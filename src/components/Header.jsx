@@ -1,4 +1,5 @@
 import logo from "../assets/images/logo-v-orange.png";
+import purpleArrow from "../assets/images/purple-arrow-home.png";
 
 const Header = () => {
     return (
