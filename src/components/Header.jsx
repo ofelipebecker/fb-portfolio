@@ -1,4 +1,4 @@
-import logo from "../logo.svg";
+import logo from "../assets/images/logo-v-orange.png";
 
 const Header = () => {
     return (
