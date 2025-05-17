@@ -112,3 +112,9 @@ h4 {
     color: var(--main-purple);
     font-family: "Zilla Slab";
 }
+
+header ul li.nav-item a.nav-link {
+    font-family: "Zilla Slab";
+    font-size: 2rem;
+}
+
