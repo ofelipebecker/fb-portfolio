@@ -4,15 +4,32 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
     return (
-        <header className="bg-purple">
-            <div className="row">
-                <div className="col-md-3 offset-md-3">English</div>
-                <div className="col-md-3">Português</div>
+        <header>
+            <div className="bg-purple shadow-sm">
+                <div className="row">
+                    <div className="col-md-4 offset-md-4 my-5 text-center">
+                        <img src={logo} className="w-auto" alt="logo" />
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="col-md-6 offset-md-3">
+                        <ul className="nav justify-content-center mb-4">
+                            <li className="nav-item">
+                                <Link to="/" className="nav-link active">
+                                    Sobre
+                                </Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link to="/work" className="nav-link">
+                                    Projetos
+                                </Link>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <img src={logo} alt="logo" />
-            <div className="row">
-                <div className="col-md-3 offset-md-3">About</div>
-                <div className="col-md-3">Work</div>
+            <div className="d-flex justify-content-center">
+                <img src={purpleArrow} className="w-auto" alt="purple-arrow" />
             </div>
         </header>
     );
