@@ -1,5 +1,6 @@
 import logo from "../assets/images/logo-v-orange.png";
 import purpleArrow from "../assets/images/purple-arrow-home.png";
+import { Link } from "react-router-dom";
 
 const Header = () => {
     return (
