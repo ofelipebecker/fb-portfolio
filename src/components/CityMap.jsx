@@ -40,7 +40,7 @@ const CityMap = () => {
         mapRef.current.flyTo({
             center: cityCoordinates,
             zoom: 14,
-            speed: 1.2,
+            speed: 2,
             curve: 1.42,
             essential: true,
         });
