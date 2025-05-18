@@ -11,7 +11,7 @@ const Home = () => {
             <div className="row g-5">
                 <div className="col-md-5 offset-md-1">
                     <h2>Onde está Felipe?</h2>
-                    <div className="card rounded-3">
+                    <div className="card rounded-3 shadow-sm">
                         <div className="card-body">
                             <CityMap />
                         </div>
