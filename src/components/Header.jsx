@@ -1,8 +1,13 @@
 import logo from "../assets/images/logo-v-orange.png";
 import purpleArrow from "../assets/images/purple-arrow-home.png";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Header = () => {
+    const location = useLocation();
+    const pathname = location.pathname;
+
+    const isProjetosActive = pathname.startsWith("/work");
+
     return (
         <header>
             <div className="bg-purple shadow-sm">
@@ -19,12 +24,22 @@ const Header = () => {
                     <div className="col-md-6 offset-md-3">
                         <ul className="nav justify-content-center mb-5">
                             <li className="nav-item">
-                                <Link to="/" className="nav-link active">
+                                <Link
+                                    to="/"
+                                    className={`nav-link ${
+                                        !isProjetosActive ? "active" : ""
+                                    }`}
+                                >
                                     Sobre
                                 </Link>
                             </li>
                             <li className="nav-item">
-                                <Link to="/work" className="nav-link">
+                                <Link
+                                    to="/work"
+                                    className={`nav-link ${
+                                        isProjetosActive ? "active" : ""
+                                    }`}
+                                >
                                     Projetos
                                 </Link>
                             </li>
