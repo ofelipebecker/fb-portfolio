@@ -9,11 +9,15 @@ const Header = () => {
                 <div className="row">
                     <div className="col-md-4 offset-md-4 my-5 text-center">
                         <img src={logo} className="w-auto" alt="logo" />
+                        <ul className="list-unstyled fst-italic mt-4 text-orange">
+                            <li>Front-End</li>
+                            <li>Palhoça, SC - Brasil</li>
+                        </ul>
                     </div>
                 </div>
                 <div className="row">
                     <div className="col-md-6 offset-md-3">
-                        <ul className="nav justify-content-center mb-4">
+                        <ul className="nav justify-content-center mb-5">
                             <li className="nav-item">
                                 <Link to="/" className="nav-link active">
                                     Sobre
