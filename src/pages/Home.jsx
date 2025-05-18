@@ -8,7 +8,7 @@ const Home = () => {
     return (
         <div className="container mt-5 text-center">
             <h1 className="mb-5">Sobre</h1>
-            <div className="row g-3">
+            <div className="row g-5">
                 <div className="col-md-5 offset-md-1">
                     <h2>Onde está Felipe?</h2>
                     <div className="card rounded-3">
