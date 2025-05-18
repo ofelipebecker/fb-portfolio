@@ -26,7 +26,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <div className="row g-3 mt-5">
+            <div className="row g-5 my-5">
                 <div className="col-md-5 offset-md-1">
                     <h2>Educação</h2>
                     <div className="card border-0 rounded-3 shadow-sm">
