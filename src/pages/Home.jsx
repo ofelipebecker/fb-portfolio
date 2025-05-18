@@ -11,7 +11,7 @@ const Home = () => {
             <div className="row g-5">
                 <div className="col-md-5 offset-md-1">
                     <h2>Onde está Felipe?</h2>
-                    <div className="card rounded-3 shadow-sm">
+                    <div className="card border-0 rounded-3 shadow-sm">
                         <div className="card-body">
                             <CityMap />
                         </div>
@@ -19,7 +19,7 @@ const Home = () => {
                 </div>
                 <div className="col-md-5">
                     <h2>Habilidades</h2>
-                    <div className="card rounded-3 shadow-sm">
+                    <div className="card border-0 rounded-3 shadow-sm">
                         <div className="card-body">
                             <RadarChart />
                         </div>
