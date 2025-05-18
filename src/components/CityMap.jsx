@@ -17,7 +17,7 @@ const CityMap = () => {
         const markers = Array.from({ length: 50 }).map(() => {
             const lng = Math.random() * 360 - 180;
             const lat = Math.random() * 180 - 90;
-            const color = `hsl(${Math.random() * 360}, 100%, 50%)`;
+            const color = "#ff931e";
 
             return new mapboxgl.Marker({ color })
                 .setLngLat([lng, lat])
