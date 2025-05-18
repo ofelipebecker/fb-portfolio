@@ -1,8 +1,8 @@
-import placeholderQuote from "../assets/images/placeholder-quote.png";
-
 import CityMap from "../components/CityMap";
 import CourseTable from "../components/CourseTable";
 import RadarChart from "../components/RadarChart";
+
+import ChartJSLogo from "../assets/images/chartjs-logo.svg";
 
 const Home = () => {
     return (
@@ -10,38 +10,38 @@ const Home = () => {
             <h1 className="mb-5">Sobre</h1>
             <div className="row g-5">
                 <div className="col-md-5 offset-md-1">
-                    <h2>Onde está Felipe?</h2>
-                    <div className="card border-0 rounded-3 shadow-sm">
+                    <div className="card border-0 h-100 rounded-3 shadow-sm">
+                        <h2 className="mt-3 mb-0">Habilidades</h2>
                         <div className="card-body">
-                            <CityMap />
+                            <RadarChart />
+                            <div className="d-flex align-items-center mt-3">
+                                <img
+                                    className="w-25px"
+                                    src={ChartJSLogo}
+                                    alt="..."
+                                ></img>
+                                <span className="text-orange">Chart.JS</span>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div className="col-md-5">
-                    <h2>Habilidades</h2>
-                    <div className="card border-0 rounded-3 shadow-sm">
-                        <div className="card-body">
-                            <RadarChart />
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div className="row g-5 my-5">
-                <div className="col-md-5 offset-md-1">
-                    <h2>Educação</h2>
-                    <div className="card border-0 rounded-3 shadow-sm">
+                    <div className="card border-0 h-100 rounded-3 shadow-sm">
+                        <h2 className="mt-3 mb-0">Educação</h2>
                         <div className="card-body">
                             <CourseTable />
                         </div>
                     </div>
                 </div>
-                <div className="col-md-5">
-                    <h2>Filosofia</h2>
-                    <img
-                        className="w-100"
-                        src={placeholderQuote}
-                        alt="..."
-                    ></img>
+            </div>
+            <div className="row">
+                <div className="col-md-10 offset-md-1 mt-5">
+                    <div className="card border-0 rounded-3 shadow-sm">
+                        <h2 className="mt-3 mb-0">Onde está Felipe?</h2>
+                        <div className="card-body">
+                            <CityMap />
+                        </div>
+                    </div>
                 </div>
             </div>
             <div className="row my-5"></div>
