@@ -1,8 +1,8 @@
-import placeholderChart from "../assets/images/placeholder-chart.png";
 import placeholderQuote from "../assets/images/placeholder-quote.png";
 import placeholderTable from "../assets/images/placeholder-table.png";
 
 import CityMap from "../components/CityMap";
+import RadarChart from "../components/RadarChart";
 
 const Home = () => {
     return (
@@ -19,7 +19,11 @@ const Home = () => {
                 </div>
                 <div className="col-md-5">
                     <h2>Habilidades</h2>
-                    <img className="w-100" src={placeholderChart} alt="..." />
+                    <div className="card rounded-3 shadow-sm">
+                        <div className="card-body">
+                            <RadarChart />
+                        </div>
+                    </div>
                 </div>
             </div>
             <div className="row g-3 mt-5">
