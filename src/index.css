@@ -97,6 +97,16 @@ body {
     background-color: var(--main-purple);
 }
 
+.btn.btn-outline-primary {
+    border-color: var(--main-purple);
+    color: var(--main-purple);
+}
+
+.btn.btn-outline-primary:hover {
+    background-color: var(--main-purple);
+    color: white;
+}
+
 h1,
 h2,
 h3,
