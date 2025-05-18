@@ -1,7 +1,7 @@
 import placeholderQuote from "../assets/images/placeholder-quote.png";
-import placeholderTable from "../assets/images/placeholder-table.png";
 
 import CityMap from "../components/CityMap";
+import CourseTable from "../components/CourseTable";
 import RadarChart from "../components/RadarChart";
 
 const Home = () => {
@@ -29,11 +29,11 @@ const Home = () => {
             <div className="row g-3 mt-5">
                 <div className="col-md-5 offset-md-1">
                     <h2>Educação</h2>
-                    <img
-                        className="w-100"
-                        src={placeholderTable}
-                        alt="..."
-                    ></img>
+                    <div className="card border-0 rounded-3 shadow-sm">
+                        <div className="card-body">
+                            <CourseTable />
+                        </div>
+                    </div>
                 </div>
                 <div className="col-md-5">
                     <h2>Filosofia</h2>
