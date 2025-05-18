@@ -71,7 +71,7 @@ const RadarChart = () => {
         <div
             style={{
                 width: "100%",
-                height: "400px",
+                minHeight: "300px",
                 backgroundColor: "#f5eff2",
             }}
         >
