@@ -134,6 +134,18 @@ p {
     font-size: 1.4rem;
 }
 
+.table > :not(caption) > * > * {
+    color: unset;
+}
+
+.table-striped > tbody > tr:nth-of-type(2n + 1) > * {
+    background-color: #fcfafb;
+}
+
+.table-hover > tbody > tr:hover > * {
+    background-color: #f1e9ed;
+}
+
 .text-orange {
     color: var(--main-orange);
 }
