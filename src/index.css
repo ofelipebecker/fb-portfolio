@@ -118,6 +118,8 @@ header ul li.nav-item a.nav-link.active {
 header ul li.nav-item a.nav-link:hover {
     color: var(--main-orange);
 }
+
+li,
 p {
     font-size: 1.4rem;
 }
