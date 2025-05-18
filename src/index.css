@@ -121,3 +121,7 @@ header ul li.nav-item a.nav-link:hover {
 p {
     font-size: 1.4rem;
 }
+
+.text-orange {
+    color: var(--main-orange);
+}
