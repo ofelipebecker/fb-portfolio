@@ -137,3 +137,7 @@ p {
 .text-orange {
     color: var(--main-orange);
 }
+
+.text-purple {
+    color: var(--main-purple);
+}
