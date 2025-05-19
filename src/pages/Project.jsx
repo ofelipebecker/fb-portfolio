@@ -22,37 +22,6 @@ function Project() {
                 },
             ],
             conclusion: "Conclusion for Project 1.",
-            next: "project2",
-        },
-        project2: {
-            title: "Project 2",
-            image: "https://via.placeholder.com/800x300",
-            intro: "Intro for Project 2.",
-            steps: [
-                {
-                    title: "Step 1",
-                    subtitle: "Planning",
-                    text: "Step 1 content for project 2.",
-                },
-            ],
-            conclusion: "Conclusion for Project 2.",
-            next: "project3",
-        },
-        project3: {
-            title: "Project 3",
-            image: "https://via.placeholder.com/800x300",
-            intro: "Intro for Project 3.",
-            steps: [],
-            conclusion: "Conclusion for Project 3.",
-            next: "project4",
-        },
-        project4: {
-            title: "Project 4",
-            image: "https://via.placeholder.com/800x300",
-            intro: "Intro for Project 4.",
-            steps: [],
-            conclusion: "Conclusion for Project 4.",
-            next: "project1",
         },
     };
 
@@ -71,7 +40,7 @@ function Project() {
             <nav aria-label="breadcrumb">
                 <ol className="breadcrumb">
                     <li className="breadcrumb-item">
-                        <Link to="/work">Work</Link>
+                        <Link to="/work">Projetos</Link>
                     </li>
                     <li className="breadcrumb-item active" aria-current="page">
                         {project.title}
@@ -108,20 +77,13 @@ function Project() {
             <nav aria-label="breadcrumb">
                 <ol className="breadcrumb">
                     <li className="breadcrumb-item">
-                        <Link to="/work">Work</Link>
+                        <Link to="/work">Projetos</Link>
                     </li>
                     <li className="breadcrumb-item active" aria-current="page">
                         {project.title}
                     </li>
                 </ol>
             </nav>
-
-            <Link
-                to={`/work/${project.next}`}
-                className="btn btn-outline-secondary"
-            >
-                Next Project
-            </Link>
         </div>
     );
 }
