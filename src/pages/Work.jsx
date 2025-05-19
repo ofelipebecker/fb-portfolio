@@ -8,16 +8,16 @@ import vcxTablesCover from "../assets/images/proj-vcx-tables/work-proj-vcx-table
 const Work = () => {
     const projects = [
         {
-            title: "Cidades & Bikes | Webapp/Mapa Interativo",
-            imageSrc: ctbCover,
-            tags: "JS | MapboxGL.js | Mapbox Directions API | Mapbox Geocoding API | OpenWeatherMap API",
+            title: "Painel Geral - VC-X Sonar | Dashboard",
+            imageSrc: vcxDashCover,
+            tags: "JS | Chart.js | Day.js | Datatables.js | Bootstrap",
             url: "/work/project1",
             disabled: false,
         },
         {
-            title: "Painel Geral - VC-X Sonar | Dashboard",
-            imageSrc: vcxDashCover,
-            tags: "JS | Chart.js | Day.js | Datatables.js | Bootstrap",
+            title: "Cidades & Bikes | Webapp/Mapa Interativo",
+            imageSrc: ctbCover,
+            tags: "JS | MapboxGL.js | Mapbox Directions API | Mapbox Geocoding API | OpenWeatherMap API",
             url: "/work/project2",
             disabled: true,
         },
