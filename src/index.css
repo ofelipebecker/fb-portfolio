@@ -135,6 +135,10 @@ p {
     font-size: 1.4rem;
 }
 
+.max-h-200px {
+    max-height: 200px;
+}
+
 .proj-link div {
     opacity: 0.9;
 }
