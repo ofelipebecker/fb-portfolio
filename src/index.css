@@ -135,6 +135,15 @@ p {
     font-size: 1.4rem;
 }
 
+.proj-link div {
+    opacity: 0.9;
+}
+
+.proj-link > div:hover {
+    box-shadow: var(--bs-box-shadow) !important;
+    opacity: 1;
+}
+
 .table > :not(caption) > * > * {
     color: unset;
 }
