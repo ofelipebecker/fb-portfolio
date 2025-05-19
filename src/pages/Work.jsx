@@ -2,6 +2,7 @@ import ProjectLink from "../components/ProjectLink";
 
 import ctbCover from "../assets/images/proj-ctb/work-proj-ctb-cover.png";
 import vcxDashCover from "../assets/images/proj-vcx-dashboard/work-proj-vcx-dashboard-cover.jpg";
+import vcxKanbanCover from "../assets/images/proj-vcx-kanban/work-proj-vcx-kanban-cover.png";
 import vcxTablesCover from "../assets/images/proj-vcx-tables/work-proj-vcx-tables-cover.png";
 
 const Work = () => {
@@ -26,7 +27,7 @@ const Work = () => {
         },
         {
             title: "Refatoração de Kanbans - VC-X Flow | Kanbans/Accordions",
-            imageSrc: "https://via.placeholder.com/800x200?text=Project+4",
+            imageSrc: vcxKanbanCover,
             tags: "JS | Vue.js | Bootstrap",
             url: "/work/project4",
         },
