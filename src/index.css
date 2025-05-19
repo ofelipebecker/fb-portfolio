@@ -79,6 +79,7 @@
 }
 
 :root {
+    --bootstrap-purple: #6f42c1;
     --light-gray: #e6e6e6;
     --main-orange: #ff931e;
     --main-purple: #6c2250;
@@ -144,6 +145,10 @@ p {
 
 .table-hover > tbody > tr:hover > * {
     background-color: #f1e9ed;
+}
+
+.text-bs-purple {
+    color: var(--bootstrap-purple);
 }
 
 .text-orange {
