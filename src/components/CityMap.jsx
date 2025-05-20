@@ -10,32 +10,10 @@ const cityCoordinates = [-48.6769029, -27.642029];
 const CityMap = () => {
     const mapContainerRef = useRef(null);
     const mapRef = useRef(null);
-    const markerRefs = useRef([]);
     const [zoomedIn, setZoomedIn] = useState(false);
-
-    const generateRandomMarkers = () => {
-        const markers = Array.from({ length: 50 }).map(() => {
-            const lng = Math.random() * 360 - 180;
-            const lat = Math.random() * 180 - 90;
-            const color = "#ff931e";
-
-            return new mapboxgl.Marker({ color })
-                .setLngLat([lng, lat])
-                .addTo(mapRef.current);
-        });
-
-        markerRefs.current = markers;
-    };
-
-    const clearRandomMarkers = () => {
-        markerRefs.current.forEach((marker) => marker.remove());
-        markerRefs.current = [];
-    };
 
     const zoomToCity = () => {
         if (!mapRef.current) return;
-
-        clearRandomMarkers();
 
         mapRef.current.flyTo({
             center: cityCoordinates,
@@ -80,7 +58,6 @@ const CityMap = () => {
 
             mapRef.current.on("load", () => {
                 mapRef.current.resize();
-                generateRandomMarkers();
             });
         }, 100);
     }, []);
