@@ -178,6 +178,10 @@ p {
     color: var(--bootstrap-purple);
 }
 
+.text-dark-orange {
+    color: var(--dark-orange);
+}
+
 .text-orange {
     color: var(--main-orange);
 }
