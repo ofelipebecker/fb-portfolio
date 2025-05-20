@@ -13,13 +13,11 @@ const projects = {
         title: "Painel Geral VC-X Sonar",
         image: mainImage,
         intro: `
-            VC-X Sonar is a platform that aims to simplify the automation,
-            acquisition and management of Telecom and IT for companies,
-            generating vision, control and savings. The new dashboard goal
-            is to show, in a simplified and interactive way, useful information
-            about consumption, costs and resources of Telecom and IT of the
-            clients. My role was designing, and developing the
-            dashboard interface.
+            O VC-X Sonar é uma plataforma que visa descomplicar a automação, aquisição e 
+            gestão de telecom e TI para empresas, gerando visão, controle e economia. 
+            O projeto do novo painel geral do software tem como objetivo expor de maneira 
+            simplificada e interativa informações úteis sobre consumo, custos e recursos 
+            de Telecom e TI dos clientes. Meu papel foi de designer e desenvolvedor front-end.
         `,
         steps: [
             {
@@ -28,40 +26,38 @@ const projects = {
                 content: (
                     <>
                         <p className="my-4">
-                            At the beginning of the project, I wrote a basic
-                            description of the problem and listed the activities
-                            that I would do. I had a meeting with the CTO and
-                            the Head of the team, to help come up with this
-                            description.
+                            No começo do projeto, escrevi uma descrição básica
+                            do problema e listei brevemente as atividades que
+                            seriam realizadas. Conversei com o CTO e o Head da
+                            equipe para que ajudassem nessa descrição.
                         </p>
-                        <blockquote className="blockquote ps-5">
+                        <blockquote className="blockquote px-5 mb-0">
                             <p className="my-4">
                                 <em>
-                                    [...] the home screen of VC-X Sonar, the
-                                    Telecom Dashboard can be misunderstood as a
-                                    main dashboard, causing only information
-                                    from one module (Telecom) to be seen and
-                                    “hiding” information from other modules
-                                    (Financial and Resources/People). It was
-                                    even reported that customers had not
-                                    realized the existence of the other
-                                    dashboards.
+                                    [...] a primeira tela a aparecer, o Painel
+                                    Telecom pode ser interpretado como um painel
+                                    geral, fazendo com que só sejam vistas
+                                    informações de um módulo e “escondendo” as
+                                    informações dos outros módulos. Foi relatado
+                                    inclusive que clientes comentaram que não
+                                    tinham percebido a existência dos outros
+                                    painéis.
                                 </em>
                             </p>
                             <p>
                                 <em>
-                                    Another point raised by internal customers
-                                    was that the dashboards currently present
-                                    information in short periods of time (per
-                                    month). Consequently, it is difficult to see
-                                    data from longer periods and make
-                                    comparisons among periods (e.g. differences
-                                    between months over a year).
+                                    Outro ponto levantado por clientes internos
+                                    foi que atualmente os painéis apresentam
+                                    informações em períodos de tempo curto (por
+                                    mês). Por consequência há uma dificuldade de
+                                    enxergar dados de períodos mais longos e
+                                    fazer comparações entre períodos (ex:
+                                    diferenças entre os meses ao longo de um
+                                    ano).
                                 </em>
                             </p>
                             <footer className="blockquote-footer">
-                                Above an excerpt from the basic description of
-                                the problem.
+                                Trecho da descrição básica do problema.
                             </footer>
                         </blockquote>
                     </>
@@ -69,112 +65,20 @@ const projects = {
             },
             {
                 title: "Pesquisa e Análise",
-                subtitle: "Goals and Strategies Definition",
+                subtitle: "Análise de Similares",
                 content: (
                     <>
                         <p className="my-4">
-                            Based on the information from the previous steps, I
-                            organized a table of goals and strategies. Some of
-                            the goals and strategies:
-                        </p>
-
-                        <table className="table table-hover">
-                            <tbody>
-                                <tr>
-                                    <th colSpan="3">Primary Goal</th>
-                                </tr>
-                                <tr>
-                                    <td colSpan="3">
-                                        Displaying a summarized visualization of
-                                        the most relevant information from each
-                                        Sonar module.
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>Secondary Goals</th>
-                                    <th>Restrictions and Problems</th>
-                                    <th>Strategies</th>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        Show information from each of the three
-                                        Sonar modules in a balanced way.
-                                    </td>
-                                    <td>
-                                        <ul className="pl-4">
-                                            <li>
-                                                Some modules have much more
-                                                content than others.
-                                            </li>
-                                            <li>
-                                                Difficult to connect the main
-                                                dashboard and individual module
-                                                dashboards.
-                                            </li>
-                                            <li>
-                                                Redundant if reusing data
-                                                already displayed elsewhere.
-                                            </li>
-                                        </ul>
-                                    </td>
-                                    <td>
-                                        <ul className="pl-4">
-                                            <li>
-                                                Organize the grid to show all
-                                                modules without scrolling.
-                                            </li>
-                                            <li>
-                                                Divide space evenly among
-                                                modules.
-                                            </li>
-                                            <li>
-                                                Redesign modules later based on
-                                                this dashboard.
-                                            </li>
-                                        </ul>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        Make it simple to understand changes in
-                                        information over time periods longer
-                                        than a month.
-                                    </td>
-                                    <td>
-                                        In some cases, a monthly view makes more
-                                        sense (e.g., billing).
-                                    </td>
-                                    <td>
-                                        <ul className="pl-4">
-                                            <li>
-                                                Default to three-month view.
-                                            </li>
-                                            <li>
-                                                Allow switching to 1, 6, and 12
-                                                months.
-                                            </li>
-                                        </ul>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </>
-                ),
-            },
-            {
-                title: "Pesquisa e Análise",
-                subtitle: "Competitor Analysis",
-                content: (
-                    <>
-                        <p className="my-4">
-                            In this step, I searched and evaluated seven web
-                            softwares that contain dashboards. Those softwares
-                            are competitors of VC-X Sonar or have some
-                            similarity with. My goal was to find good references
-                            for our dashboard, on content organization and
-                            features. Analyzed softwares: Google Analytics,
-                            Conta Azul, Conta Mínima, Meu Dinheiro Invest,
-                            Mobills, Quick Books and Sistema Soma.
+                            Nesta etapa, eu pesquisei e avaliei sete softwares
+                            web que contém dashboards, considerados como
+                            concorrentes do VC-X Sonar ou que tenham alguma
+                            similaridade, mesmo sendo de outros segmentos. A
+                            etapa tinha como objetivo buscar boas referências e
+                            possíveis oportunidades para a organização de
+                            conteúdo e funcionalidades para o dashboard. Os
+                            softwares analisados foram: Google Analytics, Conta
+                            Azul, Conta Mínima, Meu Dinheiro Invest, Mobills,
+                            Quick Books e Sistema Soma.
                         </p>
                     </>
                 ),
@@ -182,80 +86,25 @@ const projects = {
             },
             {
                 title: "Pesquisa e Análise",
-                subtitle: "Referências de Design para Dashboards",
-                content: (
-                    <>
-                        <p className="my-4">
-                            Next, I looked for articles and design guides. I
-                            wanted to find references and proven/tested design
-                            practices, to support the decisions we would take in
-                            the project. The references:
-                        </p>
-                        <ul>
-                            <li>
-                                <a
-                                    href="https://uxplanet.org/10-rules-for-better-dashboard-design-ef68189d734c"
-                                    rel="noreferrer noopener"
-                                    target="_blank"
-                                >
-                                    Article 10 rules for better dashboard
-                                    design;
-                                </a>
-                            </li>
-                            <li>
-                                <a
-                                    href="https://www.toptal.com/designers/data-visualization/dashboard-design-best-practices"
-                                    rel="noreferrer noopener"
-                                    target="_blank"
-                                >
-                                    Article Dashboard Design - Considerations
-                                    and Best Practices;
-                                </a>
-                            </li>
-                            <li>
-                                <a
-                                    href="https://usabilitygeek.com/dashboard-design-user-experience-guidelines/"
-                                    rel="noreferrer noopener"
-                                    target="_blank"
-                                >
-                                    Article Dashboard Design User Experience
-                                    Guidelines;
-                                </a>
-                            </li>
-                            <li>
-                                <a
-                                    href="https://material.io/design/communication/data-visualization.html"
-                                    rel="noreferrer noopener"
-                                    target="_blank"
-                                >
-                                    Data visualization Principle Guide, from
-                                    Material Design;
-                                </a>
-                            </li>
-                        </ul>
-                    </>
-                ),
-            },
-            {
-                title: "Pesquisa e Análise",
                 subtitle: "Entrevistas com Stakeholders",
                 content: (
                     <>
                         <p className="my-4">
-                            Subsequently, I interviewed four stakeholders who
-                            have direct contact with customers. The goal was to
-                            collect feedback they received from customers about
-                            the VC-X Sonar. Also, I wanted to have an idea of
-                            each stakeholder's view of what information was
-                            relevant to be on the dashboard. I recorded and
-                            analyzed the interviews, to summarize and organize
-                            the ideas presented.
+                            Posteriormente, entrevistei quatro clientes internos
+                            que têm contato direto com clientes. A ideia desta
+                            etapa era colher feedbacks que eles receberam de
+                            clientes a respeito do VC-X Sonar e também ter uma
+                            noção melhor sobre a visão de cada um sobre as
+                            informações que deveriam aparecer no dashboard. As
+                            entrevistas foram gravadas e as gravações foram
+                            analisadas para resumir e organizar as ideias
+                            apresentadas pelos entrevistados.
                         </p>
-                        <p className="my-4">
-                            Interviewees: Rodrigo Bedete (Solutions Head),
-                            Marina Turrisi (Client Success Analist), João Plentz
-                            (Chief Operating Officer) and Alexandre Kellermann
-                            (Client Success Analist).
+                        <p className="mt-4 mb-0">
+                            Entrevistados: Rodrigo Bedete (Head de Soluções),
+                            Marina Turrisi (Analista de Sucesso do Cliente),
+                            João Plentz (Chief Operating Officer) e Alexandre
+                            Kellermann (Analista de Sucesso do Cliente).
                         </p>
                     </>
                 ),
@@ -266,11 +115,13 @@ const projects = {
                 content: (
                     <>
                         <p className="my-4">
-                            Then, with the heatmaps tool from Hotjar, I analyzed
-                            several VC-X Sonar screens. My goal was trying to
-                            understand which information the users considered
-                            most important. I focused on the click maps and
-                            cursor movement maps.
+                            Utilizando a ferramenta Hotjar, analisei mapas de
+                            calor de diversas telas do VC-X Sonar, para
+                            visualizar a interação dos usuários com as
+                            informações do sistema e tentar entender quais
+                            informações consideravam mais importantes, a partir
+                            da quantidade de cliques e de movimentações nos
+                            elementos das páginas.
                         </p>
                     </>
                 ),
@@ -282,95 +133,95 @@ const projects = {
                 content: (
                     <>
                         <p className="my-4">
-                            Based on the information from the previous steps, I
-                            organized a table of goals and strategies. Some of
-                            the goals and strategies:
+                            A partir das informações levantadas nas etapas
+                            anteriores, gerei uma tabela de objetivos (primário
+                            e secundários) e de estratégias para atingir esses
+                            objetivos. Alguns dos objetivos:
                         </p>
-                        <table className="table table-hover">
+                        <table className="table table-hover mb-0">
                             <tbody>
                                 <tr>
-                                    <th colSpan="3">Primary Goal</th>
+                                    <th colSpan="3">Objetivo Primário</th>
                                 </tr>
                                 <tr>
                                     <td colSpan="3">
-                                        Displaying a summarized visualization of
-                                        the most relevant information from each
-                                        Sonar module.
+                                        Expor uma visualização resumida com as
+                                        principais informações de cada módulo do
+                                        Sonar.
                                     </td>
                                 </tr>
                                 <tr>
-                                    <th>Secondary Goals</th>
-                                    <th>Restrictions and Problems</th>
-                                    <th>Strategies</th>
+                                    <th>Objetivos Secundários</th>
+                                    <th>Limitações e Problemas</th>
+                                    <th>Estratégias</th>
                                 </tr>
                                 <tr>
                                     <td>
-                                        Show information from each of the three
-                                        Sonar modules in a balanced way.
+                                        Equilibrar a atenção dada entre as
+                                        informações dos diversos módulos.
                                     </td>
                                     <td>
                                         <ul className="pl-4">
                                             <li>
-                                                Some modules have much more
-                                                content than others.
+                                                Módulos têm quantidades
+                                                diferentes de conteúdo.
                                             </li>
                                             <li>
-                                                It is difficult to make a
-                                                connection between the content
-                                                of the main dashboard and the
-                                                content of the dashboards of
-                                                each module.
+                                                Dificuldade em fazer com que o
+                                                painel geral e os painéis de
+                                                módulos “conversem” entre si.
                                             </li>
                                             <li>
-                                                Including data already displayed
-                                                in the dashboards of each
-                                                module, might make them look
-                                                redundant.
+                                                Incluir dados que já existam nos
+                                                painéis de cada módulo, fazendo
+                                                com que pareçam redundantes
+                                                nestes painéis.
                                             </li>
                                         </ul>
                                     </td>
                                     <td>
                                         <ul className="pl-4">
                                             <li>
-                                                Organize the grid so that the
-                                                existence of the different
-                                                modules is already visible
-                                                without scrolling.
+                                                Organizar grid de maneira que a
+                                                existência dos diversos módulos
+                                                seja visível já no início da
+                                                visualização.
                                             </li>
                                             <li>
-                                                Divide as equally as possible
-                                                the space given to each module
-                                                content.
+                                                Dividir espaço da maneira mais
+                                                igualitária possível.
                                             </li>
                                             <li>
-                                                Create a separate task, at
-                                                another time, to redesign the
-                                                dashboards of each module, based
-                                                on the main dashboard.
+                                                Realizar uma tarefa separada, em
+                                                outro momento, para o redesign
+                                                dos painéis dos módulos tendo o
+                                                painel geral como referência.
                                             </li>
                                         </ul>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        Make it simple to understand changes in
-                                        information over time periods longer
-                                        than a month.
+                                        Facilitar a compreensão das mudanças das
+                                        informações ao longo de períodos de
+                                        tempo maiores que um mês.
                                     </td>
                                     <td>
-                                        In some data it makes more sense to have
-                                        a monthly view (ex: billing due date).
+                                        Em alguns dados faz mais sentido ter
+                                        visualização mensal (ex: vencimento de
+                                        faturas). Pode ser que seja difícil
+                                        compreender os controles.
                                     </td>
                                     <td>
                                         <ul className="pl-4">
                                             <li>
-                                                By default, display information
-                                                in three-months periods.
+                                                Apresentar informações por
+                                                default em períodos de três
+                                                meses.
                                             </li>
                                             <li>
-                                                Allow the user to change to 1
-                                                month, 6 months and 12 months
-                                                periods.
+                                                Permitir troca para 1 mês, 6
+                                                meses e 12 meses.
                                             </li>
                                         </ul>
                                     </td>
@@ -385,10 +236,10 @@ const projects = {
                 subtitle: "Definição de Conteúdo",
                 content: (
                     <>
-                        <p className="my-4">
-                            Having the objectives and strategies as a guide, I
-                            listed the information that would be displayed on
-                            the dashboard.
+                        <p className="mb-0 mt-4">
+                            Tendo os objetivos e estratégias como guia, listei
+                            as informações principais que deveriam aparecer no
+                            dashboard.
                         </p>
                     </>
                 ),
@@ -398,7 +249,11 @@ const projects = {
                 subtitle: "Desenhos de Alternativas",
                 content: (
                     <>
-                        <p className="my-4"></p>
+                        <p className="mt-4">
+                            Com papel e lápis, fiz uma série de desenhos para
+                            gerar diversas alternativas de ideias para a
+                            interface do dashboard.
+                        </p>
                     </>
                 ),
                 image: [imageSketch],
@@ -409,22 +264,21 @@ const projects = {
                 content: (
                     <>
                         <p className="mt-4 mb-2">
-                            Then, I selected the ideas that were best suited to
-                            the goals and strategies of the project. I organized
-                            a prototype of the interface and with some basic
-                            interactions, using Adobe XD. I presented the
-                            prototype to the development team to get some
-                            feedback. Based on their feedback, I did some
-                            adjustments to the prototype.
+                            Em seguida, selecionei as ideias desenhadas que
+                            fossem mais adequadas aos objetivos e estratégias do
+                            projeto e organizei um protótipo no Adobe XD, para
+                            simular a interface e algumas interações básicas. O
+                            protótipo foi apresentado à equipe de
+                            desenvolvimento e a partir dos feedbacks da equipe,
+                            foi refinado.
                         </p>
                         <p className="mt-4 mb-0">
-                            Click or scroll to interact with the prototype or:{" "}
+                            Clique no prótitipo para interagir ou:
                             <a
                                 className="btn btn-lg btn-link"
                                 href="https://xd.adobe.com/embed/29f5b877-c8d1-4d98-aa54-0768f5f2bcce-7ca6/?fullscreen"
                                 rel="noreferrer noopener"
                                 target="_blank"
-                                title="Open prototype in a new tab."
                             >
                                 Abra o protótipo em nova aba
                             </a>
@@ -442,7 +296,6 @@ const projects = {
                                     border: "none",
                                     overflow: "auto",
                                 }}
-                                scrolling="yes"
                             ></iframe>
                         </div>
                     </>
@@ -450,31 +303,32 @@ const projects = {
             },
             {
                 title: "Desenvolvimento",
-                subtitle: "Development of the First Card",
+                subtitle: "Implementação Card 1",
                 content: (
                     <>
-                        <p className="my-4">
-                            The cards have many elements in common - such as tab
-                            structure, charts, and period switch selectors. We
-                            divided the implementation into two tasks:
-                            development of the first card and development of the
-                            remaining cards. That way, we could review and
-                            adjust the html/css/js structure on the first card,
-                            and then replicate that structure on the other
-                            cards.
+                        <p className="mb-0 mt-4">
+                            Como os cards têm diversos elementos em comum, como
+                            estrutura de abas, gráficos e seletores de troca de
+                            período, nós optamos por dividir a implementação em
+                            duas tarefas: implementação do primeiro card
+                            completo e implementação dos demais cards. Dessa
+                            maneira, conseguimos revisar, ajustar e validar a
+                            estrutura de html/css/js rapidamente no primeiro
+                            card e replicar essa estrutura com mudanças pontuais
+                            nos demais cards.
                         </p>
                     </>
                 ),
             },
             {
                 title: "Desenvolvimento",
-                subtitle: "Development of the First Card - Bootstrap 4 Tabs",
+                subtitle: "Implementação Card 1 - Abas do Bootstrap 4",
                 content: (
                     <>
                         <p className="my-4">
-                            Starting the development phase, I implemented the
-                            basic structure with the components of Cards and
-                            Tabs from Bootstrap 4.
+                            Dando início a etapa, eu implementei a estrutura
+                            básica utilizando os componentes de Cards e Abas do
+                            framework Bootstrap 4.
                         </p>
                     </>
                 ),
@@ -482,18 +336,18 @@ const projects = {
             },
             {
                 title: "Desenvolvimento",
-                subtitle: "Development of the First Card - Charts",
+                subtitle: "Implementação Card 1 - Gráficos",
                 content: (
                     <>
                         <p className="my-4">
-                            We tested a series of chart libraries to define
-                            which would best fit the needs of the project. We
-                            decided on ChartJs, as it provides a good
-                            quantity/quality of charts, and it is easy to
-                            develop. Also, ChartJs has a more complete
-                            documentation. I implemented three bar charts to
-                            display the total consumption of Mobile Data, Voice
-                            and SMS.
+                            Testamos uma série de bibliotecas de gráficos para
+                            definir qual seria a melhor para usar dentro das
+                            necessidades do projeto. Decidimos pela ChartJs,
+                            pois consideramos ter uma boa quantidade e qualidade
+                            de gráficos disponíveis, facilidade de implementação
+                            e uma documentação mais completa que as demais.
+                            Implementei três gráficos de barras para representar
+                            o consumo total de Dados Móveis, Voz e SMS.
                         </p>
                     </>
                 ),
@@ -501,29 +355,30 @@ const projects = {
             },
             {
                 title: "Desenvolvimento",
-                subtitle: "Development of the First Card - Ajax Requests",
+                subtitle: "Implementação Card 1 - Requisições Ajax",
                 content: (
                     <>
-                        <p className="my-4">
-                            Together with the developer Gustavo Presa, I
-                            implemented the ajax requests to retrieve the charts
-                            data from the database.
+                        <p className="mb-0 mt-4">
+                            Em parceria com o desenvolvedor Gustavo Presa,
+                            implementei as requisições ajax responsáveis por
+                            coletar no banco de dados as informações que iriam
+                            aparecer nos gráficos.
                         </p>
                     </>
                 ),
             },
             {
                 title: "Desenvolvimento",
-                subtitle: "Development of the First Card - Period Selection",
+                subtitle: "Implementação Card 1 - Seletor de Período",
                 content: (
                     <>
                         <p className="my-4">
-                            One of the project requirements was allowing users
-                            to visualize data from different periods on the
-                            charts (3, 6 or 12 months). So, I developed a period
-                            selector to perform that interaction on the charts.
-                            To handle date and time information, I used the
-                            DayJs library.
+                            A partir do requisito de permitir aos usuários
+                            visualizar dados de períodos diferentes nos gráficos
+                            (3, 6 ou 12 meses), implementei um seletor de
+                            período para realizar essa interação nos gráficos,
+                            utilizando a biblioteca DayJs para manipular as
+                            informações de datas e tempo.
                         </p>
                     </>
                 ),
@@ -534,25 +389,25 @@ const projects = {
                 subtitle: "Revisão de Código",
                 content: (
                     <>
-                        <p className="my-4">
-                            After finishing the implementation of the first
-                            card, I opened the Pull Request. The developers Hugo
-                            Santos and Gustavo Presa reviewed the code. After
-                            some adjustments, I started the second task, for the
-                            development of the other cards.
+                        <p className="mb-0 mt-4">
+                            Finalizada a implementação do primeiro card, abri o
+                            Pull Request. O código foi revisado pelos
+                            desenvolvedores Hugo Santos e Gustavo Presa. Após os
+                            ajustes e aprovação, dei início a segunda tarefa,
+                            para a implementação dos demais cards.
                         </p>
                     </>
                 ),
             },
             {
                 title: "Desenvolvimento",
-                subtitle: "Development of the Other Cards - Tabs and Charts",
+                subtitle: "Implementação Demais Cards - Abas e Gráficos",
                 content: (
                     <>
                         <p className="my-4">
-                            Following the same structure of cards, tabs and
-                            charts validated in the previous step, I implemented
-                            the other cards in the dashboard.
+                            Seguindo a mesma estrutura de cards, abas e gráficos
+                            validada na etapa anterior, implementei os demais
+                            cards do painel geral.
                         </p>
                     </>
                 ),
@@ -560,14 +415,15 @@ const projects = {
             },
             {
                 title: "Desenvolvimento",
-                subtitle: "Development of the Other Cards - Tables",
+                subtitle: "Implementação Demais Cards - Tabelas",
                 content: (
                     <>
                         <p className="my-4">
-                            Some of the cards have information displayed in
-                            tables. I implemented these tables with html,
-                            Bootstrap 4 css classes and ajax requests to
-                            retrieve the data from the database.
+                            Em alguns dos cards as informações são mostradas em
+                            formato de tabelas. Eu implementei essas tabelas com
+                            html, classes de tabelas do Bootstrap 4 e
+                            requisições ajax para coletar no banco de dados as
+                            informações das tabelas.
                         </p>
                     </>
                 ),
@@ -575,18 +431,19 @@ const projects = {
             },
             {
                 title: "Desenvolvimento",
-                subtitle: "Development of the Other Cards - Code Review",
+                subtitle:
+                    "Implementação Demais Cards e Gráficos - Revisões de Código",
                 content: (
                     <>
-                        <p className="my-4">
-                            The last step was to open a Pull Request for the
-                            task. One more time the developers Hugo Santos and
-                            Gustavo Presa reviewed the code. Again, I made some
-                            adjustments. Next, we published the dashboard in
-                            homologation, so stakeholders and coworkers could
-                            test it. We collected their feedback and I made
-                            minor adjustments, before publishing the dashboard
-                            for real users.
+                        <p className="mb-0 mt-4">
+                            A última etapa realizada foi a abertura de um Pull
+                            Request para a tarefa. O código foi revisado
+                            novamente pelos desenvolvedores Hugo Santos e
+                            Gustavo Presa. Realizados os ajustes, o Painel Geral
+                            foi publicado em homologação, para ser testado por
+                            outras equipes. Foram colhidos feedbacks e
+                            realizados pequenos ajustes antes da publicação para
+                            os usuários.
                         </p>
                     </>
                 ),
@@ -603,29 +460,32 @@ const projects = {
                     ></iframe>
                 </div>
                 <p className="my-4">
-                    The development of the dashboard presented considerable
-                    complexity. The decision of splitting the implementation
-                    into two parts proved to be a great success. We focused on
-                    one card, validated the structure and then replicated it on
-                    the other cards. We probably avoided the code review from
-                    taking much longer, as many problems would be similar. Thus,
-                    in the second task, less adjustments were necessary.
+                    O desenvolvimento do dashboard em si, já apresentou uma
+                    complexidade considerável. A ideia de dividir a
+                    implementação em duas partes, focando primeiro em um card,
+                    validando a estrutura e depois replicando nos demais cards
+                    se mostrou um grande acerto. Provavelmente evitamos que a
+                    revisão de código fosse muito mais longa, já que diversos
+                    ajustes seriam parecidos. Dessa forma, na segunda tarefa, já
+                    implementamos tendo uma estrutura pronta e com menos ajustes
+                    necessários.
                 </p>
                 <p className="my-4">
-                    My biggest challenge in this project was working with two
-                    libraries I didn't know yet, ChartJs and DayJs. The period
-                    exchange of chart data is one of the most important features
-                    of the dashboard, so understanding how to relate the two
-                    libraries took considerable effort.
+                    Meu maior desafio nesse projeto foi o de trabalhar com duas
+                    bibliotecas que ainda não conhecia, a ChartJs e a DayJs. A
+                    troca de período dos dados dos gráficos é uma das
+                    funcionalidades mais importantes do dashboard, então
+                    compreender como relacionar as duas bibliotecas exigiu um
+                    esforço considerável.
                 </p>
-                <p className="my-4">
-                    What I liked most about this project was implementing the
-                    charts with ChartJs. I'm very interested in the data
-                    visualization area and I had already studied another
-                    library, D3. However, I found development with ChartJs
-                    simpler and more fun, both because of the structure of the
-                    library and the quality of the documentation. I intend to
-                    continue studying and working with ChartJs.
+                <p className="mb-0 mt-4">
+                    O que mais gostei neste projeto foi implementar os gráficos
+                    com ChartJs. Tenho muito interesse na área de visualização
+                    de dados e já havia estudado outra biblioteca, a D3. No
+                    entanto, achei o desenvolvimento com ChartJs mais simples e
+                    divertido, tanto pela estrutura da biblioteca quanto pela
+                    qualidade da documentação. Pretendo continuar estudando e
+                    trabalhando com ChartJs.
                 </p>
             </>
         ),
