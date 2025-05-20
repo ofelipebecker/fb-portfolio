@@ -81,6 +81,7 @@
 :root {
     --bootstrap-purple: #6f42c1;
     --dark-orange: #995812;
+    --dark-purple: #611e48;
     --light-gray: #e6e6e6;
     --light-orange: #ffe9d2;
     --main-orange: #ff931e;
@@ -114,6 +115,18 @@ body {
 
 .bg-orange {
     background-color: var(--main-orange);
+}
+
+.btn.btn-purple {
+    background-color: var(--main-purple);
+    border-color: var(--main-purple);
+    color: white;
+}
+
+.btn.btn-purple:hover {
+    background-color: var(--dark-purple);
+    border-color: var(--main-purple);
+    color: white;
 }
 
 .btn.btn-outline-primary {
