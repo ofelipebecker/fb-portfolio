@@ -40,7 +40,7 @@ function Project() {
                                             seletores de período da Day.js.
                                         </figcaption>
                                     </figure>
-                                    <p className="mb-0">{project.intro}</p>
+                                    <p className="mb-0 mt-4">{project.intro}</p>
                                 </div>
                             </div>
                         </div>
