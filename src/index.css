@@ -96,6 +96,10 @@ body {
     font-size: 1.4rem;
 }
 
+.alert {
+    border-radius: 0;
+}
+
 .bg-purple {
     background-color: var(--main-purple);
 }
