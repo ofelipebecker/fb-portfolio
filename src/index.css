@@ -98,6 +98,18 @@ body {
     background-color: var(--main-purple);
 }
 
+.bg-light-orange {
+    background-color: var(--light-orange);
+}
+
+.bg-light-purple {
+    background-color: #eadeff;
+}
+
+.bg-orange {
+    background-color: var(--main-orange);
+}
+
 .btn.btn-outline-primary {
     border-color: var(--main-purple);
     color: var(--main-purple);
