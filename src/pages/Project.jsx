@@ -24,36 +24,61 @@ function Project() {
                         </ol>
                     </nav>
                     <div className="row">
-                        <div className="col-12">
-                            <h1>{project.title}</h1>
-                            <img
-                                src={project.image}
-                                className="img-fluid my-4"
-                                alt={`${project.title} Main`}
-                            />
-                            <p className="mb-5">{project.intro}</p>
+                        <div className="col-12 mt-5">
+                            <h1 className="mb-4">{project.title}</h1>
+                            <div className="card border-0 rounded-3 shadow-sm">
+                                <div className="card-body d-flex flex-column">
+                                    <figure className="figure">
+                                        <img
+                                            src={project.image}
+                                            className="figure-img img-fluid border"
+                                            alt={`${project.title} Main`}
+                                        />
+                                        <figcaption class="figure-caption">
+                                            Cards do Painel Geral, com gráficos
+                                            da Chart.js, abas do Bootstrap e
+                                            seletores de período da Day.js.
+                                        </figcaption>
+                                    </figure>
+                                    <p className="mb-0">{project.intro}</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     {project.steps.map((step, index) => (
-                        <div className="row" key={index}>
-                            <div className="col-12 my-5">
-                                <h2>{step.title}</h2>
-                                <h3>{step.subtitle}</h3>
-                                <div>{step.content}</div>
-                                {step.image && (
-                                    <img
-                                        src={step.image}
-                                        alt={step.title}
-                                        className="img-fluid"
-                                    />
-                                )}
+                        <>
+                            <div className="row my-5"></div>
+                            <div className="row" key={index}>
+                                <div className="col-12 my-5">
+                                    <div className="card border-0 rounded-3 shadow-sm p-4">
+                                        <h2>{step.title}</h2>
+                                        <h3>{step.subtitle}</h3>
+                                        <div className="card-body d-flex flex-column p-0">
+                                            <div>{step.content}</div>
+                                            {step.image && (
+                                                <figure className="figure mb-0">
+                                                    <img
+                                                        src={step.image}
+                                                        alt={step.title}
+                                                        className="figure-img img-fluid border mb-0"
+                                                    />
+                                                </figure>
+                                            )}
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
+                        </>
                     ))}
+                    <div className="row my-5"></div>
                     <div className="row">
                         <div className="col-12 my-5">
-                            <h2>Conclusion</h2>
-                            <p>{project.conclusion}</p>
+                            <div className="card border-0 rounded-3 shadow-sm p-4">
+                                <h2>Conclusão</h2>
+                                <div className="card-body d-flex flex-column p-0">
+                                    {project.conclusion}
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <nav aria-label="breadcrumb">
@@ -69,6 +94,8 @@ function Project() {
                             </li>
                         </ol>
                     </nav>
+                    <div className="row my-5"></div>
+                    <div className="row my-5"></div>
                 </div>
             </div>
         </div>
