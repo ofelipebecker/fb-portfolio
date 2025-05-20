@@ -86,11 +86,11 @@ const CityMap = () => {
     }, []);
 
     return (
-        <div style={{ textAlign: "center" }}>
+        <div style={{ textAlign: "center" }} className="position-relative">
             {!zoomedIn && (
                 <button
                     onClick={zoomToCity}
-                    className="btn btn-outline-primary mb-3"
+                    className="btn btn-purple btn-lg mb-3 position-absolute start-50 top-50 translate-middle z-1"
                 >
                     Mostrar
                 </button>
@@ -98,7 +98,7 @@ const CityMap = () => {
             <div
                 ref={mapContainerRef}
                 style={{ width: "100%", height: "400px" }}
-            />
+            ></div>
         </div>
     );
 };
