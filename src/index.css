@@ -140,6 +140,10 @@ body {
     color: white;
 }
 
+.fw-semibold {
+    font-weight: 500;
+}
+
 h1,
 h2,
 h3,
