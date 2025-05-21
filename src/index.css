@@ -86,6 +86,7 @@
     --light-orange: #ffe9d2;
     --main-orange: #ff931e;
     --main-purple: #6c2250;
+    --react-blue: #58c4dc;
 }
 
 html {
@@ -215,6 +216,10 @@ p {
 
 .text-purple {
     color: var(--main-purple);
+}
+
+.text-react-blue {
+    color: var(--react-blue);
 }
 
 .w-25px {
