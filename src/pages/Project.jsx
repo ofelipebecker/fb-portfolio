@@ -49,7 +49,7 @@ function Project() {
                         <>
                             <div className="row my-5"></div>
                             <div className="row" key={index}>
-                                <div className="col-12 my-5">
+                                <div className="col-12">
                                     <div className="card border-0 rounded-3 shadow-sm p-4">
                                         <h2>{step.title}</h2>
                                         <h3>{step.subtitle}</h3>
@@ -72,7 +72,7 @@ function Project() {
                     ))}
                     <div className="row my-5"></div>
                     <div className="row">
-                        <div className="col-12 my-5">
+                        <div className="col-12">
                             <div className="card border-0 rounded-3 shadow-sm p-4">
                                 <h2>Conclusão</h2>
                                 <div className="card-body d-flex flex-column p-0">
