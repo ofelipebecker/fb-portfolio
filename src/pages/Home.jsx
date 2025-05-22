@@ -1,5 +1,4 @@
 import EducationCard from "../components/EducationCard";
-import Footer from "../components/Footer";
 import LocationCard from "../components/LocationCard";
 import SkillsCard from "../components/SkillsCard";
 
@@ -18,7 +17,6 @@ const Home = () => {
                 <div className="row my-5"></div>
                 <div className="row my-5"></div>
             </div>
-            <Footer />
         </>
     );
 };
