@@ -4,7 +4,7 @@ import ChartJSLogo from "../assets/images/chartjs-logo.svg";
 
 const SkillsCard = () => {
     return (
-        <div className="col-md-5 offset-md-1">
+        <div className="col-12 col-lg-6">
             <div className="card border-0 h-100 rounded-3 shadow-sm">
                 <h2 className="mt-3 mb-0">Habilidades</h2>
                 <div className="card-body">
