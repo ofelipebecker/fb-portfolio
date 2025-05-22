@@ -1,5 +1,5 @@
 import CityMap from "../components/CityMap";
-import CourseTable from "../components/CourseTable";
+import EducationCard from "../components/EducationCard";
 import SkillsCard from "../components/SkillsCard";
 
 import ReactLogo from "../assets/images/react-logo.svg";
@@ -11,18 +11,7 @@ const Home = () => {
                 <h1 className="mb-5">Sobre</h1>
                 <div className="row g-5">
                     <SkillsCard />
-                    <div className="col-md-5">
-                        <div className="card border-0 h-100 rounded-3 shadow-sm">
-                            <h2 className="mt-3 mb-0">Educação</h2>
-                            <div className="card-body d-flex flex-column">
-                                <CourseTable />
-                                <div className="d-flex align-items-center mt-3 text-bs-purple mt-auto">
-                                    <span className="bi bi-bootstrap-fill fs-2 me-2"></span>
-                                    <span>Bootstrap 5</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <EducationCard />
                 </div>
                 <div className="row">
                     <div className="col-md-10 offset-md-1 mt-5">
