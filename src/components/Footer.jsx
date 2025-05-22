@@ -5,7 +5,7 @@ const Footer = () => {
         <footer class="footer mt-auto py-3 bg-light">
             <div className="container">
                 <div className="row">
-                    <div className="col-md-10 offset-md-1">
+                    <div className="col-12">
                         <div className="d-flex align-items-center text-purple">
                             <span>
                                 Felipe Becker | Desenvolvedor Front-end | 2025
