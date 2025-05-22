@@ -1,5 +1,5 @@
-import CityMap from "../components/CityMap";
 import EducationCard from "../components/EducationCard";
+import LocationCard from "../components/LocationCard";
 import SkillsCard from "../components/SkillsCard";
 
 import ReactLogo from "../assets/images/react-logo.svg";
@@ -14,14 +14,7 @@ const Home = () => {
                     <EducationCard />
                 </div>
                 <div className="row">
-                    <div className="col-md-10 offset-md-1 mt-5">
-                        <div className="card border-0 rounded-3 shadow-sm">
-                            <h2 className="mt-3 mb-0">Onde está Felipe?</h2>
-                            <div className="card-body">
-                                <CityMap />
-                            </div>
-                        </div>
-                    </div>
+                    <LocationCard />
                 </div>
                 <div className="row my-5"></div>
                 <div className="row my-5"></div>
