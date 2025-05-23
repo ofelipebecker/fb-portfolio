@@ -34,7 +34,7 @@ function Project() {
                                             className="figure-img img-fluid border"
                                             alt={`${project.title} Main`}
                                         />
-                                        <figcaption class="figure-caption">
+                                        <figcaption className="figure-caption">
                                             Cards do Painel Geral, com gráficos
                                             da Chart.js, abas do Bootstrap e
                                             seletores de período da Day.js.

@@ -19,7 +19,7 @@ function ProjectLink({ title, imageSrc, url, tags, disabled }) {
                             alt={title}
                         />
                         <div
-                            class="alert alert-warning fst-italic position-absolute start-50 top-50 translate-middle text-dark-orange p-4"
+                            className="alert alert-warning fst-italic position-absolute start-50 top-50 translate-middle text-dark-orange p-4"
                             role="alert"
                         >
                             <span className="bi bi-cone-striped me-2"></span>

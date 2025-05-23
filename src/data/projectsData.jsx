@@ -283,7 +283,7 @@ const projects = {
                                 Abra o protótipo em nova aba
                             </a>
                         </p>
-                        <div class="ratio ratio-16x9">
+                        <div className="ratio ratio-16x9">
                             <iframe
                                 className="border"
                                 rel="noreferrer noopener"
@@ -451,7 +451,7 @@ const projects = {
         ],
         conclusion: (
             <>
-                <div class="ratio ratio-16x9">
+                <div className="ratio ratio-16x9">
                     <iframe
                         src="https://www.youtube.com/embed/XVcYAwtsil8"
                         title="YouTube video player"
