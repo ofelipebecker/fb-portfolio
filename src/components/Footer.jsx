@@ -2,15 +2,16 @@ import ReactLogo from "../assets/images/react-logo.svg";
 
 const Footer = () => {
     return (
-        <footer class="footer mt-auto py-3 bg-light">
+        <footer className="footer mt-auto py-3 bg-light px-3 px-sm-0">
             <div className="container">
                 <div className="row">
-                    <div className="col-12">
+                    <div className="col-12 col-sm-6 d-flex align-items-center">
+                        <span className="d-flex align-items-center text-purple">
+                            Felipe Becker | Desenvolvedor Front-end | 2025
+                        </span>
+                    </div>
+                    <div className="col-12 col-sm-6">
                         <div className="d-flex align-items-center text-purple">
-                            <span>
-                                Felipe Becker | Desenvolvedor Front-end | 2025
-                            </span>
-                            <span className="mx-3">-</span>
                             <span className="me-2">Feito com</span>
                             <img
                                 className="w-25px"
