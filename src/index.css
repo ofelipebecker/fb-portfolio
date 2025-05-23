@@ -118,6 +118,11 @@ body {
     background-color: var(--main-orange);
 }
 
+.btn-outline-orange {
+    border: 1px solid var(--main-orange);
+    color: var(--main-orange);
+}
+
 .btn.btn-purple {
     background-color: var(--main-purple);
     border-color: var(--main-purple);
