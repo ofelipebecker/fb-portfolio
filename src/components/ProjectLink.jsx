@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-function ProjectLink({ title, imageSrc, url, tags, disabled }) {
+const ProjectLink = ({ title, imageSrc, url, tags, disabled }) => {
     return (
         <div className="card border-0 rounded-3 shadow-sm mb-5">
             {disabled ? (
@@ -45,6 +45,6 @@ function ProjectLink({ title, imageSrc, url, tags, disabled }) {
             )}
         </div>
     );
-}
+};
 
 export default ProjectLink;

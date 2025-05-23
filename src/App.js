@@ -5,7 +5,7 @@ import Home from "./pages/Home";
 import Work from "./pages/Work";
 import Project from "./pages/Project";
 
-function App() {
+const App = () => {
     return (
         <Router>
             <Header />
@@ -17,6 +17,6 @@ function App() {
             <Footer />
         </Router>
     );
-}
+};
 
 export default App;

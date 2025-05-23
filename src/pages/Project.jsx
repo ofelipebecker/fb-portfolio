@@ -2,7 +2,7 @@ import { useParams, Link } from "react-router-dom";
 
 import projects from "../data/projectsData";
 
-function Project() {
+const Project = () => {
     const { projectId } = useParams();
     const project = projects[projectId];
 
@@ -101,6 +101,6 @@ function Project() {
             </div>
         </div>
     );
-}
+};
 
 export default Project;
