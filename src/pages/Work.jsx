@@ -40,7 +40,7 @@ const Work = () => {
     return (
         <div className="container mt-5">
             <div className="row">
-                <div className="col-md-10 offset-md-1 mt-5">
+                <div className="col-12 col-lg-10 offset-lg-1 mt-5">
                     <h1>Projetos</h1>
                     {projects.map((project, index) => (
                         <ProjectLink
