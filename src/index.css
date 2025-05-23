@@ -180,6 +180,14 @@ p {
     max-height: 200px;
 }
 
+.max-h-40px {
+    max-height: 40px;
+}
+
+.max-h-50px {
+    max-height: 50px;
+}
+
 .proj-link div {
     opacity: 0.9;
 }
