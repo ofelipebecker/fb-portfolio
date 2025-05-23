@@ -176,6 +176,10 @@ p {
     font-size: 1.4rem;
 }
 
+.max-h-130px {
+    max-height: 130px;
+}
+
 .max-h-200px {
     max-height: 200px;
 }
