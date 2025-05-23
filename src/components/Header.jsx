@@ -42,7 +42,7 @@ const Header = () => {
                                 <div className="col-12 my-5 text-center">
                                     <img
                                         src={logoVertical}
-                                        className="w-auto"
+                                        className="max-h-130px w-auto"
                                         alt="logo"
                                     />
                                     <ul className="list-unstyled fst-italic mt-4 text-orange">
