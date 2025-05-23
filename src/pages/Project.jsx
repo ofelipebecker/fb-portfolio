@@ -9,7 +9,7 @@ function Project() {
     return (
         <div className="container">
             <div className="row">
-                <div className="col-md-10 offset-md-1 mt-5">
+                <div className="col-12 col-lg-10 offset-lg-1 mt-5 px-3 px-sm-0">
                     <nav aria-label="breadcrumb">
                         <ol className="breadcrumb">
                             <li className="breadcrumb-item">
