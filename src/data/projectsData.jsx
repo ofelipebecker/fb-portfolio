@@ -34,7 +34,11 @@ import imageCTB2001SM from "../assets/images/proj-ctb/proj-ctb-20-01-sm.png";
 
 const projects = {
     project1: {
-        title: "Painel Geral VC-X Sonar",
+        title: "Painel Geral do VC-X Sonar",
+        caption: `
+            Cards do Painel Geral, com gráficos da Chart.js, abas do Bootstrap e
+            seletores de período da Day.js.
+        `,
         image: mainImage,
         intro: `
             O VC-X Sonar é uma plataforma que visa descomplicar a automação, aquisição e 
