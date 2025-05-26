@@ -12,17 +12,17 @@ const workProjects = [
         disabled: false,
     },
     {
-        title: "Padronização de Tabelas - VC-X Sonar | Tabelas",
-        imageSrc: vcxTablesCover,
-        tags: "JS | Datatables.js | Bootstrap",
-        url: "/work/project3",
-        disabled: true,
-    },
-    {
         title: "Cidades & Bikes | Webapp/Mapa Interativo",
         imageSrc: ctbCover,
         tags: "JS | MapboxGL.js | Mapbox Directions API | Mapbox Geocoding API | OpenWeatherMap API",
         url: "/work/project2",
+        disabled: false,
+    },
+    {
+        title: "Padronização de Tabelas - VC-X Sonar | Tabelas",
+        imageSrc: vcxTablesCover,
+        tags: "JS | Datatables.js | Bootstrap",
+        url: "/work/project3",
         disabled: true,
     },
     {
