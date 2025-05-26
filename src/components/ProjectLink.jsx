@@ -12,18 +12,17 @@ const ProjectLink = ({ title, imageSrc, url, tags, disabled }) => {
                         <h2 className="mb-0 me-3">{title}</h2>
                         <small>{tags}</small>
                     </div>
-                    <div className="card-body border-top border-3 p-0 max-h-200px overflow-hidden position-relative bg-light-orange">
+                    <div className="card-body border-top border-3 p-0 max-h-200px overflow-hidden position-relative bg-light-gray">
                         <img
                             src={imageSrc}
                             className="w-100 opacity-50"
                             alt={title}
                         />
                         <div
-                            className="alert alert-warning fst-italic position-absolute start-50 top-50 translate-middle text-dark-orange p-4"
+                            className="alert alert-secondary fst-italic position-absolute start-50 top-50 translate-middle p-4"
                             role="alert"
                         >
-                            <span className="bi bi-cone-striped me-2"></span>
-                            <span>Em construção...</span>
+                            <span>Em breve...</span>
                         </div>
                     </div>
                 </div>
