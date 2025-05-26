@@ -106,6 +106,10 @@ body {
     background-color: var(--main-purple);
 }
 
+.bg-light-gray {
+    background-color: var(--light-gray);
+}
+
 .bg-light-orange {
     background-color: var(--light-orange);
 }
