@@ -35,9 +35,7 @@ const Project = () => {
                                             alt={`${project.title} Main`}
                                         />
                                         <figcaption className="figure-caption">
-                                            Cards do Painel Geral, com gráficos
-                                            da Chart.js, abas do Bootstrap e
-                                            seletores de período da Day.js.
+                                            {project.caption}
                                         </figcaption>
                                     </figure>
                                     <p className="mb-0 mt-4">{project.intro}</p>
