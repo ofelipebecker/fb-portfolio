@@ -23,7 +23,7 @@ const workProjects = [
         imageSrc: vcxTablesCover,
         tags: "JS | Datatables.js | Bootstrap",
         url: "/work/project3",
-        disabled: true,
+        disabled: false,
     },
     {
         title: "Refatoração de Kanbans - VC-X Flow | Kanbans/Accordions",
