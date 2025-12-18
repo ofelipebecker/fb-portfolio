@@ -196,6 +196,10 @@ p {
     max-height: 50px;
 }
 
+.modal-w-fit-content {
+    max-width: fit-content;
+}
+
 .proj-link div {
     opacity: 0.9;
 }
