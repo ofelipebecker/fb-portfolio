@@ -1072,9 +1072,51 @@ const projects = {
                             Eu fiz uma análise de usabilidade das tabelas seguindo o método da 
                             avaliação heurística de Nielsen.
                         </p>
+                        <button 
+                            className="p-0 border-0 bg-transparent" 
+                            data-bs-toggle="modal" 
+                            data-bs-target="#exampleModal"
+                        >
+                            <img
+                                src={imageVCXT03}
+                                className="figure-img img-fluid border mb-0"
+                                alt="Exemplo de problemas apontados durante as análises."
+                            />
+                        </button>
+                        <div 
+                            class="modal fade" 
+                            id="exampleModal" 
+                            tabindex="-1" 
+                            aria-labelledby="exampleModalLabel" 
+                            aria-hidden="true"
+                        >
+                            <div class="modal-dialog modal-w-fit-content">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button 
+                                            class="btn-close"
+                                            data-bs-dismiss="modal"
+                                            aria-label="Close"
+                                        >
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <figure className="figure mb-0">
+                                            <img
+                                                src={imageVCXT03}
+                                                className="figure-img img-fluid border mb-0"
+                                                alt="Exemplo de problemas apontados durante as análises. Imagem expandida."
+                                            />
+                                            <figcaption className="figure-caption">
+                                                <em>Exemplo de problemas apontados durante as análises.</em>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </>
                 ),
-                image: [imageVCXT01],
             },
             {
                 title: "Pesquisa e Análise",
