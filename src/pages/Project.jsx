@@ -60,6 +60,11 @@ const Project = () => {
                                                         alt={step.title}
                                                         className="figure-img img-fluid border mb-0"
                                                     />
+                                                    {step.imageCaption && (
+                                                        <figcaption className="figure-caption">
+                                                            <em>{step.imageCaption}</em>
+                                                        </figcaption>
+                                                    )}
                                                 </figure>
                                             )}
                                         </div>
