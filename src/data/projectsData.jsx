@@ -1019,6 +1019,7 @@ const projects = {
         title: "Padronização de Tabelas - VC-X Sonar | Tabelas",
         caption: `
             Tela do VC-X Sonar, mostrando as tabelas de Ativos Vinculados e Licenças Vinculadas.
+            Dados considerados sigilosos foram omitidos com asteriscos (***). 
         `,
         image: imageVCXT01,
         intro: `
