@@ -1039,7 +1039,7 @@ const projects = {
                             encontrar boas referências e práticas já consagradas e testadas para 
                             seguir.
                         </p>
-                        <ul>
+                        <ul className="mb-5">
                             <li>
                                 <a href="https://m2.material.io/components/data-tables">
                                     Material Design Data Tables
@@ -1047,18 +1047,20 @@ const projects = {
                             </li>
                             <li>
                                 <a href="https://uxdesign.cc/data-table-for-enterprise-ux-cb48fb9fdf1e">
-                                    Designing better data tables for enterprise UX
+                                    Artigo "Designing better data tables for enterprise UX", de 
+                                    Lalatendu Satpathy.
                                 </a>
                             </li>
                             <li>
                                 <a href="https://taras-bakusevych.medium.com/data-tables-design-3c705b106a64">
-                                    Data Tables Design
+                                    Artigo "Data Tables Design", de Taras Bakusevych.
                                 </a>
                             </li>
                         </ul>
                     </>
                 ),
-                image: [imageVCXT01],
+                image: [imageVCXT02],
+                imageCaption: "Princípios de design para tabelas do Material Design.",
             },
             {
                 title: "Pesquisa e Análise",
