@@ -32,8 +32,10 @@ import imageCTB19 from "../assets/images/proj-ctb/proj-ctb-19.png";
 import imageCTB20 from "../assets/images/proj-ctb/proj-ctb-20.png";
 import imageCTB2001SM from "../assets/images/proj-ctb/proj-ctb-20-01-sm.png";
 
-// VC-X Dashboard
+// VC-X Tables
 import imageVCXT01 from "../assets/images/proj-vcx-tables/proj-vcx-tables-1.png";
+import imageVCXT02 from "../assets/images/proj-vcx-tables/proj-vcx-tables-2.png";
+import imageVCXT03 from "../assets/images/proj-vcx-tables/proj-vcx-tables-3.png";
 
 const projects = {
     project1: {
