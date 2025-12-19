@@ -38,6 +38,7 @@ import imageCTB2001SM from "../assets/images/proj-ctb/proj-ctb-20-01-sm.png";
 import imageVCXT01 from "../assets/images/proj-vcx-tables/proj-vcx-tables-1.png";
 import imageVCXT02 from "../assets/images/proj-vcx-tables/proj-vcx-tables-2.png";
 import imageVCXT03 from "../assets/images/proj-vcx-tables/proj-vcx-tables-3.png";
+import imageVCXT04 from "../assets/images/proj-vcx-tables/proj-vcx-tables-4.png";
 
 const projects = {
     project1: {
@@ -1093,9 +1094,13 @@ const projects = {
                             ferramentas, pude fazer análises de mapas de cliques, de movimentação de
                              mouse e também de scroll.
                         </p>
+                        <SingleImageModal
+                            modalId = "vcxt-04-modal"
+                            imageSrc={imageVCXT04}
+                            caption = "Exemplo de mapa de calor de movimentações de mouse do usuário, na tabela de Faturas."
+                        />
                     </>
                 ),
-                image: [imageVCXT01],
             },
             {
                 title: "Modelagem",
@@ -1113,13 +1118,24 @@ const projects = {
             },
             {
                 title: "Modelagem",
-                subtitle: "Definição de Princípios de Design para as Tabelas",
+                subtitle: "Definição de Diretrizes de Design para as Tabelas",
                 content: (
                     <>
                         <p className="mt-4">
                             Tendo feito a pesquisa e análise do estado atual, defini princípios de 
                             design para as tabelas do Sonar.
                         </p>
+                        <ul className="pl-4">
+                            <li>
+                                Item 1.
+                            </li>
+                            <li>
+                                Item 2.
+                            </li>
+                            <li>
+                                Item 3.
+                            </li>
+                        </ul>
                     </>
                 ),
                 image: [imageVCXT01],
