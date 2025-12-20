@@ -1086,12 +1086,20 @@ const projects = {
             },
             {
                 title: "Pesquisa e Análise",
-                subtitle: "Avaliação Heurística Tabelas",
+                subtitle: "Avaliação Heurística das Tabelas",
                 content: (
                     <>
-                        <p className="my-4">
-                            Eu fiz uma análise de usabilidade das tabelas seguindo o método da 
-                            avaliação heurística de Nielsen.
+                        <p className="my-4 text-nowrap">
+                            Eu fiz uma análise de usabilidade das tabelas seguindo o método da&nbsp;
+                            <a 
+                                href="https://www.nngroup.com/articles/ten-usability-heuristics/"
+                                rel="noreferrer"
+                                target="_blank"
+                                title="Abrir em nova aba."
+                            >
+                                avaliação heurística
+                            </a>
+                            &nbsp;de Nielsen.
                         </p>
                         <SingleImageModal
                             modalId = "vcxt-03-modal"
