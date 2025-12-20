@@ -1101,10 +1101,9 @@ const projects = {
                             </a>
                             &nbsp;de Nielsen.
                         </p>
-                        <SingleImageModal
-                            modalId = "vcxt-03-modal"
-                            imageSrc={imageVCXT03}
-                            caption = "Exemplo de problemas apontados durante as análises."
+                        <ImageCarousel 
+                            id="vcxt-03"
+                            images={imagesVCXT03}
                         />
                     </>
                 ),
