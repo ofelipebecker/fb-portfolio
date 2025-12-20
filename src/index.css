@@ -149,6 +149,36 @@ body {
     color: white;
 }
 
+.carousel-caption {
+    bottom: unset;
+    color: var(--dark-purple);
+    position: relative;
+    left: unset;
+    right: unset;
+    padding-bottom: unset;
+}
+
+.carousel-control-next .carousel-control-next-icon, 
+.carousel-control-prev .carousel-control-prev-icon {
+    background-color: var(--dark-purple);
+    height: 4rem;
+    width: 3rem;
+}
+
+.carousel-indicators {
+    margin-bottom: 0;
+    position: relative;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: var(--dark-purple);
+    height: 7px;
+}
+
+.carousel-indicators [data-bs-target]:not(.active) {
+    opacity: 0.7;
+}
+
 .fw-semibold {
     font-weight: 500;
 }
