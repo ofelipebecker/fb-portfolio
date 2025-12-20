@@ -1117,7 +1117,7 @@ const projects = {
                             Adicionei ao VC-X Sonar ferramentas para gerar mapas de calor. 
                             Inicialmente, usei o Matomo e, posteriormente, o Hotjar. Com essas 
                             ferramentas, pude fazer análises de mapas de cliques, de movimentação de
-                             mouse e também de scroll.
+                            mouse e também de scroll.
                         </p>
                         <SingleImageModal
                             modalId = "vcxt-04-modal"
