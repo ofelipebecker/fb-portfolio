@@ -37,8 +37,25 @@ import imageCTB2001SM from "../assets/images/proj-ctb/proj-ctb-20-01-sm.png";
 // VC-X Tables
 import imageVCXT01 from "../assets/images/proj-vcx-tables/proj-vcx-tables-1.png";
 import imageVCXT02 from "../assets/images/proj-vcx-tables/proj-vcx-tables-2.png";
-import imageVCXT03 from "../assets/images/proj-vcx-tables/proj-vcx-tables-3.png";
+import imageVCXT031 from "../assets/images/proj-vcx-tables/proj-vcx-tables-3-1.png";
+import imageVCXT032 from "../assets/images/proj-vcx-tables/proj-vcx-tables-3-2.png";
+import imageVCXT033 from "../assets/images/proj-vcx-tables/proj-vcx-tables-3-3.png";
 import imageVCXT04 from "../assets/images/proj-vcx-tables/proj-vcx-tables-4.png";
+
+const imagesVCXT03 = [
+  {
+    src: imageVCXT031,
+    caption: "Alguns problemas apontados na análise: visibilidade de cabeçalhos de colunas.",
+  },
+  {
+    src: imageVCXT032,
+    caption: "Alguns problemas apontados na análise: visibilidade de barras de rolagem.",
+  },
+  {
+    src: imageVCXT033,
+    caption: "Alguns problemas apontados na análise: visibilidade de barras de rolagem.",
+  }
+];
 
 const projects = {
     project1: {
