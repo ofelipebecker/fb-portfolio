@@ -1148,22 +1148,27 @@ const projects = {
                     <>
                         <p className="mt-4">
                             Tendo feito a pesquisa e análise do estado atual, defini princípios de 
-                            design para as tabelas do Sonar.
+                            design para as tabelas do Sonar. Alguns desses princípios são:
                         </p>
                         <ul className="pl-4">
-                            <li>
-                                Item 1.
+                            <li className="mb-2">
+                                A informação base da tabela deve estar na primeira coluna da tabela.
+                            </li>
+                            <li className="mb-2">
+                                Nas tabelas que contém a coluna de "Status", esta coluna deve ser a 
+                                segunda.
+                            </li>
+                            <li className="mb-2">
+                                Alinhamento: conteúdos predominantemente textuais devem ser 
+                                alinhados à esquerda e conteúdos predominantemente numéricos devem 
+                                ser alinhados à direita.
                             </li>
                             <li>
-                                Item 2.
-                            </li>
-                            <li>
-                                Item 3.
+                                Os cabeçalhos das colunas devem estar sempre visíveis.
                             </li>
                         </ul>
                     </>
                 ),
-                image: [imageVCXT01],
             },
             {
                 title: "Desenvolvimento Front-end",
