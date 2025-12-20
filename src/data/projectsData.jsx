@@ -1,3 +1,4 @@
+import ImageCarousel from "../components/ImageCarousel";
 import SingleImageModal from "../components/SingleImageModal";
 
 // VC-X Dashboard
