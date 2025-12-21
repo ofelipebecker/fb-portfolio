@@ -4,7 +4,7 @@ const ImageCarousel = ({ id, images }) => {
   const carouselId = `${id}-carousel`;
   
   return (
-    <div id={carouselId} className="carousel slide">
+    <div id={carouselId} className="carousel slide border">
       <div className="carousel-inner">
         {images.map((image, index) => (
           <div 
@@ -13,7 +13,7 @@ const ImageCarousel = ({ id, images }) => {
           >
             <img 
               src={image.src} 
-              className="border d-block w-100" 
+              className="d-block mx-auto mw-100" 
               alt={image.caption} 
             />
             <div className="carousel-caption">
