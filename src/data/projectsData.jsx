@@ -1134,13 +1134,13 @@ const projects = {
                 content: (
                     <>
                         <p className="mt-4">
-                            Seguindo os novos requisitos das Histórias de
-                            Usuário, trabalhei em alguns desenhos à mão da
-                            interface.
+                            A seguir, trabalhei em alguns desenhos à mão de alternativas para o novo 
+                            padrão das tabelas.
                         </p>
                     </>
                 ),
-                image: [imageVCXT01],
+                image: [imageVCXT05],
+                imageCaption: "Exemplo de desenho de alternativas: tabela de Ativos.",
             },
             {
                 title: "Modelagem",
