@@ -65,6 +65,33 @@ const imagesVCXT03 = [
   }
 ];
 
+const imagesVCXT07 = [
+  {
+    src: imageVCXT071,
+    caption: "Placeholder.",
+  },
+  {
+    src: imageVCXT072,
+    caption: "Placeholder.",
+  },
+  {
+    src: imageVCXT073,
+    caption: "Placeholder.",
+  },
+  {
+    src: imageVCXT074,
+    caption: "Placeholder.",
+  },
+  {
+    src: imageVCXT075,
+    caption: "Placeholder.",
+  },
+  {
+    src: imageVCXT076,
+    caption: "Placeholder.",
+  },
+];
+
 const projects = {
     project1: {
         title: "Painel Geral do VC-X Sonar",
