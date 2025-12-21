@@ -1210,7 +1210,9 @@ const projects = {
                 content: (
                     <>
                         <p className="mt-4">
-                            Placeholder.
+                            Tendo um padrão de design das tabelas definido, demos início ao processo 
+                            de implementação, utilizando a biblioteca DatatablesJS (e seus diversos 
+                            plugins) e Bootstrap.
                         </p>
                     </>
                 ),
