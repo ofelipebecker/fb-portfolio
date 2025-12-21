@@ -1214,9 +1214,12 @@ const projects = {
                             de implementação, utilizando a biblioteca DatatablesJS (e seus diversos 
                             plugins) e Bootstrap.
                         </p>
+                        <ImageCarousel 
+                            id="vcxt-07"
+                            images={imagesVCXT07}
+                        />
                     </>
                 ),
-                image: [imageVCXT01],
             },
         ],
         conclusion: (
