@@ -42,6 +42,7 @@ import imageVCXT031 from "../assets/images/proj-vcx-tables/proj-vcx-tables-3-1.p
 import imageVCXT032 from "../assets/images/proj-vcx-tables/proj-vcx-tables-3-2.png";
 import imageVCXT033 from "../assets/images/proj-vcx-tables/proj-vcx-tables-3-3.png";
 import imageVCXT04 from "../assets/images/proj-vcx-tables/proj-vcx-tables-4.png";
+import imageVCXT05 from "../assets/images/proj-vcx-tables/proj-vcx-tables-5.png";
 
 const imagesVCXT03 = [
   {
