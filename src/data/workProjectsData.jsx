@@ -32,13 +32,6 @@ const workProjects = [
         url: "/work/project4",
         disabled: true,
     },
-    {
-        title: "VC-X Sonar e VC-X Flow | Correções Diversas",
-        imageSrc: vcxKanbanCover,
-        tags: "JS | Vue.js | Bootstrap",
-        url: "/work/project5",
-        disabled: true,
-    },
 ];
 
 export default workProjects;
