@@ -1,10 +1,23 @@
 import { useParams, Link } from "react-router-dom";
-
-import projects from "../data/projectsData";
+import { useEffect, useState } from "react";
 
 const Project = () => {
     const { projectId } = useParams();
-    const project = projects[projectId];
+    const [project, setProject] = useState(null);
+
+    useEffect(() => {
+        import(`../data/projects/${projectId}.jsx`).then(module => setProject(module.default));
+    }, [projectId]);
+
+    if (!project) return (
+        <div className="container">
+            <div className="row">
+                <div className="col-12 col-lg-10 offset-lg-1 mt-5 px-3 px-sm-0">
+                    <p>Carregando...</p>
+                </div>
+            </div>
+        </div>
+    );
 
     return (
         <div className="container">
@@ -15,10 +28,7 @@ const Project = () => {
                             <li className="breadcrumb-item">
                                 <Link to="/work">Projetos</Link>
                             </li>
-                            <li
-                                className="breadcrumb-item active"
-                                aria-current="page"
-                            >
+                            <li className="breadcrumb-item active" aria-current="page">
                                 {project.title}
                             </li>
                         </ol>
@@ -90,10 +100,7 @@ const Project = () => {
                             <li className="breadcrumb-item">
                                 <Link to="/work">Projetos</Link>
                             </li>
-                            <li
-                                className="breadcrumb-item active"
-                                aria-current="page"
-                            >
+                            <li className="breadcrumb-item active" aria-current="page">
                                 {project.title}
                             </li>
                         </ol>
