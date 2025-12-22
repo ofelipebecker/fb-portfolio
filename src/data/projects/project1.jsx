@@ -1,12 +1,12 @@
-import mainImage from "../assets/images/proj-vcx-dashboard/proj-vcx-dash-1.png";
-import image1STCardTabs from "../assets/images/proj-vcx-dashboard/proj-vcx-dash-5-1-bs-tabs.png";
-import image1STCardChart from "../assets/images/proj-vcx-dashboard/proj-vcx-dash-5-2-chart.png";
-import imageHeatmap from "../assets/images/proj-vcx-dashboard/proj-vcx-dash-3-heatmap.jpg";
-import imageOtherCardsTabsAndCharts from "../assets/images/proj-vcx-dashboard/proj-vcx-dash-7-other-charts-tabs.png";
-import imageOtherCardsTables from "../assets/images/proj-vcx-dashboard/proj-vcx-dash-8-other-charts-tables.png";
-import imagePeriodSelector from "../assets/images/proj-vcx-dashboard/proj-vcx-dash-6-period-selector.png";
-import imageSketch from "../assets/images/proj-vcx-dashboard/proj-vcx-dash-4-sketch-1.jpg";
-import imageS2 from "../assets/images/proj-vcx-dashboard/proj-vcx-dash-2-0.png";
+import mainImage from "../../assets/images/proj-vcx-dashboard/proj-vcx-dash-1.png";
+import image1STCardTabs from "../../assets/images/proj-vcx-dashboard/proj-vcx-dash-5-1-bs-tabs.png";
+import image1STCardChart from "../../assets/images/proj-vcx-dashboard/proj-vcx-dash-5-2-chart.png";
+import imageHeatmap from "../../assets/images/proj-vcx-dashboard/proj-vcx-dash-3-heatmap.jpg";
+import imageOtherCardsTabsAndCharts from "../../assets/images/proj-vcx-dashboard/proj-vcx-dash-7-other-charts-tabs.png";
+import imageOtherCardsTables from "../../assets/images/proj-vcx-dashboard/proj-vcx-dash-8-other-charts-tables.png";
+import imagePeriodSelector from "../../assets/images/proj-vcx-dashboard/proj-vcx-dash-6-period-selector.png";
+import imageSketch from "../../assets/images/proj-vcx-dashboard/proj-vcx-dash-4-sketch-1.jpg";
+import imageS2 from "../../assets/images/proj-vcx-dashboard/proj-vcx-dash-2-0.png";
 
 const project1 = {
     title: "Painel Geral do VC-X Sonar",
