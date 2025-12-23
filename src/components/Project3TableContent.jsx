@@ -12,6 +12,7 @@ const Project3TableContent = () => {
     const options = {
         fixedColumns: {
             left: 1,
+            right: 1,
         },
         language: {
             "decimal": "",
