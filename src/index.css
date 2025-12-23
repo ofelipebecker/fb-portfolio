@@ -208,6 +208,10 @@ div.dt-container div.dt-search input {
     padding: 0.5rem;
 }
 
+.dt-button.buttons-colvis span.dt-button-down-arrow {
+    margin-left: 0.8rem;
+}
+
 .dt-paging .pagination .dt-paging-button button {
     font-size: 1.3rem;
 }
