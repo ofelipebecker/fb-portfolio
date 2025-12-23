@@ -52,10 +52,10 @@ const Project3TableContent = () => {
                     <th>Status</th>
                     <th>Fabricante</th>
                     <th>Categoria</th>
-                    <th>Matrícula</th>
+                    <th className="text-end">Matrícula</th>
                     <th>Situação</th>
                     <th>Responsável</th>
-                    <th>CNPJ</th>
+                    <th className="text-end">CNPJ</th>
                     <th>Empresa</th>
                     <th>Ações</th>
                 </tr>
@@ -71,10 +71,10 @@ const Project3TableContent = () => {
                         </td>
                         <td className="text-nowrap">{item.manufacturer}</td>
                         <td className="text-nowrap">{item.category}</td>
-                        <td className="text-nowrap">{item.registration}</td>
+                        <td className="text-nowrap text-end">{item.registration}</td>
                         <td className="text-nowrap">{item.situation}</td>
                         <td className="text-nowrap">{item.responsible}</td>
-                        <td className="text-nowrap">{item.cnpj}</td>
+                        <td className="text-nowrap text-end">{item.cnpj}</td>
                         <td className="text-nowrap">{item.company}</td>
                         <td className="text-nowrap"><button className="btn btn-danger">Excluir</button></td>
                     </tr>
