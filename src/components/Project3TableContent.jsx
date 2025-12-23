@@ -63,19 +63,19 @@ const Project3TableContent = () => {
             <tbody>
                 {tableData.map((item, index) => (
                     <tr key={index}>
-                        <td className="text-nowrap">{item.ativo}</td>
+                        <td className="text-nowrap">{item.asset}</td>
                         <td className="text-nowrap">
                             <span className={`badge rounded-pill text-bg-${item.status === "Ativo" ? "success" : "warning"}`}>
                                 {item.status}
                             </span>
                         </td>
-                        <td className="text-nowrap">{item.fabricante}</td>
-                        <td className="text-nowrap">{item.categoria}</td>
-                        <td className="text-nowrap">{item.matricula}</td>
-                        <td className="text-nowrap">{item.situacao}</td>
-                        <td className="text-nowrap">{item.responsavel}</td>
+                        <td className="text-nowrap">{item.manufacturer}</td>
+                        <td className="text-nowrap">{item.category}</td>
+                        <td className="text-nowrap">{item.registration}</td>
+                        <td className="text-nowrap">{item.situation}</td>
+                        <td className="text-nowrap">{item.responsible}</td>
                         <td className="text-nowrap">{item.cnpj}</td>
-                        <td className="text-nowrap">{item.empresa}</td>
+                        <td className="text-nowrap">{item.company}</td>
                         <td className="text-nowrap"><button className="btn btn-danger">Excluir</button></td>
                     </tr>
                 ))}
