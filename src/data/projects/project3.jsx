@@ -16,6 +16,8 @@ import imageVCXT074 from "../../assets/images/proj-vcx-tables/proj-vcx-tables-7-
 import imageVCXT075 from "../../assets/images/proj-vcx-tables/proj-vcx-tables-7-5.png";
 import imageVCXT076 from "../../assets/images/proj-vcx-tables/proj-vcx-tables-7-6.png";
 
+import Project3TableContent from '../../components/Project3TableContent';
+
 const imagesVCXT03 = [
   {
     src: imageVCXT031,
@@ -207,6 +209,13 @@ const project3 = {
                         images={imagesVCXT07}
                     />
                 </>
+            ),
+        },
+        {
+            title: "Desenvolvimento Front-end",
+            subtitle: "Exemplo de Tabela Interativa",
+            content: (
+                <Project3TableContent></Project3TableContent>
             ),
         },
     ],
