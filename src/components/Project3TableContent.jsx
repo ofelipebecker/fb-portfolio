@@ -36,7 +36,10 @@ const Project3TableContent = () => {
     };
 
     return (
-        <DataTable options={options}>
+        <DataTable
+            className="table table-hover"
+            options={options}
+        >
             <thead>
                 <tr>
                     <th>Ativo</th>
@@ -54,20 +57,20 @@ const Project3TableContent = () => {
             <tbody>
                 {tableData.map((item, index) => (
                     <tr key={index}>
-                        <td>{item.ativo}</td>
-                        <td>
+                        <td className="text-nowrap">{item.ativo}</td>
+                        <td className="text-nowrap">
                             <span className={`badge rounded-pill text-bg-${item.status === "Ativo" ? "success" : "warning"}`}>
                                 {item.status}
                             </span>
                         </td>
-                        <td>{item.fabricante}</td>
-                        <td>{item.categoria}</td>
-                        <td>{item.matricula}</td>
-                        <td>{item.situacao}</td>
-                        <td>{item.responsavel}</td>
-                        <td>{item.cnpj}</td>
-                        <td>{item.empresa}</td>
-                        <td><button className="btn btn-danger">Excluir</button></td>
+                        <td className="text-nowrap">{item.fabricante}</td>
+                        <td className="text-nowrap">{item.categoria}</td>
+                        <td className="text-nowrap">{item.matricula}</td>
+                        <td className="text-nowrap">{item.situacao}</td>
+                        <td className="text-nowrap">{item.responsavel}</td>
+                        <td className="text-nowrap">{item.cnpj}</td>
+                        <td className="text-nowrap">{item.empresa}</td>
+                        <td className="text-nowrap"><button className="btn btn-danger">Excluir</button></td>
                     </tr>
                 ))}
             </tbody>
