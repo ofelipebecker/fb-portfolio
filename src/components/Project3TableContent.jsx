@@ -77,7 +77,9 @@ const Project3TableContent = () => {
                         <td className="text-nowrap">{item.responsible}</td>
                         <td className="text-nowrap text-end">{item.cnpj}</td>
                         <td className="text-nowrap">{item.company}</td>
-                        <td className="text-nowrap"><button className="btn btn-danger">Excluir</button></td>
+                        <td className="text-nowrap">
+                            <button className="btn btn-outline-danger btn-lg">Excluir</button>
+                        </td>
                     </tr>
                 ))}
             </tbody>
