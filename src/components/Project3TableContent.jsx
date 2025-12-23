@@ -53,6 +53,12 @@ const Project3TableContent = () => {
                 "sortDescending": ": ativar para ordenar coluna descendente"
             }
         },
+        layout: {
+            topStart: ['pageLength', 'buttons'],
+            topEnd: 'search',
+            bottomStart: 'info',
+            bottomEnd: 'paging',
+        },
         scrollX: true,
         scrollY: true,
     };
