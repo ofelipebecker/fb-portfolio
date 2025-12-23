@@ -19,6 +19,7 @@ const Project3TableContent = () => {
     const options = {
         buttons: [
             {
+                className: 'btn btn-lg btn-outline-secondary',
                 extend: 'colvis',
                 text: 'Gerenciar Colunas',
                 columns: ':not(:first):not(:last)'
