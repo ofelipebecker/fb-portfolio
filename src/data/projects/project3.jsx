@@ -215,7 +215,9 @@ const project3 = {
             title: "Desenvolvimento Front-end",
             subtitle: "Exemplo de Tabela Interativa",
             content: (
-                <Project3TableContent></Project3TableContent>
+                <div className="mt-5">
+                    <Project3TableContent></Project3TableContent>
+                </div>
             ),
         },
     ],
