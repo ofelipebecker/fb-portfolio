@@ -1,0 +1,211 @@
+export const tableData = [
+    {
+        ativo: "Dell 3QSNCK2",
+        status: "Ativo",
+        fabricante: "Dell",
+        categoria: "Notebook",
+        matricula: "ABC123XYZ",
+        situacao: "Em uso",
+        responsavel: "João Silva",
+        cnpj: "12.345.678/0001-90",
+        empresa: "Tech Solutions Ltda"
+    },
+    {
+        ativo: "HP EliteBook 840",
+        status: "Ativo",
+        fabricante: "HP",
+        categoria: "Notebook",
+        matricula: "DEF456UVW",
+        situacao: "Em uso",
+        responsavel: "Maria Santos",
+        cnpj: "98.765.432/0001-10",
+        empresa: "Inova Sistemas S.A."
+    },
+    {
+        ativo: "Samsung Monitor 27\"",
+        status: "Inativo",
+        fabricante: "Samsung",
+        categoria: "Monitor",
+        matricula: "GHI789RST",
+        situacao: "Em estoque",
+        responsavel: "-",
+        cnpj: "12.345.678/0001-90",
+        empresa: "Tech Solutions Ltda"
+    },
+    {
+        ativo: "Logitech MX Master 3",
+        status: "Ativo",
+        fabricante: "Logitech",
+        categoria: "Mouse",
+        matricula: "JKL012MNO",
+        situacao: "Em uso",
+        responsavel: "Carlos Oliveira",
+        cnpj: "98.765.432/0001-10",
+        empresa: "Inova Sistemas S.A."
+    },
+    {
+        ativo: "Apple MacBook Pro",
+        status: "Ativo",
+        fabricante: "Apple",
+        categoria: "Notebook",
+        matricula: "PQR345STU",
+        situacao: "Em uso",
+        responsavel: "Ana Pereira",
+        cnpj: "12.345.678/0001-90",
+        empresa: "Tech Solutions Ltda"
+    },
+    {
+        ativo: "Dell Latitude 5420",
+        status: "Inativo",
+        fabricante: "Dell",
+        categoria: "Notebook",
+        matricula: "VWX678YZA",
+        situacao: "Em estoque",
+        responsavel: "-",
+        cnpj: "98.765.432/0001-10",
+        empresa: "Inova Sistemas S.A."
+    },
+    {
+        ativo: "Lenovo ThinkPad X1",
+        status: "Ativo",
+        fabricante: "Lenovo",
+        categoria: "Notebook",
+        matricula: "BCD901EFG",
+        situacao: "Em uso",
+        responsavel: "Fernanda Lima",
+        cnpj: "12.345.678/0001-90",
+        empresa: "Tech Solutions Ltda"
+    },
+    {
+        ativo: "Microsoft Surface Pro",
+        status: "Ativo",
+        fabricante: "Microsoft",
+        categoria: "Tablet",
+        matricula: "HIJ234KLM",
+        situacao: "Em uso",
+        responsavel: "Roberto Alves",
+        cnpj: "98.765.432/0001-10",
+        empresa: "Inova Sistemas S.A."
+    },
+    {
+        ativo: "Acer Monitor 24\"",
+        status: "Inativo",
+        fabricante: "Acer",
+        categoria: "Monitor",
+        matricula: "NOP567QRS",
+        situacao: "Em estoque",
+        responsavel: "-",
+        cnpj: "12.345.678/0001-90",
+        empresa: "Tech Solutions Ltda"
+    },
+    {
+        ativo: "Razer BlackWidow",
+        status: "Ativo",
+        fabricante: "Razer",
+        categoria: "Teclado",
+        matricula: "TUV890WXY",
+        situacao: "Em uso",
+        responsavel: "Patrícia Costa",
+        cnpj: "98.765.432/0001-10",
+        empresa: "Inova Sistemas S.A."
+    },
+    {
+        ativo: "HP LaserJet Pro",
+        status: "Ativo",
+        fabricante: "HP",
+        categoria: "Impressora",
+        matricula: "ZAB123CDE",
+        situacao: "Em uso",
+        responsavel: "Marcos Souza",
+        cnpj: "12.345.678/0001-90",
+        empresa: "Tech Solutions Ltda"
+    },
+    {
+        ativo: "LG Monitor 32\"",
+        status: "Inativo",
+        fabricante: "LG",
+        categoria: "Monitor",
+        matricula: "FGH456IJK",
+        situacao: "Em estoque",
+        responsavel: "-",
+        cnpj: "98.765.432/0001-10",
+        empresa: "Inova Sistemas S.A."
+    },
+    {
+        ativo: "Dell OptiPlex",
+        status: "Ativo",
+        fabricante: "Dell",
+        categoria: "Desktop",
+        matricula: "LMN789OPQ",
+        situacao: "Em uso",
+        responsavel: "Juliana Martins",
+        cnpj: "12.345.678/0001-90",
+        empresa: "Tech Solutions Ltda"
+    },
+    {
+        ativo: "Apple Magic Mouse",
+        status: "Ativo",
+        fabricante: "Apple",
+        categoria: "Mouse",
+        matricula: "RST012UVW",
+        situacao: "Em uso",
+        responsavel: "Lucas Ferreira",
+        cnpj: "98.765.432/0001-10",
+        empresa: "Inova Sistemas S.A."
+    },
+    {
+        ativo: "Canon MF644Cdw",
+        status: "Inativo",
+        fabricante: "Canon",
+        categoria: "Impressora",
+        matricula: "XYZ345ABC",
+        situacao: "Em estoque",
+        responsavel: "-",
+        cnpj: "12.345.678/0001-90",
+        empresa: "Tech Solutions Ltda"
+    },
+    {
+        ativo: "Asus ROG Zephyrus",
+        status: "Ativo",
+        fabricante: "Asus",
+        categoria: "Notebook",
+        matricula: "DEF678GHI",
+        situacao: "Em uso",
+        responsavel: "Ricardo Gomes",
+        cnpj: "98.765.432/0001-10",
+        empresa: "Inova Sistemas S.A."
+    },
+    {
+        ativo: "Docking Station Dell",
+        status: "Inativo",
+        fabricante: "Dell",
+        categoria: "Acessório",
+        matricula: "JKL901MNO",
+        situacao: "Em estoque",
+        responsavel: "-",
+        cnpj: "12.345.678/0001-90",
+        empresa: "Tech Solutions Ltda"
+    },
+    {
+        ativo: "JBL Speaker 310",
+        status: "Ativo",
+        fabricante: "JBL",
+        categoria: "Áudio",
+        matricula: "PQR234STU",
+        situacao: "Em uso",
+        responsavel: "Camila Rodrigues",
+        cnpj: "98.765.432/0001-10",
+        empresa: "Inova Sistemas S.A."
+    },
+    {
+        ativo: "Webcam Logitech C920",
+        status: "Ativo",
+        fabricante: "Logitech",
+        categoria: "Webcam",
+        matricula: "VWX567YZA",
+        situacao: "Em uso",
+        responsavel: "André Santos",
+        cnpj: "12.345.678/0001-90",
+        empresa: "Tech Solutions Ltda"
+    }
+];
