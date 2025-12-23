@@ -1,12 +1,19 @@
-import { tableData } from '../data/projects/project3TableData';
 import DataTable from 'datatables.net-react';
 import DT from 'datatables.net-bs5';
-import 'datatables.net-bs5/css/dataTables.bootstrap5.css';
 import FixedColumns from 'datatables.net-fixedcolumns';
+import Buttons from 'datatables.net-buttons';
+
+import 'datatables.net-buttons/js/buttons.colVis.mjs';
+
+import { tableData } from '../data/projects/project3TableData';
+
+import 'datatables.net-bs5/css/dataTables.bootstrap5.css';
 import 'datatables.net-fixedcolumns-bs5/css/fixedColumns.bootstrap5.css';
+import 'datatables.net-buttons-bs5/css/buttons.bootstrap5.css';
 
 DataTable.use(DT);
 DataTable.use(FixedColumns);
+DataTable.use(Buttons);
 
 const Project3TableContent = () => {
     const options = {
