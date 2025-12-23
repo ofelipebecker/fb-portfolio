@@ -22,7 +22,7 @@ const Project3TableContent = () => {
             "infoFiltered": "(filtrado de _MAX_ registros totais)",
             "infoPostFix": "",
             "thousands": ",",
-            "lengthMenu": "Mostrar _MENU_ registros",
+            "lengthMenu": "_MENU_ resultados",
             "loadingRecords": "Carregando...",
             "processing": "Processando...",
             "search": "Pesquisar",
