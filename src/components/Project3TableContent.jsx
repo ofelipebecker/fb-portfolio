@@ -17,6 +17,13 @@ DataTable.use(Buttons);
 
 const Project3TableContent = () => {
     const options = {
+        buttons: [
+            {
+                extend: 'colvis',
+                text: 'Gerenciar Colunas',
+                columns: ':not(:first):not(:last)'
+            }
+        ],
         fixedColumns: {
             left: 1,
             right: 1,
