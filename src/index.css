@@ -179,6 +179,39 @@ body {
     opacity: 0.7;
 }
 
+div.dt-container table.dataTable tr > .dtfc-fixed-left::after {
+  box-shadow: inset 10px 0 8px -8px rgba(0, 0, 0, 0.2);
+}
+
+div.dt-container table.dataTable tr > .dtfc-fixed-right::after {
+  box-shadow: inset -10px 0 8px -8px rgba(0, 0, 0, 0.2);
+}
+
+div.dt-container table.dataTable tr > th {
+    border-bottom-width: 0.2rem;
+}
+
+div.dt-container table.dataTable tr > th, 
+div.dt-container table.dataTable tr > td {
+    padding: 1.2rem;
+    vertical-align: middle;
+}
+
+div.dt-container div.dt-length select {
+    font-size: 1.3rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+div.dt-container div.dt-search input {
+    font-size: 1.3rem;
+    padding: 0.5rem;
+}
+
+.dt-paging .pagination .dt-paging-button button {
+    font-size: 1.3rem;
+}
+
 .fw-semibold {
     font-weight: 500;
 }
