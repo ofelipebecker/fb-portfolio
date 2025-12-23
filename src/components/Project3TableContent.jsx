@@ -1,6 +1,7 @@
 import { tableData } from '../data/projects/project3TableData';
 import DataTable from 'datatables.net-react';
 import DT from 'datatables.net-bs5';
+import 'datatables.net-bs5/css/dataTables.bootstrap5.css';
 
 DataTable.use(DT);
 
