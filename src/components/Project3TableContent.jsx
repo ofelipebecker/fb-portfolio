@@ -2,11 +2,17 @@ import { tableData } from '../data/projects/project3TableData';
 import DataTable from 'datatables.net-react';
 import DT from 'datatables.net-bs5';
 import 'datatables.net-bs5/css/dataTables.bootstrap5.css';
+import FixedColumns from 'datatables.net-fixedcolumns';
+import 'datatables.net-fixedcolumns-bs5/css/fixedColumns.bootstrap5.css';
 
 DataTable.use(DT);
+DataTable.use(FixedColumns);
 
 const Project3TableContent = () => {
     const options = {
+        fixedColumns: {
+            left: 1,
+        },
         language: {
             "decimal": "",
             "emptyTable": "Nenhum registro disponível na tabela",
