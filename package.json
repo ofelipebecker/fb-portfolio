@@ -13,6 +13,8 @@
     "chart.js": "^4.4.9",
     "datatables.net-bs5": "^2.3.5",
     "datatables.net-dt": "^2.3.5",
+    "datatables.net-fixedcolumns": "^5.0.5",
+    "datatables.net-fixedcolumns-bs5": "^5.0.5",
     "datatables.net-react": "^1.0.1",
     "mapbox-gl": "^3.12.0",
     "react": "^19.1.0",
