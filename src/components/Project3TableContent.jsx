@@ -99,7 +99,13 @@ const Project3TableContent = () => {
                         <td className="text-nowrap text-end">{item.cnpj}</td>
                         <td className="text-nowrap">{item.company}</td>
                         <td className="text-nowrap">
-                            <button className="btn btn-outline-danger">
+                            <button className="btn btn-sm btn-outline-md-gray me-3">
+                                <span className="bi bi-pencil fs-4"></span>
+                            </button>
+                            <button className="btn btn-sm btn-outline-md-gray me-3">
+                                <span className="bi bi-toggle-on fs-4"></span>
+                            </button>
+                            <button className="btn btn-sm btn-outline-danger">
                                 <span className="bi bi-trash3 fs-4"></span>
                             </button>
                         </td>
