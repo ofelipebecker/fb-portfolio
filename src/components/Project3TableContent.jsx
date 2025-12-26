@@ -63,8 +63,20 @@ const Project3TableContent = () => {
             pageLength: 10,
         };
 
-        if (tableRef.current && !dataTableRef.current) {
-            dataTableRef.current = new DataTable(tableRef.current, {
+        const tableElement = tableRef.current;
+
+        if (tableElement && !dataTableRef.current) {
+            const handleTableClick = (event) => {
+                const deleteBtn = event.target.closest('[data-action="delete"]');
+                if (!deleteBtn || !dataTableRef.current) return;
+                
+                const rowIndex = parseInt(deleteBtn.getAttribute('data-row'));
+                if (isNaN(rowIndex)) return;
+                
+                dataTableRef.current.row(rowIndex).remove().draw();
+            };
+
+            dataTableRef.current = new DataTable(tableElement, {
                 ...tableOptions,
                 columns: [
                     { 
@@ -76,7 +88,7 @@ const Project3TableContent = () => {
                         data: 'status',
                         title: 'Status',
                         className: 'text-nowrap',
-                        render: function(data) {
+                        render: (data) => {
                             const isActive = data === 'Ativo';
                             const badgeClass = isActive ? 'success' : 'warning';
                             const displayText = isActive ? 'Ativo' : 'Inativo';
@@ -127,20 +139,32 @@ const Project3TableContent = () => {
                         title: 'Ações',
                         className: 'text-nowrap',
                         orderable: false,
-                        render: function(data, type, row, meta) {
+                        render: (_data, _type, _row, meta) => {
                             return `
-                                <button class="btn btn-sm btn-outline-md-gray me-3" data-row="${meta.row}" data-action="edit">
+                                <button 
+                                    class="btn btn-sm btn-outline-md-gray me-3"
+                                    data-row="${meta.row}"
+                                    data-action="edit"
+                                >
                                     <span class="bi bi-pencil fs-4"></span>
                                 </button>
-                                <button class="btn btn-sm btn-outline-md-gray me-3" data-row="${meta.row}" data-action="toggle">
+                                <button 
+                                    class="btn btn-sm btn-outline-md-gray me-3"
+                                    data-row="${meta.row}"
+                                    data-action="toggle"
+                                >
                                     <span class="bi bi-toggle-on fs-4"></span>
                                 </button>
-                                <button class="btn btn-sm btn-outline-danger" data-row="${meta.row}" data-action="delete">
+                                <button 
+                                    class="btn btn-sm btn-outline-danger"
+                                    data-row="${meta.row}"
+                                    data-action="delete"
+                                >
                                     <span class="bi bi-trash3 fs-4"></span>
                                 </button>
                             `;
                         },
-                    }
+                    },
                 ],
                 buttons: [
                     {
@@ -153,13 +177,23 @@ const Project3TableContent = () => {
                 fixedColumns: {
                     left: 1,
                     right: 1,
-                }
+                },
             });
-        }
+
+            tableElement.addEventListener('click', handleTableClick);
+            
+            dataTableRef.current._clickHandler = handleTableClick;
+        };
         
         return () => {
-            if (dataTableRef.current) {
-                dataTableRef.current.destroy();
+            const dtInstance = dataTableRef.current;
+            
+            if (dtInstance) {
+                if (dtInstance._clickHandler && tableElement) {
+                    tableElement.removeEventListener('click', dtInstance._clickHandler);
+                }
+                
+                dtInstance.destroy();
                 dataTableRef.current = null;
             }
         };
