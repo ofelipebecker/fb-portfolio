@@ -25,6 +25,41 @@ const Project3TableContent = () => {
     const [assets, setAssets] = useState(tableData);
 
     useEffect(() => {
+        const modalElement = document.getElementById('delete-asset-modal');
+        
+        if (modalElement) {
+            modalElement.addEventListener('show.bs.modal', (event) => {
+                const button = event.relatedTarget;
+                
+                if (button) {
+                    const rowIndex = button.getAttribute('data-row');
+                    const assetName = button.getAttribute('data-asset-name');
+                    
+                    const nameSpan = document.getElementById('asset-name-placeholder');
+                    if (nameSpan) {
+                        nameSpan.textContent = assetName || 'Ativo sem nome';
+                    }
+                    
+                    const confirmBtn = document.getElementById('confirm-delete-btn');
+                    if (confirmBtn) {
+                        confirmBtn.onclick = () => {
+                            if (dataTableRef.current && rowIndex !== null) {
+                                dataTableRef.current.row(parseInt(rowIndex)).remove().draw();
+                            }
+                        };
+                    }
+                }
+            });
+        }
+        
+        return () => {
+            if (modalElement) {
+                modalElement.removeEventListener('show.bs.modal', () => {});
+            }
+        };
+    }, []);
+
+    useEffect(() => {
         const tableOptions = {
             data: assets,
             language: {
@@ -139,7 +174,7 @@ const Project3TableContent = () => {
                         title: 'Ações',
                         className: 'text-nowrap',
                         orderable: false,
-                        render: (_data, _type, _row, meta) => {
+                        render: (_data, _type, row, meta) => {
                             return `
                                 <button 
                                     class="btn btn-sm btn-outline-md-gray me-3"
@@ -156,9 +191,11 @@ const Project3TableContent = () => {
                                     <span class="bi bi-toggle-on fs-4"></span>
                                 </button>
                                 <button 
-                                    class="btn btn-sm btn-outline-danger"
+                                    class="btn btn-sm btn-outline-danger" 
+                                    data-bs-toggle="modal" 
+                                    data-bs-target="#delete-asset-modal"
                                     data-row="${meta.row}"
-                                    data-action="delete"
+                                    data-asset-name="${row.asset}"
                                 >
                                     <span class="bi bi-trash3 fs-4"></span>
                                 </button>
@@ -200,11 +237,44 @@ const Project3TableContent = () => {
     }, [assets]);
 
     return (
-        <table 
-            ref={tableRef} 
-            className="table table-hover"
-        >
-        </table>
+        <>
+            <table 
+                ref={tableRef} 
+                className="table table-hover"
+            >
+            </table>
+            <div className="modal fade" id="delete-asset-modal" tabIndex="-1">
+                <div className="modal-dialog">
+                    <div className="modal-content">
+                        <div className="modal-header">
+                            <h4 className="modal-title fs-2">Deseja excluir o ativo?</h4>
+                            <button className="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div className="modal-body">
+                            <p>
+                                <b>Ativo: </b>
+                                <span id="asset-name-placeholder">(carregando...)</span>
+                            </p>
+                        </div>
+                        <div className="modal-footer">
+                            <button 
+                                className="btn btn-lg btn-outline-secondary" 
+                                data-bs-dismiss="modal"
+                            >
+                                Cancelar
+                            </button>
+                            <button 
+                                className="btn btn-lg btn-danger"
+                                id="confirm-delete-btn"
+                                data-bs-dismiss="modal"
+                            >
+                                EXCLUIR ATIVO
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </>
     );
 };
 
