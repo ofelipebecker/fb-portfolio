@@ -58,7 +58,8 @@ const Project3TableContent = () => {
                 bottomEnd: 'paging',
             },
             scrollX: true,
-            scrollY: true,
+            scrollY: '600px',
+            scrollCollapse: true,
             pageLength: 10,
         };
 
