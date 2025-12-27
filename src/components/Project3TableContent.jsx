@@ -171,13 +171,16 @@ const Project3TableContent = () => {
                         className: 'text-nowrap',
                         orderable: false,
                         render: (_data, _type, row, meta) => {
+                            const toggleIcon = row.status === 'active' ? 'on' : 'off';
+
                             return `
                                 <button 
                                     class="btn btn-sm btn-outline-md-gray me-3"
                                     data-row="${meta.row}"
                                     data-action="toggle"
+                                    data-current-status="${row.status}"
                                 >
-                                    <span class="bi bi-toggle-on fs-4"></span>
+                                    <span class="bi bi-toggle-${toggleIcon} fs-4"></span>
                                 </button>
                                 <button 
                                     class="btn btn-sm btn-outline-danger" 
