@@ -237,7 +237,7 @@ const Project3TableContent = () => {
             >
             </table>
             <div className="modal fade" id="delete-asset-modal" tabIndex="-1">
-                <div className="modal-dialog">
+                <div className="modal-dialog mt-10">
                     <div className="modal-content">
                         <div className="modal-header">
                             <h4 className="modal-title fs-2">Deseja excluir o ativo?</h4>
