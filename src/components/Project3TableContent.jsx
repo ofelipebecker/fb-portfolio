@@ -32,17 +32,17 @@ const Project3TableContent = () => {
         const handleModalOpen = (event) => {
             if (!dataTableRef.current) return;
 
-                const button = event.relatedTarget;
-                
-                    const rowIndex = button.getAttribute('data-row');
-                    const assetName = button.getAttribute('data-asset-name');
+            const button = event.relatedTarget;
+                        
+            const rowIndex = button.getAttribute('data-row');
+            const assetName = button.getAttribute('data-asset-name');
             const confirmBtn = document.getElementById('confirm-delete-btn');
-            const nameSpan = document.getElementById('asset-name-placeholder');
-                    
+            const nameSpan = document.getElementById('asset-name');
+            
             nameSpan.textContent = assetName;
-                    
-                        confirmBtn.onclick = () => {
-                                dataTableRef.current.row(parseInt(rowIndex)).remove().draw();
+            
+            confirmBtn.onclick = () => {
+                dataTableRef.current.row(parseInt(rowIndex)).remove().draw();
             };
         };
         
@@ -248,7 +248,7 @@ const Project3TableContent = () => {
                         <div className="modal-body">
                             <p>
                                 <b>Ativo: </b>
-                                <span id="asset-name-placeholder">(carregando...)</span>
+                                <span id="asset-name"></span>
                             </p>
                         </div>
                         <div className="modal-footer">
