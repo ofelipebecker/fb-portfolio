@@ -20,41 +20,37 @@ DataTable.use(Buttons);
 const Project3TableContent = () => {
     const tableRef = useRef(null);
     const dataTableRef = useRef(null);
+    const modalRef = useRef(null);
 
     // eslint-disable-next-line no-unused-vars
     const [assets, setAssets] = useState(tableData);
 
     useEffect(() => {
-        const modalElement = document.getElementById('delete-asset-modal');
+        const currentModal = modalRef.current;
+        if (!currentModal) return;
         
-        if (modalElement) {
-            modalElement.addEventListener('show.bs.modal', (event) => {
+        const handleModalOpen = (event) => {
+            if (!dataTableRef.current) return;
+
                 const button = event.relatedTarget;
                 
-                if (button) {
                     const rowIndex = button.getAttribute('data-row');
                     const assetName = button.getAttribute('data-asset-name');
+            const confirmBtn = document.getElementById('confirm-delete-btn');
+            const nameSpan = document.getElementById('asset-name-placeholder');
                     
-                    const nameSpan = document.getElementById('asset-name-placeholder');
-                    if (nameSpan) {
-                        nameSpan.textContent = assetName || 'Ativo sem nome';
-                    }
+            nameSpan.textContent = assetName;
                     
-                    const confirmBtn = document.getElementById('confirm-delete-btn');
-                    if (confirmBtn) {
                         confirmBtn.onclick = () => {
-                            if (dataTableRef.current && rowIndex !== null) {
                                 dataTableRef.current.row(parseInt(rowIndex)).remove().draw();
-                            }
-                        };
-                    }
-                }
-            });
-        }
+            };
+        };
+        
+        currentModal.addEventListener('show.bs.modal', handleModalOpen);
         
         return () => {
-            if (modalElement) {
-                modalElement.removeEventListener('show.bs.modal', () => {});
+            if (currentModal) {
+                currentModal.removeEventListener('show.bs.modal', handleModalOpen);
             }
         };
     }, []);
@@ -236,7 +232,13 @@ const Project3TableContent = () => {
                 className="table table-hover"
             >
             </table>
-            <div className="modal fade" id="delete-asset-modal" tabIndex="-1">
+            <div 
+                ref={modalRef}
+                className="modal fade" 
+                id="delete-asset-modal" 
+                tabIndex="-1" 
+                aria-hidden="true"
+            >
                 <div className="modal-dialog mt-10">
                     <div className="modal-content">
                         <div className="modal-header">
