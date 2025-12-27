@@ -179,13 +179,6 @@ const Project3TableContent = () => {
                                 <button 
                                     class="btn btn-sm btn-outline-md-gray me-3"
                                     data-row="${meta.row}"
-                                    data-action="edit"
-                                >
-                                    <span class="bi bi-pencil fs-4"></span>
-                                </button>
-                                <button 
-                                    class="btn btn-sm btn-outline-md-gray me-3"
-                                    data-row="${meta.row}"
                                     data-action="toggle"
                                 >
                                     <span class="bi bi-toggle-on fs-4"></span>
