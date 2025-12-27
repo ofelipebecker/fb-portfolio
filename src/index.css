@@ -324,6 +324,26 @@ p {
     max-width: fit-content;
 }
 
+.mt-6 {
+  margin-top: 4rem !important;
+}
+
+.mt-7 {
+  margin-top: 5rem !important;
+}
+
+.mt-8 {
+  margin-top: 6rem !important;
+}
+
+.mt-9 {
+  margin-top: 8rem !important;
+}
+
+.mt-10 {
+  margin-top: 10rem !important;
+}
+
 .proj-link div {
     opacity: 0.9;
 }
