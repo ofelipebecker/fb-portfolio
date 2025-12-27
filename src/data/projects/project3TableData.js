@@ -1,7 +1,7 @@
 export const tableData = [
     {
         asset: "Dell 3QSNCK2",
-        status: "Ativo",
+        status: "active",
         manufacturer: "Dell",
         category: "Notebook",
         registration: "ABC123XYZ",
@@ -12,7 +12,7 @@ export const tableData = [
     },
     {
         asset: "HP EliteBook 840",
-        status: "Ativo",
+        status: "active",
         manufacturer: "HP",
         category: "Notebook",
         registration: "DEF456UVW",
@@ -23,7 +23,7 @@ export const tableData = [
     },
     {
         asset: "Samsung Monitor 27\"",
-        status: "Inativo",
+        status: "inactive",
         manufacturer: "Samsung",
         category: "Monitor",
         registration: "GHI789RST",
@@ -34,7 +34,7 @@ export const tableData = [
     },
     {
         asset: "Logitech MX Master 3",
-        status: "Ativo",
+        status: "active",
         manufacturer: "Logitech",
         category: "Mouse",
         registration: "JKL012MNO",
@@ -45,7 +45,7 @@ export const tableData = [
     },
     {
         asset: "Apple MacBook Pro",
-        status: "Ativo",
+        status: "active",
         manufacturer: "Apple",
         category: "Notebook",
         registration: "PQR345STU",
@@ -56,7 +56,7 @@ export const tableData = [
     },
     {
         asset: "Dell Latitude 5420",
-        status: "Inativo",
+        status: "inactive",
         manufacturer: "Dell",
         category: "Notebook",
         registration: "VWX678YZA",
@@ -67,7 +67,7 @@ export const tableData = [
     },
     {
         asset: "Lenovo ThinkPad X1",
-        status: "Ativo",
+        status: "active",
         manufacturer: "Lenovo",
         category: "Notebook",
         registration: "BCD901EFG",
@@ -78,7 +78,7 @@ export const tableData = [
     },
     {
         asset: "Microsoft Surface Pro",
-        status: "Ativo",
+        status: "active",
         manufacturer: "Microsoft",
         category: "Tablet",
         registration: "HIJ234KLM",
@@ -89,7 +89,7 @@ export const tableData = [
     },
     {
         asset: "Acer Monitor 24\"",
-        status: "Inativo",
+        status: "inactive",
         manufacturer: "Acer",
         category: "Monitor",
         registration: "NOP567QRS",
@@ -100,7 +100,7 @@ export const tableData = [
     },
     {
         asset: "Razer BlackWidow",
-        status: "Ativo",
+        status: "active",
         manufacturer: "Razer",
         category: "Teclado",
         registration: "TUV890WXY",
@@ -111,7 +111,7 @@ export const tableData = [
     },
     {
         asset: "HP LaserJet Pro",
-        status: "Ativo",
+        status: "active",
         manufacturer: "HP",
         category: "Impressora",
         registration: "ZAB123CDE",
@@ -122,7 +122,7 @@ export const tableData = [
     },
     {
         asset: "LG Monitor 32\"",
-        status: "Inativo",
+        status: "inactive",
         manufacturer: "LG",
         category: "Monitor",
         registration: "FGH456IJK",
@@ -133,7 +133,7 @@ export const tableData = [
     },
     {
         asset: "Dell OptiPlex",
-        status: "Ativo",
+        status: "active",
         manufacturer: "Dell",
         category: "Desktop",
         registration: "LMN789OPQ",
@@ -144,7 +144,7 @@ export const tableData = [
     },
     {
         asset: "Apple Magic Mouse",
-        status: "Ativo",
+        status: "active",
         manufacturer: "Apple",
         category: "Mouse",
         registration: "RST012UVW",
@@ -155,7 +155,7 @@ export const tableData = [
     },
     {
         asset: "Canon MF644Cdw",
-        status: "Inativo",
+        status: "inactive",
         manufacturer: "Canon",
         category: "Impressora",
         registration: "XYZ345ABC",
@@ -166,7 +166,7 @@ export const tableData = [
     },
     {
         asset: "Asus ROG Zephyrus",
-        status: "Ativo",
+        status: "active",
         manufacturer: "Asus",
         category: "Notebook",
         registration: "DEF678GHI",
@@ -177,7 +177,7 @@ export const tableData = [
     },
     {
         asset: "Docking Station Dell",
-        status: "Inativo",
+        status: "inactive",
         manufacturer: "Dell",
         category: "Acessório",
         registration: "JKL901MNO",
@@ -188,7 +188,7 @@ export const tableData = [
     },
     {
         asset: "JBL Speaker 310",
-        status: "Ativo",
+        status: "active",
         manufacturer: "JBL",
         category: "Áudio",
         registration: "PQR234STU",
@@ -199,7 +199,7 @@ export const tableData = [
     },
     {
         asset: "Webcam Logitech C920",
-        status: "Ativo",
+        status: "active",
         manufacturer: "Logitech",
         category: "Webcam",
         registration: "VWX567YZA",

@@ -120,7 +120,7 @@ const Project3TableContent = () => {
                         title: 'Status',
                         className: 'text-nowrap',
                         render: (data) => {
-                            const isActive = data === 'Ativo';
+                            const isActive = data === 'active';
                             const badgeClass = isActive ? 'success' : 'warning';
                             const displayText = isActive ? 'Ativo' : 'Inativo';
                             
