@@ -253,7 +253,7 @@ const Project3TableContent = () => {
                         </div>
                         <div className="modal-footer">
                             <button 
-                                className="btn btn-lg btn-outline-secondary" 
+                                className="btn btn-lg btn-outline-secondary me-3" 
                                 data-bs-dismiss="modal"
                             >
                                 Cancelar
