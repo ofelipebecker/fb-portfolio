@@ -97,16 +97,6 @@ const Project3TableContent = () => {
         const tableElement = tableRef.current;
 
         if (tableElement && !dataTableRef.current) {
-            const handleTableClick = (event) => {
-                const deleteBtn = event.target.closest('[data-action="delete"]');
-                if (!deleteBtn || !dataTableRef.current) return;
-                
-                const rowIndex = parseInt(deleteBtn.getAttribute('data-row'));
-                if (isNaN(rowIndex)) return;
-                
-                dataTableRef.current.row(rowIndex).remove().draw();
-            };
-
             dataTableRef.current = new DataTable(tableElement, {
                 ...tableOptions,
                 columns: [
@@ -208,10 +198,6 @@ const Project3TableContent = () => {
                     right: 1,
                 },
             });
-
-            tableElement.addEventListener('click', handleTableClick);
-            
-            dataTableRef.current._clickHandler = handleTableClick;
         };
         
         return () => {
