@@ -22,9 +22,6 @@ const Project3TableContent = () => {
     const dataTableRef = useRef(null);
     const modalRef = useRef(null);
 
-    // eslint-disable-next-line no-unused-vars
-    const [assets, setAssets] = useState(tableData);
-
     useEffect(() => {
         const currentModal = modalRef.current;
         if (!currentModal) return;
@@ -57,7 +54,7 @@ const Project3TableContent = () => {
 
     useEffect(() => {
         const tableOptions = {
-            data: assets,
+            data: tableData,
             language: {
                 'decimal': '',
                 'emptyTable': 'Nenhum registro disponível na tabela',
@@ -212,7 +209,7 @@ const Project3TableContent = () => {
                 dataTableRef.current = null;
             }
         };
-    }, [assets]);
+    }, []);
 
     return (
         <>
