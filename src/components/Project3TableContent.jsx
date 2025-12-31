@@ -18,8 +18,8 @@ DataTable.use(FixedColumns);
 DataTable.use(Buttons);
 
 const Project3TableContent = () => {
-    const tableRef = useRef(null);
-    const dataTableRef = useRef(null);
+    const domTableRef = useRef(null);
+    const dataTablesInstanceRef = useRef(null);
     const modalRef = useRef(null);
 
     useEffect(() => {
@@ -27,7 +27,7 @@ const Project3TableContent = () => {
         if (!currentModal) return;
         
         const handleModalOpen = (event) => {
-            if (!dataTableRef.current) return;
+            if (!dataTablesInstanceRef.current) return;
 
             const button = event.relatedTarget;
                         
@@ -39,7 +39,7 @@ const Project3TableContent = () => {
             nameSpan.textContent = assetName;
             
             confirmBtn.onclick = () => {
-                dataTableRef.current.row(parseInt(rowIndex)).remove().draw();
+                dataTablesInstanceRef.current.row(parseInt(rowIndex)).remove().draw();
             };
         };
         
@@ -91,10 +91,10 @@ const Project3TableContent = () => {
             pageLength: 10,
         };
 
-        const tableElement = tableRef.current;
+        const domTableElement = domTableRef.current;
 
-        if (tableElement && !dataTableRef.current) {
-            dataTableRef.current = new DataTable(tableElement, {
+        if (domTableElement && !dataTablesInstanceRef.current) {
+            dataTablesInstanceRef.current = new DataTable(domTableElement, {
                 ...tableOptions,
                 columns: [
                     { 
@@ -198,15 +198,15 @@ const Project3TableContent = () => {
         };
         
         return () => {
-            const dtInstance = dataTableRef.current;
+            const dataTable = dataTablesInstanceRef.current;
             
-            if (dtInstance) {
-                if (dtInstance._clickHandler && tableElement) {
-                    tableElement.removeEventListener('click', dtInstance._clickHandler);
+            if (dataTable) {
+                if (dataTable._clickHandler && domTableElement) {
+                    domTableElement.removeEventListener('click', dataTable._clickHandler);
                 }
                 
-                dtInstance.destroy();
-                dataTableRef.current = null;
+                dataTable.destroy();
+                dataTablesInstanceRef.current = null;
             }
         };
     }, []);
@@ -214,7 +214,7 @@ const Project3TableContent = () => {
     return (
         <>
             <table 
-                ref={tableRef} 
+                ref={domTableRef} 
                 className="table table-hover"
             >
             </table>
