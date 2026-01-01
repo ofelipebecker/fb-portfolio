@@ -20,8 +20,7 @@ DataTable.use(Buttons);
 const Project3TableContent = () => {
     const domTableRef = useRef(null);
     const dataTablesInstanceRef = useRef(null);
-    const modalRef = useRef(null);
-    const toggleStatusModalRef = useRef(null);
+    const tableModalRef = useRef(null);
 
     useEffect(() => {
         const tableOptions = {
@@ -135,7 +134,7 @@ const Project3TableContent = () => {
                                 <button 
                                     class="btn btn-sm btn-outline-md-gray me-3"
                                     data-bs-toggle="modal" 
-                                    data-bs-target="#toggle-status-modal"
+                                    data-bs-target="#table-modal"
                                     data-row="${meta.row}"
                                     data-action="toggle"
                                     data-asset-name="${row.asset}"
@@ -146,9 +145,10 @@ const Project3TableContent = () => {
                                 <button 
                                     class="btn btn-sm btn-outline-danger" 
                                     data-bs-toggle="modal" 
-                                    data-bs-target="#delete-asset-modal"
+                                    data-bs-target="#table-modal"
                                     data-row="${meta.row}"
                                     data-asset-name="${row.asset}"
+                                    data-action="delete"
                                 >
                                     <span class="bi bi-trash3 fs-4"></span>
                                 </button>
@@ -182,91 +182,91 @@ const Project3TableContent = () => {
     }, []);
 
     useEffect(() => {
-        const currentModal = modalRef.current;
+        const currentModal = tableModalRef.current;
         if (!currentModal) return;
-        
+
         const handleModalOpen = (event) => {
             if (!dataTablesInstanceRef.current) return;
 
             const button = event.relatedTarget;
-                        
+            const action = button.getAttribute('data-action');
             const rowIndex = button.getAttribute('data-row');
             const assetName = button.getAttribute('data-asset-name');
-            const confirmBtn = document.getElementById('confirm-delete-btn');
+            
+            const confirmBtn = document.getElementById('confirm-action-btn');
             const nameSpan = document.getElementById('asset-name');
-            
+            const newStatusContainer = document.getElementById('new-status-container');
+            const newStatusSpan = document.getElementById('new-status-value');
+            const modalTitle = document.getElementById('modal-title');
+
+            confirmBtn.onclick = null;
+
             nameSpan.textContent = assetName;
-            
-            confirmBtn.onclick = () => {
-                dataTablesInstanceRef.current.row(parseInt(rowIndex)).remove().draw();
-            };
+            confirmBtn.dataset.rowIndex = rowIndex;
+            confirmBtn.dataset.action = action;
+
+            if (action === 'toggle') {
+                const currentStatus = button.getAttribute('data-current-status');
+                const newStatus = currentStatus === 'active' ? 'inactive' : 'active';
+                const newStatusText = newStatus === 'active' ? 'Ativo' : 'Inativo';
+                const currentStatusText = currentStatus === 'active' ? 'Ativo' : 'Inativo';
+                
+                newStatusContainer.classList.remove('d-none');
+                newStatusSpan.textContent = `${currentStatusText} → ${newStatusText}`;
+                
+                modalTitle.textContent = 'Deseja alterar o status do ativo?';
+                confirmBtn.textContent = 'Confirmar Alteração';
+                confirmBtn.className = 'btn btn-lg btn-primary';
+                confirmBtn.dataset.currentStatus = currentStatus;
+                confirmBtn.dataset.newStatus = newStatus;
+                
+                confirmBtn.onclick = () => {
+                    const dataTable = dataTablesInstanceRef.current;
+                    if (!dataTable) return;
+                    
+                    const rowIndexNum = parseInt(rowIndex);
+                    const rowData = dataTable.row(rowIndexNum).data();
+                    const newStatus = rowData.status === 'active' ? 'inactive' : 'active';
+                    
+                    const updatedData = { ...rowData, status: newStatus };
+                    dataTable.row(rowIndexNum).data(updatedData);
+                    
+                    const rowNode = dataTable.row(rowIndexNum).node();
+                    if (rowNode) {
+                        const toggleBtn = rowNode.querySelector('[data-action="toggle"]');
+                        if (toggleBtn) {
+                            toggleBtn.setAttribute('data-current-status', newStatus);
+                            const iconSpan = toggleBtn.querySelector('span');
+                            if (iconSpan) {
+                                iconSpan.className = `bi bi-toggle-${newStatus === 'active' ? 'on' : 'off'} fs-4`;
+                            }
+                        }
+                    }
+                    
+                    dataTable.draw(false);
+                };
+                
+            } else if (action === 'delete') {
+                newStatusContainer.classList.add('d-none');
+                
+                modalTitle.textContent = 'Deseja excluir o ativo?';
+                confirmBtn.textContent = 'EXCLUIR ATIVO';
+                confirmBtn.className = 'btn btn-lg btn-danger';
+                
+                confirmBtn.onclick = () => {
+                    const dataTable = dataTablesInstanceRef.current;
+                    if (!dataTable) return;
+                    
+                    dataTable.row(parseInt(rowIndex)).remove().draw();
+                };
+            }
         };
-        
+
         currentModal.addEventListener('show.bs.modal', handleModalOpen);
         
         return () => {
             if (currentModal) {
                 currentModal.removeEventListener('show.bs.modal', handleModalOpen);
-            }
-        };
-    }, []);
-
-    useEffect(() => {
-        const currentToggleStatusModal = toggleStatusModalRef.current;
-        if (!currentToggleStatusModal) return;
-        
-        const handleModalOpen = (event) => {
-            if (!dataTablesInstanceRef.current) return;
-
-            const button = event.relatedTarget;
-                        
-            const rowIndex = button.getAttribute('data-row');
-            const assetName = button.getAttribute('data-asset-name');
-            const currentStatus = button.getAttribute('data-current-status');
-            const confirmBtn = document.getElementById('confirm-toggle-status-btn');
-            const nameSpan = document.getElementById('status-asset-name');
-            const newStatusSpan = document.getElementById('new-status-value');
-            
-            const newStatus = currentStatus === 'active' ? 'inactive' : 'active';
-            const newStatusText = newStatus === 'active' ? 'Ativo' : 'Inativo';
-            const currentStatusText = currentStatus === 'active' ? 'Ativo' : 'Inativo';
-            
-            nameSpan.textContent = assetName;
-            newStatusSpan.textContent = `${currentStatusText} → ${newStatusText}`;
-            
-            confirmBtn.onclick = () => {
-                const dataTable = dataTablesInstanceRef.current;
-                if (!dataTable) return;
-                
-                const rowIndexNum = parseInt(rowIndex);
-                const rowData = dataTable.row(rowIndexNum).data();
-                
-                const newStatus = rowData.status === 'active' ? 'inactive' : 'active';
-                
-                const updatedData = { ...rowData, status: newStatus };
-                dataTable.row(rowIndexNum).data(updatedData);
-                
-                const rowNode = dataTable.row(rowIndexNum).node();
-                if (rowNode) {
-                    const toggleBtn = rowNode.querySelector('[data-action="toggle"]');
-                    if (toggleBtn) {
-                        toggleBtn.setAttribute('data-current-status', newStatus);
-                        const iconSpan = toggleBtn.querySelector('span');
-                        if (iconSpan) {
-                            iconSpan.className = `bi bi-toggle-${newStatus === 'active' ? 'on' : 'off'} fs-4`;
-                        }
-                    }
-                }
-                
-                dataTable.draw(false);
-            };
-        };
-        
-        currentToggleStatusModal.addEventListener('show.bs.modal', handleModalOpen);
-        
-        return () => {
-            if (currentToggleStatusModal) {
-                currentToggleStatusModal.removeEventListener('show.bs.modal', handleModalOpen);
             }
         };
     }, []);
@@ -279,16 +279,16 @@ const Project3TableContent = () => {
             >
             </table>
             <div 
-                ref={modalRef}
+                ref={tableModalRef}
                 className="modal fade" 
-                id="delete-asset-modal" 
+                id="table-modal" 
                 tabIndex="-1" 
                 aria-hidden="true"
             >
                 <div className="modal-dialog mt-10">
                     <div className="modal-content">
                         <div className="modal-header">
-                            <h4 className="modal-title fs-2">Deseja excluir o ativo?</h4>
+                            <h4 className="modal-title fs-2" id="modal-title">Confirmar</h4>
                             <button className="btn-close" data-bs-dismiss="modal"></button>
                         </div>
                         <div className="modal-body">
@@ -296,44 +296,7 @@ const Project3TableContent = () => {
                                 <b>Ativo: </b>
                                 <span id="asset-name"></span>
                             </p>
-                        </div>
-                        <div className="modal-footer">
-                            <button 
-                                className="btn btn-lg btn-outline-secondary me-3" 
-                                data-bs-dismiss="modal"
-                            >
-                                Cancelar
-                            </button>
-                            <button 
-                                className="btn btn-lg btn-danger"
-                                id="confirm-delete-btn"
-                                data-bs-dismiss="modal"
-                            >
-                                EXCLUIR ATIVO
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div 
-                ref={toggleStatusModalRef}
-                className="modal fade" 
-                id="toggle-status-modal" 
-                tabIndex="-1" 
-                aria-hidden="true"
-            >
-                <div className="modal-dialog mt-10">
-                    <div className="modal-content">
-                        <div className="modal-header">
-                            <h4 className="modal-title fs-2">Deseja alterar o status do ativo?</h4>
-                            <button className="btn-close" data-bs-dismiss="modal"></button>
-                        </div>
-                        <div className="modal-body">
-                            <p>
-                                <b>Ativo: </b>
-                                <span id="status-asset-name"></span>
-                            </p>
-                            <p>
+                            <p id="new-status-container" className="d-none">
                                 <b>Novo status: </b>
                                 <span id="new-status-value"></span>
                             </p>
@@ -346,11 +309,11 @@ const Project3TableContent = () => {
                                 Cancelar
                             </button>
                             <button 
-                                className="btn btn-lg btn-primary"
-                                id="confirm-toggle-status-btn"
+                                className="btn btn-lg"
+                                id="confirm-action-btn"
                                 data-bs-dismiss="modal"
                             >
-                                Confirmar Alteração
+                                Confirmar
                             </button>
                         </div>
                     </div>
