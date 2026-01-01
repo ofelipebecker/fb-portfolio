@@ -213,11 +213,20 @@ const project3 = {
         },
         {
             title: "Desenvolvimento Front-end",
-            subtitle: "Exemplo de Tabela Interativa",
+            subtitle: "Implementação de Referência com Dados Sintéticos",
             content: (
+                <>
+                    <p className="my-4">
+                        Para demonstrar na prática as funcionalidades implementadas, desenvolvi esta 
+                        tabela de exemplo utilizando DataTables.js. Embora os dados sejam fictícios 
+                        e sigam um padrão de anonimização (CNPJs e nomes gerados para demonstração), 
+                        todas as funcionalidades de interação replicam o padrão estabelecido para as 
+                        tabelas do VC-X Sonar.
+                    </p>
                 <div className="mt-5">
                     <Project3TableContent></Project3TableContent>
                 </div>
+                </>
             ),
         },
     ],
