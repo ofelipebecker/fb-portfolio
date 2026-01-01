@@ -200,11 +200,7 @@ const Project3TableContent = () => {
         return () => {
             const dataTable = dataTablesInstanceRef.current;
             
-            if (dataTable) {
-                if (dataTable._clickHandler && domTableElement) {
-                    domTableElement.removeEventListener('click', dataTable._clickHandler);
-                }
-                
+            if (dataTable) {                
                 dataTable.destroy();
                 dataTablesInstanceRef.current = null;
             }
