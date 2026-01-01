@@ -7,7 +7,7 @@ const Footer = () => {
                 <div className="row">
                     <div className="col-12 col-sm-6 d-flex align-items-center">
                         <span className="d-flex align-items-center text-purple">
-                            Felipe Becker | Desenvolvedor Front-end | 2025
+                            Felipe Becker | Desenvolvedor Front-end | 2026
                         </span>
                     </div>
                     <div className="col-12 col-sm-6">
