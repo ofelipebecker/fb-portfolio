@@ -24,96 +24,6 @@ const Project3TableContent = () => {
     const toggleStatusModalRef = useRef(null);
 
     useEffect(() => {
-        const currentModal = modalRef.current;
-        if (!currentModal) return;
-        
-        const handleModalOpen = (event) => {
-            if (!dataTablesInstanceRef.current) return;
-
-            const button = event.relatedTarget;
-                        
-            const rowIndex = button.getAttribute('data-row');
-            const assetName = button.getAttribute('data-asset-name');
-            const confirmBtn = document.getElementById('confirm-delete-btn');
-            const nameSpan = document.getElementById('asset-name');
-            
-            nameSpan.textContent = assetName;
-            
-            confirmBtn.onclick = () => {
-                dataTablesInstanceRef.current.row(parseInt(rowIndex)).remove().draw();
-            };
-        };
-        
-        currentModal.addEventListener('show.bs.modal', handleModalOpen);
-        
-        return () => {
-            if (currentModal) {
-                currentModal.removeEventListener('show.bs.modal', handleModalOpen);
-            }
-        };
-    }, []);
-
-    useEffect(() => {
-        const currentToggleStatusModal = toggleStatusModalRef.current;
-        if (!currentToggleStatusModal) return;
-        
-        const handleModalOpen = (event) => {
-            if (!dataTablesInstanceRef.current) return;
-
-            const button = event.relatedTarget;
-                        
-            const rowIndex = button.getAttribute('data-row');
-            const assetName = button.getAttribute('data-asset-name');
-            const currentStatus = button.getAttribute('data-current-status');
-            const confirmBtn = document.getElementById('confirm-toggle-status-btn');
-            const nameSpan = document.getElementById('status-asset-name');
-            const newStatusSpan = document.getElementById('new-status-value');
-            
-            const newStatus = currentStatus === 'active' ? 'inactive' : 'active';
-            const newStatusText = newStatus === 'active' ? 'Ativo' : 'Inativo';
-            const currentStatusText = currentStatus === 'active' ? 'Ativo' : 'Inativo';
-            
-            nameSpan.textContent = assetName;
-            newStatusSpan.textContent = `${currentStatusText} → ${newStatusText}`;
-            
-            confirmBtn.onclick = () => {
-                const dataTable = dataTablesInstanceRef.current;
-                if (!dataTable) return;
-                
-                const rowIndexNum = parseInt(rowIndex);
-                const rowData = dataTable.row(rowIndexNum).data();
-                
-                const newStatus = rowData.status === 'active' ? 'inactive' : 'active';
-                
-                const updatedData = { ...rowData, status: newStatus };
-                dataTable.row(rowIndexNum).data(updatedData);
-                
-                const rowNode = dataTable.row(rowIndexNum).node();
-                if (rowNode) {
-                    const toggleBtn = rowNode.querySelector('[data-action="toggle"]');
-                    if (toggleBtn) {
-                        toggleBtn.setAttribute('data-current-status', newStatus);
-                        const iconSpan = toggleBtn.querySelector('span');
-                        if (iconSpan) {
-                            iconSpan.className = `bi bi-toggle-${newStatus === 'active' ? 'on' : 'off'} fs-4`;
-                        }
-                    }
-                }
-                
-                dataTable.draw(false);
-            };
-        };
-        
-        currentToggleStatusModal.addEventListener('show.bs.modal', handleModalOpen);
-        
-        return () => {
-            if (currentToggleStatusModal) {
-                currentToggleStatusModal.removeEventListener('show.bs.modal', handleModalOpen);
-            }
-        };
-    }, []);
-
-    useEffect(() => {
         const tableOptions = {
             data: tableData,
             language: {
@@ -267,6 +177,96 @@ const Project3TableContent = () => {
             if (dataTable) {                
                 dataTable.destroy();
                 dataTablesInstanceRef.current = null;
+            }
+        };
+    }, []);
+
+    useEffect(() => {
+        const currentModal = modalRef.current;
+        if (!currentModal) return;
+        
+        const handleModalOpen = (event) => {
+            if (!dataTablesInstanceRef.current) return;
+
+            const button = event.relatedTarget;
+                        
+            const rowIndex = button.getAttribute('data-row');
+            const assetName = button.getAttribute('data-asset-name');
+            const confirmBtn = document.getElementById('confirm-delete-btn');
+            const nameSpan = document.getElementById('asset-name');
+            
+            nameSpan.textContent = assetName;
+            
+            confirmBtn.onclick = () => {
+                dataTablesInstanceRef.current.row(parseInt(rowIndex)).remove().draw();
+            };
+        };
+        
+        currentModal.addEventListener('show.bs.modal', handleModalOpen);
+        
+        return () => {
+            if (currentModal) {
+                currentModal.removeEventListener('show.bs.modal', handleModalOpen);
+            }
+        };
+    }, []);
+
+    useEffect(() => {
+        const currentToggleStatusModal = toggleStatusModalRef.current;
+        if (!currentToggleStatusModal) return;
+        
+        const handleModalOpen = (event) => {
+            if (!dataTablesInstanceRef.current) return;
+
+            const button = event.relatedTarget;
+                        
+            const rowIndex = button.getAttribute('data-row');
+            const assetName = button.getAttribute('data-asset-name');
+            const currentStatus = button.getAttribute('data-current-status');
+            const confirmBtn = document.getElementById('confirm-toggle-status-btn');
+            const nameSpan = document.getElementById('status-asset-name');
+            const newStatusSpan = document.getElementById('new-status-value');
+            
+            const newStatus = currentStatus === 'active' ? 'inactive' : 'active';
+            const newStatusText = newStatus === 'active' ? 'Ativo' : 'Inativo';
+            const currentStatusText = currentStatus === 'active' ? 'Ativo' : 'Inativo';
+            
+            nameSpan.textContent = assetName;
+            newStatusSpan.textContent = `${currentStatusText} → ${newStatusText}`;
+            
+            confirmBtn.onclick = () => {
+                const dataTable = dataTablesInstanceRef.current;
+                if (!dataTable) return;
+                
+                const rowIndexNum = parseInt(rowIndex);
+                const rowData = dataTable.row(rowIndexNum).data();
+                
+                const newStatus = rowData.status === 'active' ? 'inactive' : 'active';
+                
+                const updatedData = { ...rowData, status: newStatus };
+                dataTable.row(rowIndexNum).data(updatedData);
+                
+                const rowNode = dataTable.row(rowIndexNum).node();
+                if (rowNode) {
+                    const toggleBtn = rowNode.querySelector('[data-action="toggle"]');
+                    if (toggleBtn) {
+                        toggleBtn.setAttribute('data-current-status', newStatus);
+                        const iconSpan = toggleBtn.querySelector('span');
+                        if (iconSpan) {
+                            iconSpan.className = `bi bi-toggle-${newStatus === 'active' ? 'on' : 'off'} fs-4`;
+                        }
+                    }
+                }
+                
+                dataTable.draw(false);
+            };
+        };
+        
+        currentToggleStatusModal.addEventListener('show.bs.modal', handleModalOpen);
+        
+        return () => {
+            if (currentToggleStatusModal) {
+                currentToggleStatusModal.removeEventListener('show.bs.modal', handleModalOpen);
             }
         };
     }, []);
