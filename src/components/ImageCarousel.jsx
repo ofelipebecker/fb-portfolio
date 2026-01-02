@@ -11,14 +11,14 @@ const ImageCarousel = ({ id, images }) => {
             key={index}
             className={`carousel-item ${index === 0 ? 'active' : ''}`}
           >
+            <div className="carousel-caption text-start px-3">
+              <p>{image.caption}</p>
+            </div>
             <img 
               src={image.src} 
               className="d-block mx-auto mw-100" 
               alt={image.caption} 
             />
-            <div className="carousel-caption">
-              <p>{image.caption}</p>
-            </div>
           </div>
         ))}
       </div>
