@@ -29,7 +29,7 @@ const imagesVCXT03 = [
   },
   {
     src: imageVCXT033,
-    caption: "Alguns problemas apontados na análise: visibilidade de barras de rolagem.",
+    caption: "Alguns problemas apontados na análise: quebras nos textos nas células.",
   }
 ];
 
