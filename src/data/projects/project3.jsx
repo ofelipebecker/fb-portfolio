@@ -36,27 +36,39 @@ const imagesVCXT03 = [
 const imagesVCXT07 = [
   {
     src: imageVCXT071,
-    caption: "Placeholder.",
+    caption: "Exemplo de implementação realizada: tabela de Relatório de Detalhamento por acesso.",
   },
   {
     src: imageVCXT072,
-    caption: "Placeholder.",
+    caption: `
+        Exemplo de implementação realizada: tabelas de Ativos Vinculados e de Licenças Vinculadas.
+    `,
   },
   {
     src: imageVCXT073,
-    caption: "Placeholder.",
+    caption: `
+        Exemplo de implementação realizada: tabela do tipo 'condensada' de Informações de Fatura.
+    `,
   },
   {
     src: imageVCXT074,
-    caption: "Placeholder.",
+    caption: `
+        Exemplo de implementação realizada: tabela de Arquivos Aceitos para Processamento de Fatura
+        de Acordo com Operadora. Tabela do tipo 'condensada', localizada dentro de um accordion do
+        Bootstrap.
+    `,
   },
   {
     src: imageVCXT075,
-    caption: "Placeholder.",
+    caption: `
+        Exemplo de implementação realizada: tabela de Relatório Mensal de Processamento de Faturas.
+        Seguindo o padrão visual definido, está tabela foi implementada em MJML, para ser enviada 
+        aos usuários por e-mail.
+    `,
   },
   {
     src: imageVCXT076,
-    caption: "Placeholder.",
+    caption: "Exemplo de implementação realizada: tabela de Acessos por Empresa.",
   },
 ];
 
