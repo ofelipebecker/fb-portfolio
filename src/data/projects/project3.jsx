@@ -214,7 +214,9 @@ const project3 = {
                     <p className="mt-4">
                         Tendo um padrão de design das tabelas definido, demos início ao processo 
                         de implementação, utilizando a biblioteca DatatablesJS (e seus diversos 
-                        plugins) e Bootstrap.
+                        plugins) e Bootstrap. Também, foram implementadas tabelas especiais, 
+                        seguindo o mesmo padrão, porém desenvolvidas através de MJML, para envio por 
+                        e-mail.
                     </p>
                     <ImageCarousel 
                         id="vcxt-07"
