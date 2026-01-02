@@ -265,10 +265,16 @@ const project3 = {
                 atender desde listas simples até processos mais complexos, como upload de arquivos 
                 em tabelas. Adicionalmente, tivemos que implementar tabelas para e-mails via MJML, 
                 um processo separado com suas próprias dificuldades técnicas. Todo esse trabalho foi 
-                realizado por uma equipe reduzida de 3 desenvolvedores que conciliavam este projeto 
-                com outras demandas paralelas.
+                realizado por uma equipe reduzida de 3 desenvolvedores que conciliavam com outras 
+                demandas paralelas.
             </p>
-            <p className="mb-0 mt-4"></p>
+            <p className="mb-0 mt-4">
+                Este projeto representou um grande crescimento técnico para mim, no qual alcançei 
+                proficiência em DataTables.js, além de evolução em JavaScript e outras bibliotecas. 
+                O feedback positivo dos usuários validou as decisões de design e funcionalidades. 
+                Aprendi a dividir um projeto complexo em blocos entregáveis, o que permitiu manter 
+                qualidade e consistência mesmo com múltiplas demandas simultâneas.
+            </p>
         </>
     ),
 };
