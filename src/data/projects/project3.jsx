@@ -237,9 +237,9 @@ const project3 = {
                         todas as funcionalidades de interação replicam o padrão estabelecido para as 
                         tabelas do VC-X Sonar.
                     </p>
-                <div className="mt-5">
-                    <Project3TableContent></Project3TableContent>
-                </div>
+                    <div className="mt-5">
+                        <Project3TableContent></Project3TableContent>
+                    </div>
                 </>
             ),
         },
