@@ -83,9 +83,12 @@
     --dark-orange: #995812;
     --dark-purple: #611e48;
     --light-gray: #e6e6e6;
+    --lighter-gray: #f8f9fa;
+    --lighter-gray-2: #f2f2f2;
     --light-orange: #ffe9d2;
     --main-orange: #ff931e;
     --main-purple: #6c2250;
+    --medium-gray: #6c757d;
     --react-blue: #58c4dc;
 }
 
@@ -122,6 +125,19 @@ body {
     background-color: var(--main-orange);
 }
 
+.btn.btn-outline-md-gray,
+.btn.btn-outline-md-gray:hover {
+    border-color: var(--medium-gray);
+}
+
+.btn.btn-outline-md-gray:hover {
+    background-color: var(--lighter-gray-2);
+}
+
+.btn.btn-outline-md-gray .bi.bi-toggle-on {
+    color: rgba(var(--bs-success-rgb));
+}
+
 .btn-outline-orange {
     border: 1px solid var(--main-orange);
     color: var(--main-orange);
@@ -147,6 +163,121 @@ body {
 .btn.btn-outline-primary:hover {
     background-color: var(--main-purple);
     color: white;
+}
+
+.carousel-caption {
+    bottom: unset;
+    color: var(--dark-purple);
+    position: relative;
+    left: unset;
+    right: unset;
+    padding-bottom: unset;
+}
+
+.carousel-control-next, 
+.carousel-control-prev {
+    width: 10%; 
+}
+
+.carousel-control-next .carousel-control-next-icon, 
+.carousel-control-prev .carousel-control-prev-icon {
+    background-color: var(--dark-purple);
+    height: 4rem;
+    width: 3rem;
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12) !important;
+}
+
+.carousel-indicators {
+    margin-bottom: 0;
+    position: relative;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: var(--dark-purple);
+    height: 7px;
+}
+
+.carousel-indicators [data-bs-target]:not(.active) {
+    opacity: 0.7;
+}
+
+div.dt-buttons div.dt-button-collection {
+    background: white;
+    border: 1px solid #dee2e6;
+    border-radius: 0.4rem;
+    padding: 0;
+    min-width: unset;
+    max-width: 200px;
+    box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14),
+        0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2) !important;
+}
+
+div.dt-buttons .dt-button-collection .dt-button {
+    padding: 1rem;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    color: #212529;
+}
+
+div.dt-buttons .dt-button-collection .dt-button:not(:last-child) {
+    border-bottom: 1px solid var(--light-gray);
+}
+
+div.dt-buttons .dt-button-collection .dt-button:hover {
+    background-color: var(--lighter-gray);
+}
+
+div.dt-buttons div.dt-button-collection .dt-button-active::after {
+    content: "\F26E";
+    font-family: "bootstrap-icons";
+    font-size: 2rem;
+    line-height: 100%;
+    right: 1rem;
+}
+
+div.dt-container table.dataTable tr > .dtfc-fixed-left::after {
+  box-shadow: inset 10px 0 8px -8px rgba(0, 0, 0, 0.2);
+}
+
+div.dt-container table.dataTable tr > .dtfc-fixed-right::after {
+  box-shadow: inset -10px 0 8px -8px rgba(0, 0, 0, 0.2);
+}
+
+div.dt-container table.dataTable tr > th {
+    border-bottom-width: 0.2rem;
+}
+
+div.dt-container table.dataTable tr > th, 
+div.dt-container table.dataTable tr > td {
+    padding: 1.2rem;
+    vertical-align: middle;
+}
+
+div.dt-container div.dt-length select {
+    font-size: 1.3rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+div.dt-container div.dt-search input {
+    font-size: 1.3rem;
+    padding: 0.5rem;
+}
+
+div.dt-scroll-body table.table.dataTable.table-hover > tbody > tr:hover > * {
+    background-color: var(--lighter-gray);
+    box-shadow: unset;
+}
+
+.dt-button.buttons-colvis span.dt-button-down-arrow {
+    margin-left: 0.8rem;
+}
+
+.dt-paging .pagination .dt-paging-button button {
+    font-size: 1.3rem;
 }
 
 .fw-semibold {
@@ -194,6 +325,30 @@ p {
 
 .max-h-50px {
     max-height: 50px;
+}
+
+.modal-w-fit-content {
+    max-width: fit-content;
+}
+
+.mt-6 {
+  margin-top: 4rem !important;
+}
+
+.mt-7 {
+  margin-top: 5rem !important;
+}
+
+.mt-8 {
+  margin-top: 6rem !important;
+}
+
+.mt-9 {
+  margin-top: 8rem !important;
+}
+
+.mt-10 {
+  margin-top: 10rem !important;
 }
 
 .proj-link div {
