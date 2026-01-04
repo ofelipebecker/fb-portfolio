@@ -15,7 +15,6 @@ const Work = () => {
                             imageSrc={project.imageSrc}
                             tags={project.tags}
                             url={project.url}
-                            disabled={project.disabled}
                         />
                     ))}
                 </div>
