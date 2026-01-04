@@ -4,7 +4,7 @@ import workProjects from "../data/workProjectsData";
 
 const Work = () => {
     return (
-        <div className="container mt-5">
+        <div className="container my-5">
             <div className="row">
                 <div className="col-12 col-lg-10 offset-lg-1 mt-5">
                     <h1>Projetos</h1>
