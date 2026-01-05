@@ -8,6 +8,10 @@ const ProjectPagination = ({ currentProjectId }) => {
     const hasPreviousProject = previousProjectNum > 0;
     const hasNextProject = nextProjectNum <= workProjectsLength;
 
+    const handleLinkClick = () => {
+        window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+    };
+
     return (
         <nav aria-label="Navegação entre projetos">
             <ul className="pagination mb-0">
@@ -17,6 +21,7 @@ const ProjectPagination = ({ currentProjectId }) => {
                             className="page-link fs-4" 
                             to={`/work/project${previousProjectNum}`}
                             aria-label="Projeto anterior"
+                            onClick={handleLinkClick}
                         >
                             ← Anterior
                         </Link>
@@ -32,6 +37,7 @@ const ProjectPagination = ({ currentProjectId }) => {
                             className="page-link fs-4" 
                             to={`/work/project${nextProjectNum}`}
                             aria-label="Próximo projeto"
+                            onClick={handleLinkClick}
                         >
                             Próximo →
                         </Link>
