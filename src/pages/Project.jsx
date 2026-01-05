@@ -1,5 +1,8 @@
-import { useParams, Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
+
+import ProjectBreadcrumb from "../components/ProjectBreadcrumb";
+import ProjectPagination from "../components/ProjectPagination";
 
 const Project = () => {
     const { projectId } = useParams();
@@ -23,16 +26,7 @@ const Project = () => {
         <div className="container">
             <div className="row">
                 <div className="col-12 col-lg-10 offset-lg-1 mt-5 px-3 px-sm-0">
-                    <nav aria-label="breadcrumb">
-                        <ol className="breadcrumb">
-                            <li className="breadcrumb-item">
-                                <Link to="/work">Projetos</Link>
-                            </li>
-                            <li className="breadcrumb-item active" aria-current="page">
-                                {project.title}
-                            </li>
-                        </ol>
-                    </nav>
+                    <ProjectBreadcrumb projectTitle={project.title} />
                     <div className="row">
                         <div className="col-12 mt-5">
                             <h1 className="mb-4">{project.title}</h1>
@@ -95,16 +89,10 @@ const Project = () => {
                         </div>
                     </div>
                     <div className="row my-5"></div>
-                    <nav aria-label="breadcrumb">
-                        <ol className="breadcrumb">
-                            <li className="breadcrumb-item">
-                                <Link to="/work">Projetos</Link>
-                            </li>
-                            <li className="breadcrumb-item active" aria-current="page">
-                                {project.title}
-                            </li>
-                        </ol>
-                    </nav>
+                    <div className="d-flex justify-content-between align-items-center">
+                        <ProjectBreadcrumb projectTitle={project.title} />
+                        <ProjectPagination currentProjectId={projectId} />
+                    </div>
                     <div className="row my-5"></div>
                     <div className="row my-5"></div>
                 </div>
