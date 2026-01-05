@@ -23,4 +23,8 @@ const workProjects = [
     },
 ];
 
+const workProjectsLength = workProjects.length;
+
+export { workProjectsLength };
+
 export default workProjects;
