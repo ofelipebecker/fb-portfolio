@@ -1,6 +1,8 @@
 import { useParams, Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 
+import ProjectPagination from "../components/ProjectPagination";
+
 const Project = () => {
     const { projectId } = useParams();
     const [project, setProject] = useState(null);
@@ -95,16 +97,19 @@ const Project = () => {
                         </div>
                     </div>
                     <div className="row my-5"></div>
-                    <nav aria-label="breadcrumb">
-                        <ol className="breadcrumb">
-                            <li className="breadcrumb-item">
-                                <Link to="/work">Projetos</Link>
-                            </li>
-                            <li className="breadcrumb-item active" aria-current="page">
-                                {project.title}
-                            </li>
-                        </ol>
-                    </nav>
+                    <div className="d-flex justify-content-between align-items-center">
+                        <nav aria-label="breadcrumb">
+                            <ol className="breadcrumb">
+                                <li className="breadcrumb-item">
+                                    <Link to="/work">Projetos</Link>
+                                </li>
+                                <li className="breadcrumb-item active" aria-current="page">
+                                    {project.title}
+                                </li>
+                            </ol>
+                        </nav>
+                        <ProjectPagination currentProjectId={projectId} />
+                    </div>
                     <div className="row my-5"></div>
                     <div className="row my-5"></div>
                 </div>
