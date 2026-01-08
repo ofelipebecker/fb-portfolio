@@ -7,7 +7,7 @@ const Header = () => {
     const location = useLocation();
     const pathname = location.pathname;
 
-    const isProjetosActive = pathname.startsWith("/work");
+    const isWorkPage = pathname.startsWith("/work");
 
     return (
         <header>
@@ -58,7 +58,7 @@ const Header = () => {
                                             <Link
                                                 to="/"
                                                 className={`nav-link ${
-                                                    !isProjetosActive
+                                                    !isWorkPage
                                                         ? "active"
                                                         : ""
                                                 }`}
@@ -70,7 +70,7 @@ const Header = () => {
                                             <Link
                                                 to="/work"
                                                 className={`nav-link ${
-                                                    isProjetosActive
+                                                    isWorkPage
                                                         ? "active"
                                                         : ""
                                                 }`}
