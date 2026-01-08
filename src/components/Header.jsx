@@ -57,11 +57,9 @@ const Header = () => {
                                         <li className="nav-item">
                                             <Link
                                                 to="/"
-                                                className={`nav-link ${
-                                                    !isWorkPage
-                                                        ? "active"
-                                                        : ""
-                                                }`}
+                                                className={
+                                                    `nav-link ${!isWorkPage ? "active" : ""}`
+                                                }
                                             >
                                                 Sobre
                                             </Link>
@@ -69,11 +67,9 @@ const Header = () => {
                                         <li className="nav-item">
                                             <Link
                                                 to="/work"
-                                                className={`nav-link ${
-                                                    isWorkPage
-                                                        ? "active"
-                                                        : ""
-                                                }`}
+                                                className={
+                                                    `nav-link ${isWorkPage ? "active" : ""}`
+                                                }
                                             >
                                                 Projetos
                                             </Link>
