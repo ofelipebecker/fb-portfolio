@@ -7,6 +7,7 @@ const Header = () => {
     const location = useLocation();
     const pathname = location.pathname;
 
+    const isHomePage = pathname === "/";
     const isWorkPage = pathname.startsWith("/work");
 
     return (
@@ -39,6 +40,19 @@ const Header = () => {
                     >
                         <div className="d-flex flex-column w-100">
                             <div className="row d-none d-lg-flex">
+                                {isHomePage && (
+                                    <div className="col-10 offset-1 text-end">
+                                        <div className="text-nowrap">
+                                            <button className="btn btn-lg btn-link text-light">
+                                                Português
+                                            </button>
+                                            <span className="text-light"> | </span>
+                                            <button className="btn btn-lg btn-link text-light">
+                                                English
+                                            </button>
+                                        </div>
+                                    </div>
+                                )}
                                 <div className="col-12 my-5 text-center">
                                     <img
                                         src={logoVertical}
