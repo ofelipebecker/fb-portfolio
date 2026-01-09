@@ -45,9 +45,9 @@ const Header = () => {
                                         className="max-h-130px w-auto"
                                         alt="logo"
                                     />
-                                    <ul className="list-unstyled fst-italic mt-4 text-orange">
-                                                                                <li>Palhoça, SC - Brasil</li>
-                                    </ul>
+                                    <p className="fst-italic mt-4 text-orange">
+                                        Palhoça, SC - Brasil
+                                    </p>
                                 </div>
                             </div>
                             <div className="row">
