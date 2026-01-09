@@ -1,7 +1,8 @@
-import logoVertical from "../assets/images/logo-vertical-orange-ptbr.svg";
-import logoHorizontal from "../assets/images/logo-horizontal-orange-ptbr.svg";
-import purpleArrow from "../assets/images/purple-arrow-home.png";
 import { Link, useLocation } from "react-router-dom";
+
+import logoHorizontal from "../assets/images/logo-horizontal-orange-ptbr.svg";
+import logoVertical from "../assets/images/logo-vertical-orange-ptbr.svg";
+import purpleArrow from "../assets/images/purple-arrow-home.png";
 
 const Header = () => {
     const location = useLocation();
