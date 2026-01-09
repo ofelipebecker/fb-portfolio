@@ -1,5 +1,5 @@
-import logoVertical from "../assets/images/logo-v-orange.png";
-import logoHorizontal from "../assets/images/logo-h-orange.png";
+import logoVertical from "../assets/images/logo-vertical-orange-ptbr.svg";
+import logoHorizontal from "../assets/images/logo-horizontal-orange-ptbr.svg";
 import purpleArrow from "../assets/images/purple-arrow-home.png";
 import { Link, useLocation } from "react-router-dom";
 
