@@ -46,8 +46,7 @@ const Header = () => {
                                         alt="logo"
                                     />
                                     <ul className="list-unstyled fst-italic mt-4 text-orange">
-                                        <li>Front-End</li>
-                                        <li>Palhoça, SC - Brasil</li>
+                                                                                <li>Palhoça, SC - Brasil</li>
                                     </ul>
                                 </div>
                             </div>
