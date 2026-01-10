@@ -1,9 +1,11 @@
-import { createContext, useState, useContext } from 'react';
+import { createContext, useState, useContext, useEffect } from 'react';
 
 const LanguageContext = createContext();
 
 export const useLanguage = () => {
-    return useContext(LanguageContext);
+    const context = useContext(LanguageContext);
+
+    return context;
 };
 
 export const LanguageProvider = ({ children }) => {
@@ -13,15 +15,12 @@ export const LanguageProvider = ({ children }) => {
         return saved || 'pt';
     });
     
-    const updateLanguage = (newLanguage) => {
-        setLanguage(newLanguage);
-        localStorage.setItem('portfolio-language', newLanguage);
-    };
+    useEffect(() => {
+        localStorage.setItem('portfolio-language', language);
+    }, [language]);
     
     return (
-        <LanguageContext.Provider 
-            value={{ language, setLanguage: updateLanguage }}
-        >
+        <LanguageContext.Provider value={{ language, setLanguage }}>
             {children}
         </LanguageContext.Provider>
     );
