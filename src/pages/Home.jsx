@@ -17,7 +17,10 @@ const Home = () => {
                     title={data.skills.title}
                     chartData={data.skills.chart}
                 />
-                <EducationCard />
+                <EducationCard 
+                    title={data.education.title}
+                    tableData={data.education.table}
+                />
             </div>
             <div className="row px-3 px-sm-0">
                 <LocationCard />
