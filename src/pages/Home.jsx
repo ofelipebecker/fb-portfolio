@@ -13,7 +13,10 @@ const Home = () => {
         <div className="container mt-5 text-center">
             <h1 className="mb-5">{data.home.title}</h1>
             <div className="row g-5 px-3 px-sm-0">
-                <SkillsCard />
+                <SkillsCard 
+                    title={data.skills.title}
+                    chartData={data.skills.chart}
+                />
                 <EducationCard />
             </div>
             <div className="row px-3 px-sm-0">

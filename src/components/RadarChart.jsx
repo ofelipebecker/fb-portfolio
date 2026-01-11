@@ -18,18 +18,14 @@ ChartJS.register(
     Legend
 );
 
-const RadarChart = () => {
+const RadarChart = ({ chartData }) => {
+    const { labels, tooltipLabel } = chartData;
+
     const data = {
-        labels: [
-            "JavaScript",
-            "Html/CSS",
-            "Bootstrap",
-            "React",
-            "Bibliotecas de JS",
-        ],
+        labels: labels,
         datasets: [
             {
-                label: "Habilidade",
+                label: tooltipLabel,
                 data: [80, 90, 85, 70, 80],
                 backgroundColor: "rgba(255, 147, 30, 0.2)",
                 borderColor: "#ff931e",
