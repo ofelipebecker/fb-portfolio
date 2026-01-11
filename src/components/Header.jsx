@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useLanguage } from "../context/LanguageContext";
 
@@ -8,12 +9,17 @@ import purpleArrow from "../assets/images/purple-arrow-home.png";
 const Header = () => {
     const { language, setLanguage } = useLanguage();
     const isLanguagePT = language === "pt";
+    const [ data, setData ] = useState({});
 
     const location = useLocation();
     const pathname = location.pathname;
 
     const isHomePage = pathname === "/";
     const isWorkPage = pathname.startsWith("/work");
+
+    useEffect(() => {
+        import(`../data/translations/header-${language}.json`).then(data => setData(data.default));
+    }, [language]);
 
     return (
         <header>
@@ -73,7 +79,7 @@ const Header = () => {
                                         alt="logo"
                                     />
                                     <p className="fst-italic mt-4 text-orange">
-                                        Palhoça, SC - Brasil
+                                        {data.location}
                                     </p>
                                 </div>
                             </div>
@@ -87,7 +93,7 @@ const Header = () => {
                                                     `nav-link ${!isWorkPage ? "active" : ""}`
                                                 }
                                             >
-                                                Sobre
+                                                {data.nav.about}
                                             </Link>
                                         </li>
                                         <li className="nav-item">
@@ -97,7 +103,7 @@ const Header = () => {
                                                     `nav-link ${isWorkPage ? "active" : ""}`
                                                 }
                                             >
-                                                Projetos
+                                                {data.nav.work}
                                             </Link>
                                         </li>
                                     </ul>
