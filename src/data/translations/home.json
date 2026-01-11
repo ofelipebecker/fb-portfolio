@@ -15,6 +15,38 @@
         ],
         "tooltipLabel": "Skill"
       }
+    }, 
+    "education": {
+      "title": "Education",
+      "table": {
+        "headers": [
+          "Course",
+          "Institution", 
+          "Date"
+        ],
+        "body": [
+          {
+            "course": "Bachelor's Degree in Design",
+            "institution": "UFSC",
+            "date": "2008 - 2014"
+          },
+          {
+            "course": "JavaScript Algorithms and Data Structures Certification",
+            "institution": "FreeCodeCamp", 
+            "date": "2020"
+          },
+          {
+            "course": "Front End Development Libraries (React + Redux)",
+            "institution": "FreeCodeCamp",
+            "date": "Ongoing"
+          },
+          {
+            "course": "EnglishScore Proficiency - Level CEFR C1",
+            "institution": "British Council",
+            "date": "2020"
+          }
+        ]
+      }
     }
   },
   "pt": {
@@ -32,6 +64,38 @@
           "Bibliotecas de JS"
         ],
         "tooltipLabel": "Habilidade"
+      }
+    }, 
+    "education": {
+      "title": "Educação",
+      "table": {
+        "headers": [
+          "Curso",
+          "Instituição",
+          "Data"
+        ],
+        "body": [
+          {
+            "course": "Bacharelado em Design",
+            "institution": "UFSC",
+            "date": "2008 - 2014"
+          },
+          {
+            "course": "JavaScript Algorithms and Data Structures Certification",
+            "institution": "FreeCodeCamp",
+            "date": "2020"
+          },
+          {
+            "course": "Front End Development Libraries (React + Redux)",
+            "institution": "FreeCodeCamp",
+            "date": "Em andamento"
+          },
+          {
+            "course": "EnglishScore Proficiency - Level CEFR C1",
+            "institution": "British Council",
+            "date": "2020"
+          }
+        ]
       }
     }
   }
