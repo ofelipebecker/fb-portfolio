@@ -1,10 +1,14 @@
 import { Link, useLocation } from "react-router-dom";
+import { useLanguage } from "../context/LanguageContext";
 
 import logoHorizontal from "../assets/images/logo-horizontal-orange-ptbr.svg";
 import logoVertical from "../assets/images/logo-vertical-orange-ptbr.svg";
 import purpleArrow from "../assets/images/purple-arrow-home.png";
 
 const Header = () => {
+    const { language, setLanguage } = useLanguage();
+    const isLanguagePT = language === "pt";
+
     const location = useLocation();
     const pathname = location.pathname;
 
@@ -44,11 +48,19 @@ const Header = () => {
                                 {isHomePage && (
                                     <div className="col-10 offset-1 text-end">
                                         <div className="text-nowrap">
-                                            <button className="btn btn-lg btn-link text-light">
+                                            <button 
+                                                className="btn btn-lg text-light"
+                                                onClick={() => setLanguage('pt')}
+                                            >   
+                                                {isLanguagePT && ('✓ ')}
                                                 Português
                                             </button>
-                                            <span className="text-light"> | </span>
-                                            <button className="btn btn-lg btn-link text-light">
+                                            <span className="text-light">|</span>
+                                            <button 
+                                                className="btn btn-lg text-light"
+                                                onClick={() => setLanguage('en')}
+                                            >   
+                                                {!isLanguagePT && ('✓ ')}
                                                 English
                                             </button>
                                         </div>
