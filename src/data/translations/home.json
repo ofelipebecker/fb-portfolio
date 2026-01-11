@@ -1,0 +1,38 @@
+{
+  "en": {
+    "home": {
+      "title": "About"
+    },
+    "skills": {
+      "title": "Skills",
+      "chart": {
+        "labels": [
+          "JavaScript",
+          "HTML/CSS",
+          "Bootstrap",
+          "React",
+          "JS Libraries"
+        ],
+        "tooltipLabel": "Skill"
+      }
+    }
+  },
+  "pt": {
+    "home": {
+      "title": "Sobre"
+    },
+    "skills": {
+      "title": "Habilidades",
+      "chart": {
+        "labels": [
+          "JavaScript",
+          "HTML/CSS",
+          "Bootstrap",
+          "React",
+          "Bibliotecas de JS"
+        ],
+        "tooltipLabel": "Habilidade"
+      }
+    }
+  }
+}
