@@ -2,8 +2,8 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useLanguage } from "../context/LanguageContext";
 
-import logoHorizontal from "../assets/images/logo-horizontal-orange-ptbr.svg";
-import logoVertical from "../assets/images/logo-vertical-orange-ptbr.svg";
+import logoHorizontal from "../assets/images/logo-horizontal-orange-en.svg";
+import logoVertical from "../assets/images/logo-vertical-orange-en.svg";
 import purpleArrow from "../assets/images/purple-arrow-home.png";
 
 const Header = () => {
