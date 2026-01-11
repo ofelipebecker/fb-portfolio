@@ -1,6 +1,7 @@
-import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useLanguage } from "../context/LanguageContext";
+
+import headerTranslations from '../data/translations/header.json';
 
 import logoHorizontal from "../assets/images/logo-horizontal-orange-en.svg";
 import logoVertical from "../assets/images/logo-vertical-orange-en.svg";
@@ -9,17 +10,14 @@ import purpleArrow from "../assets/images/purple-arrow-home.png";
 const Header = () => {
     const { language, setLanguage } = useLanguage();
     const isLanguagePT = language === "pt";
-    const [ data, setData ] = useState({});
+
+    const data = headerTranslations[language];
 
     const location = useLocation();
     const pathname = location.pathname;
 
     const isHomePage = pathname === "/";
     const isWorkPage = pathname.startsWith("/work");
-
-    useEffect(() => {
-        import(`../data/translations/header-${language}.json`).then(data => setData(data.default));
-    }, [language]);
 
     return (
         <header>
