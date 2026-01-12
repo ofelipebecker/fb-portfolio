@@ -2,7 +2,7 @@ import RadarChart from "../components/RadarChart";
 
 import ChartJSLogo from "../assets/images/chartjs-logo.svg";
 
-const SkillsCard = ({title, chartData }) => {
+const SkillsCard = ({ title, chartData }) => {
     return (
         <div className="col-12 col-lg-6">
             <div className="card border-0 h-100 rounded-3 shadow-sm">

@@ -1,6 +1,6 @@
 import CourseTable from "../components/CourseTable";
 
-const EducationCard = ({title, tableData }) => {
+const EducationCard = ({ title, tableData }) => {
     return (
         <div className="col-12 col-lg-6">
             <div className="card border-0 h-100 rounded-3 shadow-sm">
