@@ -47,6 +47,14 @@
           }
         ]
       }
+    }, 
+    "location": {
+      "title": "Where is Felipe?",
+      "map": {
+        "address": "Hello! I'm in Palhoça/SC - Brazil!",
+        "contactMessage": "Contact me at:",
+        "buttonText": "Show"
+      }
     }
   },
   "pt": {
@@ -96,6 +104,14 @@
             "date": "2020"
           }
         ]
+      }
+    }, 
+    "location": {
+      "title": "Onde está Felipe?",
+      "map": {
+        "address": "Olá! Estou em Palhoça/SC - Brasil!",
+        "contactMessage": "Entre em contato comigo em:",
+        "buttonText": "Mostrar"
       }
     }
   }
