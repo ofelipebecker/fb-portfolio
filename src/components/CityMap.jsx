@@ -7,10 +7,12 @@ mapboxgl.accessToken =
 
 const cityCoordinates = [-48.6769029, -27.642029];
 
-const CityMap = () => {
+const CityMap = ({ mapData }) => {
     const mapContainerRef = useRef(null);
     const mapRef = useRef(null);
     const [zoomedIn, setZoomedIn] = useState(false);
+
+    const { address, contactMessage, buttonText } = mapData;
 
     const zoomToCity = () => {
         if (!mapRef.current) return;
@@ -25,8 +27,8 @@ const CityMap = () => {
 
         const popup = new mapboxgl.Popup({ offset: 25 }).setHTML(`
             <ul class="list-unstyled text-start text-purple mb-0">
-                <li class="mb-4">Olá! Estou em Palhoça/SC - Brasil!</li>
-                <li>Entre em contato comigo em:
+                <li class="mb-4">${address}</li>
+                <li>${contactMessage}
                     <ul class="list-unstyled">
                         <li class="my-2">📞 +55 (48) 999-847-042</li>
                         <li>✉️ ofelipebecker@proton.me</li>
@@ -69,7 +71,7 @@ const CityMap = () => {
                     onClick={zoomToCity}
                     className="btn btn-purple btn-lg mb-3 position-absolute start-50 top-50 translate-middle z-1"
                 >
-                    Mostrar
+                    {buttonText}
                 </button>
             )}
             <div

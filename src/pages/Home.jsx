@@ -23,7 +23,10 @@ const Home = () => {
                 />
             </div>
             <div className="row px-3 px-sm-0">
-                <LocationCard />
+                <LocationCard 
+                    title={data.location.title}
+                    mapData={data.location.map}
+                />
             </div>
             <div className="row my-5"></div>
             <div className="row my-5 d-none d-lg-flex"></div>
