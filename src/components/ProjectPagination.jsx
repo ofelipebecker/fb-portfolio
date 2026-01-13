@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { workProjectsLength } from "../data/workProjectsData";
+import { workProjectsLength } from "../data/translations/workProjectsData-pt";
 
 const ProjectPagination = ({ currentProjectId }) => {
     const currentProjectNum = Number(currentProjectId.replace('project', ''));
