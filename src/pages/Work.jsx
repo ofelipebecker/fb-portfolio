@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useLanguage } from "../context/LanguageContext";
 
-import ProjectLink from "../components/ProjectLink";
+import ProjectLink from "../components/work/ProjectLink";
 
 const Work = () => {
     const { language } = useLanguage();

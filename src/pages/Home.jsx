@@ -1,9 +1,9 @@
 import { useLanguage } from '../context/LanguageContext';
 import homeTranslations from '../data/translations/home.json';
 
-import EducationCard from "../components/EducationCard";
-import LocationCard from "../components/LocationCard";
-import SkillsCard from "../components/SkillsCard";
+import EducationCard from "../components/home/EducationCard";
+import LocationCard from "../components/home/LocationCard";
+import SkillsCard from "../components/home/SkillsCard";
 
 const Home = () => {
     const { language } = useLanguage();

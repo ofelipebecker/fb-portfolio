@@ -1,6 +1,6 @@
-import { useLanguage } from "../context/LanguageContext";
+import { useLanguage } from "../../context/LanguageContext";
 
-import ReactLogo from "../assets/images/react-logo.svg";
+import ReactLogo from "../../assets/images/react-logo.svg";
 
 const Footer = () => {
     const { language } = useLanguage();

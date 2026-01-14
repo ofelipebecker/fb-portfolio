@@ -1,11 +1,11 @@
 import { Link, useLocation } from "react-router-dom";
-import { useLanguage } from "../context/LanguageContext";
+import { useLanguage } from "../../context/LanguageContext";
 
-import headerTranslations from '../data/translations/header.json';
+import headerTranslations from '../../data/translations/header.json';
 
-import logoHorizontal from "../assets/images/logo-horizontal-orange-en.svg";
-import logoVertical from "../assets/images/logo-vertical-orange-en.svg";
-import purpleArrow from "../assets/images/purple-arrow-home.png";
+import logoHorizontal from "../../assets/images/logo-horizontal-orange-en.svg";
+import logoVertical from "../../assets/images/logo-vertical-orange-en.svg";
+import purpleArrow from "../../assets/images/purple-arrow-home.png";
 
 const Header = () => {
     const { language, setLanguage } = useLanguage();

@@ -1,4 +1,4 @@
-import CityMap from "../components/CityMap";
+import CityMap from "../../components/home/CityMap";
 
 const LocationCard = ({ title, mapData }) => {
     return (
