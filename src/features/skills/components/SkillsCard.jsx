@@ -1,4 +1,4 @@
-import RadarChart from "../components/RadarChart";
+import RadarChart from "./RadarChart";
 
 import ChartJSLogo from "../../../assets/images/chartjs-logo.svg";
 
