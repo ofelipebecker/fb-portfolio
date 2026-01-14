@@ -3,7 +3,7 @@ import homeTranslations from '../data/translations/home.json';
 
 import EducationCard from "../components/home/EducationCard";
 import LocationCard from "../components/home/LocationCard";
-import SkillsCard from "../components/home/SkillsCard";
+import SkillsCard from "../features/skills/components/SkillsCard";
 
 const Home = () => {
     const { language } = useLanguage();

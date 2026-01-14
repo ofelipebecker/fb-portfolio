@@ -1,6 +1,6 @@
-import RadarChart from "../../components/home/RadarChart";
+import RadarChart from "../components/RadarChart";
 
-import ChartJSLogo from "../../assets/images/chartjs-logo.svg";
+import ChartJSLogo from "../../../assets/images/chartjs-logo.svg";
 
 const SkillsCard = ({ title, chartData }) => {
     return (
