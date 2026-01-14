@@ -1,7 +1,7 @@
 import { useLanguage } from '../context/LanguageContext';
 import homeTranslations from '../data/translations/home.json';
 
-import EducationCard from "../components/home/EducationCard";
+import EducationCard from "../features/education/components/EducationCard";
 import LocationCard from "../components/home/LocationCard";
 import SkillsCard from "../features/skills/components/SkillsCard";
 

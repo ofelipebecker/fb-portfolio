@@ -1,4 +1,4 @@
-import CourseTable from "../../components/home/CourseTable";
+import CourseTable from "./CourseTable";
 
 const EducationCard = ({ title, tableData }) => {
     return (
