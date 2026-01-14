@@ -2,7 +2,7 @@ import { useLanguage } from '../context/LanguageContext';
 import homeTranslations from '../data/translations/home.json';
 
 import EducationCard from "../features/education/components/EducationCard";
-import LocationCard from "../components/home/LocationCard";
+import LocationCard from "../features/location/components/LocationCard";
 import SkillsCard from "../features/skills/components/SkillsCard";
 
 const Home = () => {
