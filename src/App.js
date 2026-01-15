@@ -1,8 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { LanguageProvider } from "./context/LanguageContext";
 
-import Footer from "./components/common/Footer";
-import Header from "./components/common/Header";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
 import Home from "./pages/Home";
 import Work from "./pages/Work";
 import Project from "./pages/Project";
