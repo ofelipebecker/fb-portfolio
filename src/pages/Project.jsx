@@ -1,8 +1,8 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 
-import ProjectBreadcrumb from "../components/ProjectBreadcrumb";
-import ProjectPagination from "../components/ProjectPagination";
+import ProjectBreadcrumb from "../features/projects/components/ProjectBreadcrumb";
+import ProjectPagination from "../features/projects/components/ProjectPagination";
 
 const Project = () => {
     const { projectId } = useParams();
