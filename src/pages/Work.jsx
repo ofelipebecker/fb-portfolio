@@ -9,7 +9,7 @@ const Work = () => {
     const [workProjects, setWorkProjects] = useState(null);
     
     useEffect(() => {
-        import(`../data/translations/workProjectsData-${language}.js`)
+        import(`../features/work/data/workProjectsData-${language}.js`)
             .then(module => setWorkProjects(module.default));
     }, [language]);
 
