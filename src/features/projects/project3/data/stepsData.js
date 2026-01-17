@@ -1,4 +1,4 @@
-export const projectStepsData = [
+export const stepsData = [
     {
         title: "Pesquisa e Análise",
         subtitle: "Referências Sobre Design de Tabelas",
