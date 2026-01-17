@@ -4,12 +4,12 @@ import SingleImageModal from "../../../../components/SingleImageModal";
 import DemoTable from "./DemoTable";
 
 import imageVCXT04 from "../../../../assets/images/proj-vcx-tables/proj-vcx-tables-4.png"
-import imageVCXT071 from "../../assets/images/proj-vcx-tables/proj-vcx-tables-7-1.png";
-import imageVCXT072 from "../../assets/images/proj-vcx-tables/proj-vcx-tables-7-2.png";
-import imageVCXT073 from "../../assets/images/proj-vcx-tables/proj-vcx-tables-7-3.png";
-import imageVCXT074 from "../../assets/images/proj-vcx-tables/proj-vcx-tables-7-4.png";
-import imageVCXT075 from "../../assets/images/proj-vcx-tables/proj-vcx-tables-7-5.png";
-import imageVCXT076 from "../../assets/images/proj-vcx-tables/proj-vcx-tables-7-6.png";
+import imageVCXT071 from "../../../../assets/images/proj-vcx-tables/proj-vcx-tables-7-1.png";
+import imageVCXT072 from "../../../../assets/images/proj-vcx-tables/proj-vcx-tables-7-2.png";
+import imageVCXT073 from "../../../../assets/images/proj-vcx-tables/proj-vcx-tables-7-3.png";
+import imageVCXT074 from "../../../../assets/images/proj-vcx-tables/proj-vcx-tables-7-4.png";
+import imageVCXT075 from "../../../../assets/images/proj-vcx-tables/proj-vcx-tables-7-5.png";
+import imageVCXT076 from "../../../../assets/images/proj-vcx-tables/proj-vcx-tables-7-6.png";
 
 const imagesVCXT07 = [
     {
