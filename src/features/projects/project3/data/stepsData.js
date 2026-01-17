@@ -2,7 +2,7 @@ export const stepsData = [
     {
         title: "Pesquisa e Análise",
         subtitle: "Referências Sobre Design de Tabelas",
-        image: "proj-vcx-tables-2.png",
+        image: "https://placehold.co/600x400",
         imageCaption: "Princípios de design para tabelas do Material Design.",
     },
     {
@@ -16,7 +16,7 @@ export const stepsData = [
     {
         title: "Modelagem",
         subtitle: "Desenho de Alternativas",
-        image: "proj-vcx-tables-5.png",
+        image: "https://placehold.co/600x400",
         imageCaption: "Exemplo de desenho de alternativas: tabela de Ativos.",
     },
     {
