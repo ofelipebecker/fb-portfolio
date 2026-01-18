@@ -5,7 +5,7 @@ import ProjectIntro from "../../features/projects/components/ProjectIntro";
 import ProjectPagination from "../../features/projects/components/ProjectPagination";
 
 import { introData } from "../../features/projects/project3/data/introData";
-import { steps } from "../../features/projects/project3/data/steps";
+import { steps } from "../../features/projects/project3/steps";
 
 const Project = () => {
     const { projectId } = useParams();
