@@ -5,7 +5,7 @@ import ProjectIntro from "../../features/projects/components/ProjectIntro";
 import ProjectPagination from "../../features/projects/components/ProjectPagination";
 import ProjectSteps from "../../features/projects/components/ProjectSteps";
 
-import { introData } from "../../features/projects/project3/data/introData";
+import { intro } from "../../features/projects/project3/intro";
 import { steps } from "../../features/projects/project3/steps";
 
 const Project = () => {
@@ -16,11 +16,11 @@ const Project = () => {
         <div className="container">
             <div className="row">
                 <div className="col-12 col-lg-10 offset-lg-1 mt-5 px-3 px-sm-0">
-                    <ProjectBreadcrumb projectTitle={introData.title} />
-                    <ProjectIntro data={introData} /> 
+                    <ProjectBreadcrumb projectTitle={intro.data.title} />
+                    <ProjectIntro intro={intro} /> 
                     <ProjectSteps steps={projectSteps} />
                     <div className="d-flex justify-content-between align-items-center">
-                        <ProjectBreadcrumb projectTitle={introData.title} />
+                        <ProjectBreadcrumb projectTitle={intro.data.title} />
                         <ProjectPagination currentProjectId={projectId} />
                     </div>
                     <div className="row my-5"></div>
