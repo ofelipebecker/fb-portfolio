@@ -1,9 +1,15 @@
-import ImageCarousel from "../../../../components/ImageCarousel";
+import ImageCarousel from "../../components/ImageCarousel";
+import SingleFigure from "../../../../components/SingleFigure";
 import SingleFigureModal from "../../../../components/SingleFigureModal";
 
 import DemoTable from "./DemoTable";
 
+import imageVCXT02 from "../../../../assets/images/proj-vcx-tables/proj-vcx-tables-2.png";
+import imageVCXT031 from "../../../../assets/images/proj-vcx-tables/proj-vcx-tables-3-1.png";
+import imageVCXT032 from "../../../../assets/images/proj-vcx-tables/proj-vcx-tables-3-2.png";
+import imageVCXT033 from "../../../../assets/images/proj-vcx-tables/proj-vcx-tables-3-3.png";
 import imageVCXT04 from "../../../../assets/images/proj-vcx-tables/proj-vcx-tables-4.png"
+import imageVCXT05 from "../../../../assets/images/proj-vcx-tables/proj-vcx-tables-5.png";
 import imageVCXT071 from "../../../../assets/images/proj-vcx-tables/proj-vcx-tables-7-1.png";
 import imageVCXT072 from "../../../../assets/images/proj-vcx-tables/proj-vcx-tables-7-2.png";
 import imageVCXT073 from "../../../../assets/images/proj-vcx-tables/proj-vcx-tables-7-3.png";
@@ -11,52 +17,24 @@ import imageVCXT074 from "../../../../assets/images/proj-vcx-tables/proj-vcx-tab
 import imageVCXT075 from "../../../../assets/images/proj-vcx-tables/proj-vcx-tables-7-5.png";
 import imageVCXT076 from "../../../../assets/images/proj-vcx-tables/proj-vcx-tables-7-6.png";
 
+const imagesVCXT03 = [imageVCXT031, imageVCXT032, imageVCXT033];
+
 const imagesVCXT07 = [
-    {
-        src: imageVCXT071,
-        caption: "Exemplo de implementação realizada: tabela de Relatório de Detalhamento por acesso.",
-    },
-    {
-        src: imageVCXT072,
-        caption: `
-            Exemplo de implementação realizada: tabelas de Ativos Vinculados e de Licenças Vinculadas.
-        `,
-    },
-    {
-        src: imageVCXT073,
-        caption: `
-            Exemplo de implementação realizada: tabela do tipo 'condensada' de Informações de Fatura.
-        `,
-    },
-    {
-        src: imageVCXT074,
-        caption: `
-            Exemplo de implementação realizada: tabela de Arquivos Aceitos para Processamento de Fatura
-            de Acordo com Operadora. Tabela do tipo 'condensada', localizada dentro de um accordion do
-            Bootstrap.
-        `,
-    },
-    {
-        src: imageVCXT075,
-        caption: `
-            Exemplo de implementação realizada: tabela de Relatório Mensal de Processamento de Faturas.
-            Seguindo o padrão visual definido, está tabela foi implementada em MJML, para ser enviada 
-            aos usuários por e-mail.
-        `,
-    },
-    {
-        src: imageVCXT076,
-        caption: "Exemplo de implementação realizada: tabela de Acessos por Empresa.",
-    },
+    imageVCXT071, 
+    imageVCXT072, 
+    imageVCXT073, 
+    imageVCXT074, 
+    imageVCXT075, 
+    imageVCXT076
 ];
 
 export const StepsContent = [
-    () => (
+    ({ captions='' }) => (
         <>
             <p className="my-4">
                 Eu pesquisei artigos e documentos sobre design de tabelas, para 
                 encontrar boas referências e práticas já consagradas e testadas para 
-                seguir.
+                seguir. 
             </p>
             <ul className="mb-5">
                 <li>
@@ -76,9 +54,14 @@ export const StepsContent = [
                     </a>
                 </li>
             </ul>
+            <SingleFigure 
+                src={imageVCXT02} 
+                alt={captions[0]}
+                caption={captions[0]}
+            />
         </>
     ),
-    () => (
+    ({ captions='' }) => (
         <>
             <p className="my-4 text-nowrap">
                 Eu fiz uma análise de usabilidade das tabelas seguindo o método da&nbsp;
@@ -92,9 +75,14 @@ export const StepsContent = [
                 </a>
                 &nbsp;de Nielsen.
             </p>
+            <ImageCarousel 
+                id="vcxt-03"
+                images={imagesVCXT03}
+                captions={captions}
+            />
         </>
     ),
-    () => (
+    ({ captions='' }) => (
         <>
             <p className="my-4">
                 Adicionei ao VC-X Sonar ferramentas para gerar mapas de calor. 
@@ -103,21 +91,26 @@ export const StepsContent = [
                 mouse e também de scroll.
             </p>
             <SingleFigureModal
-                modalId = "vcxt-04-modal"
+                modalId="vcxt-04-modal"
                 imageSrc={imageVCXT04}
-                caption = "Exemplo de mapa de calor de movimentações de mouse do usuário, na tabela de Faturas."
+                caption={captions[0]}
             />
         </>
     ),
-    () => (
+    ({ captions='' }) => (
         <>
             <p className="mt-4">
                 A seguir, trabalhei em alguns desenhos à mão de alternativas para o novo 
                 padrão das tabelas.
             </p>
+            <SingleFigure 
+                src={imageVCXT05} 
+                alt={captions[0]}
+                caption={captions[0]}
+            />
         </>
     ),
-    () => (
+    ({ captions='' }) => (
         <>
             <p className="mt-4">
                 Tendo feito a pesquisa e análise do estado atual, defini princípios de 
@@ -142,7 +135,7 @@ export const StepsContent = [
             </ul>
         </>
     ),
-    () => (
+    ({ captions='' }) => (
         <>
             <p className="mt-4">
                 Tendo um padrão de design das tabelas definido, demos início ao processo 
@@ -154,10 +147,11 @@ export const StepsContent = [
             <ImageCarousel 
                 id="vcxt-07"
                 images={imagesVCXT07}
+                captions={captions}
             />
         </>
     ),
-    () => (
+    ({ captions='' }) => (
         <>
             <p className="my-4">
                 Para demonstrar na prática as funcionalidades implementadas, desenvolvi esta 

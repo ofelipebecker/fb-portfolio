@@ -12,21 +12,7 @@ const ProjectSteps = ({ steps }) => {
                                 <h2>{data.title}</h2>
                                 <h3>{data.subtitle}</h3>
                                 <div className="card-body d-flex flex-column p-0">
-                                    <div><StepContent /></div>
-                                    {data.image && (
-                                        <figure className="figure mb-0">
-                                            <img
-                                                src={data.image}
-                                                alt={data.title}
-                                                className="figure-img img-fluid border mb-0"
-                                            />
-                                            {data.imageCaption && (
-                                                <figcaption className="figure-caption">
-                                                    <em>{data.imageCaption}</em>
-                                                </figcaption>
-                                            )}
-                                        </figure>
-                                    )}
+                                    <div><StepContent captions={data.imagesCaptions}/></div>
                                 </div>
                             </div>
                         </div>
