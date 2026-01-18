@@ -1,5 +1,5 @@
 import ImageCarousel from "../../components/ImageCarousel";
-import SingleImageModal from "../../components/SingleImageModal";
+import SingleFigureModal from "../../components/SingleFigureModal";
 
 // VC-X Tables Images
 import imageVCXT01 from "../../assets/images/proj-vcx-tables/proj-vcx-tables-1.png";
@@ -155,7 +155,7 @@ const project3 = {
                         ferramentas, pude fazer análises de mapas de cliques, de movimentação de
                         mouse e também de scroll.
                     </p>
-                    <SingleImageModal
+                    <SingleFigureModal
                         modalId = "vcxt-04-modal"
                         imageSrc={imageVCXT04}
                         caption = "Exemplo de mapa de calor de movimentações de mouse do usuário, na tabela de Faturas."
