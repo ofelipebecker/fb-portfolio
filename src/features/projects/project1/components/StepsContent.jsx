@@ -228,7 +228,8 @@ export const StepsContent = [
                         border: "none",
                         overflow: "auto",
                     }}
-                ></iframe>
+                >
+                </iframe>
             </div>
         </>
     ),
