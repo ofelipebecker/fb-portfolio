@@ -1,3 +1,5 @@
+import SingleFigure from "../../../../components/SingleFigure";
+
 export const StepsContent = [
     ({ captions='', images }) => (
         <>
@@ -43,6 +45,11 @@ export const StepsContent = [
                 analisados foram: Google Analytics, Conta Azul, Conta Mínima, Meu Dinheiro 
                 Invest, Mobills, Quick Books e Sistema Soma.
             </p>
+            <SingleFigure 
+                image={images[0]} 
+                alt={captions[0]}
+                caption={captions[0]}
+            />
         </>
     ),
     ({ captions='', images }) => (
@@ -72,6 +79,11 @@ export const StepsContent = [
                 importantes, a partir da quantidade de cliques e de movimentações nos 
                 elementos das páginas.
             </p>
+            <SingleFigure 
+                image={images[0]} 
+                alt={captions[0]}
+                caption={captions[0]}
+            />
         </>
     ),
     ({ captions='', images }) => (
@@ -172,10 +184,15 @@ export const StepsContent = [
     ),
     ({ captions='', images }) => (
         <>
-            <p className="mt-4">
+            <p className="my-4">
                 Com papel e lápis, fiz uma série de desenhos para gerar diversas 
                 alternativas de ideias para a interface do dashboard.
             </p>
+            <SingleFigure 
+                image={images[0]} 
+                alt={captions[0]}
+                caption={captions[0]}
+            />
         </>
     ),
     ({ captions='', images }) => (
@@ -233,6 +250,11 @@ export const StepsContent = [
                 Dando início a etapa, eu implementei a estrutura básica utilizando os 
                 componentes de Cards e Abas do framework Bootstrap 4.
             </p>
+            <SingleFigure 
+                image={images[0]} 
+                alt={captions[0]}
+                caption={captions[0]}
+            />
         </>
     ),
     ({ captions='', images }) => (
@@ -245,6 +267,11 @@ export const StepsContent = [
                 que as demais. Implementei três gráficos de barras para representar o 
                 consumo total de Dados Móveis, Voz e SMS.
             </p>
+            <SingleFigure 
+                image={images[0]} 
+                alt={captions[0]}
+                caption={captions[0]}
+            />
         </>
     ),
     ({ captions='', images }) => (
@@ -264,6 +291,11 @@ export const StepsContent = [
                 seletor de período para realizar essa interação nos gráficos, utilizando 
                 a biblioteca DayJs para manipular as informações de datas e tempo.
             </p>
+            <SingleFigure 
+                image={images[0]} 
+                alt={captions[0]}
+                caption={captions[0]}
+            />
         </>
     ),
     ({ captions='', images }) => (
@@ -282,6 +314,11 @@ export const StepsContent = [
                 Seguindo a mesma estrutura de cards, abas e gráficos validada na etapa 
                 anterior, implementei os demais cards do painel geral.
             </p>
+            <SingleFigure 
+                image={images[0]} 
+                alt={captions[0]}
+                caption={captions[0]}
+            />
         </>
     ),
     ({ captions='', images }) => (
@@ -291,6 +328,11 @@ export const StepsContent = [
                 implementei essas tabelas com html, classes de tabelas do Bootstrap 4 e 
                 requisições ajax para coletar no banco de dados as informações das tabelas.
             </p>
+            <SingleFigure 
+                image={images[0]} 
+                alt={captions[0]}
+                caption={captions[0]}
+            />
         </>
     ),
     ({ captions='', images }) => (
