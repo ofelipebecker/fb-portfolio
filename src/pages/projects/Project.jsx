@@ -7,18 +7,22 @@ import ProjectIntro from "../../features/projects/components/ProjectIntro";
 import ProjectPagination from "../../features/projects/components/ProjectPagination";
 import ProjectSteps from "../../features/projects/components/ProjectSteps";
 
-import { conclusion } from "../../features/projects/project3/conclusion";
-import { intro } from "../../features/projects/project3/intro";
-
 const Project = () => {
     const { projectId } = useParams();
+    const [projectConclusion, setProjectConclusion] = useState(null);
+    const [projectIntro, setProjectIntro] = useState(null);
     const [projectSteps, setProjectSteps] = useState(null);
 
     useEffect(() => {
-        import(`../../features/projects/${projectId}/steps`).then(module => setProjectSteps(module.default));
+        import(`../../features/projects/${projectId}/conclusion`)
+            .then(module => setProjectConclusion(module.default));
+        import(`../../features/projects/${projectId}/intro`)
+            .then(module => setProjectIntro(module.default));
+        import(`../../features/projects/${projectId}/steps`)
+            .then(module => setProjectSteps(module.default));
     }, [projectId]);
 
-    if (!projectSteps) return (
+    if (!projectConclusion || !projectIntro || !projectSteps) return (
         <div className="container">
             <div className="row">
                 <div className="col-12 col-lg-10 offset-lg-1 mt-5 px-3 px-sm-0">
@@ -32,12 +36,12 @@ const Project = () => {
         <div className="container">
             <div className="row">
                 <div className="col-12 col-lg-10 offset-lg-1 mt-5 px-3 px-sm-0">
-                    <ProjectBreadcrumb projectTitle={intro.data.title} />
-                    <ProjectIntro intro={intro} /> 
+                    <ProjectBreadcrumb projectTitle={projectIntro.data.title} />
+                    <ProjectIntro intro={projectIntro} /> 
                     <ProjectSteps steps={projectSteps} />
-                    <ProjectConclusion conclusion={conclusion} /> 
+                    <ProjectConclusion conclusion={projectConclusion} /> 
                     <div className="d-flex justify-content-between align-items-center mb-10">
-                        <ProjectBreadcrumb projectTitle={intro.data.title} />
+                        <ProjectBreadcrumb projectTitle={projectIntro.data.title} />
                         <ProjectPagination currentProjectId={projectId} />
                     </div>
                 </div>
