@@ -1,6 +1,8 @@
 import { conclusionData } from './data/conclusionData';
 
-export const conclusion = {
+const conclusion = {
     data: conclusionData,
     video: '',
 };
+
+export default conclusion;
