@@ -36,12 +36,10 @@ const Project = () => {
                     <ProjectIntro intro={intro} /> 
                     <ProjectSteps steps={projectSteps} />
                     <ProjectConclusion conclusion={conclusion} /> 
-                    <div className="d-flex justify-content-between align-items-center">
+                    <div className="d-flex justify-content-between align-items-center mb-10">
                         <ProjectBreadcrumb projectTitle={intro.data.title} />
                         <ProjectPagination currentProjectId={projectId} />
                     </div>
-                    <div className="row my-5"></div>
-                    <div className="row my-5"></div>
                 </div>
             </div>
         </div>

@@ -1,6 +1,6 @@
 const ProjectConclusion = ({ conclusion }) => (
     <div className="row">
-        <div className="col-12">
+        <div className="col-12 mb-8">
             <div className="card border-0 rounded-3 shadow-sm p-4">
                 <h2>Conclusão</h2>
                 <div className="card-body d-flex flex-column p-0">
