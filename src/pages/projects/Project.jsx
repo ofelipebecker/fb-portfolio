@@ -2,10 +2,12 @@ import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 import ProjectBreadcrumb from "../../features/projects/components/ProjectBreadcrumb";
+import ProjectConclusion from "../../features/projects/components/ProjectConclusion";
 import ProjectIntro from "../../features/projects/components/ProjectIntro";
 import ProjectPagination from "../../features/projects/components/ProjectPagination";
 import ProjectSteps from "../../features/projects/components/ProjectSteps";
 
+import { conclusion } from "../../features/projects/project3/conclusion";
 import { intro } from "../../features/projects/project3/intro";
 
 const Project = () => {
@@ -33,6 +35,7 @@ const Project = () => {
                     <ProjectBreadcrumb projectTitle={intro.data.title} />
                     <ProjectIntro intro={intro} /> 
                     <ProjectSteps steps={projectSteps} />
+                    <ProjectConclusion conclusion={conclusion} /> 
                     <div className="d-flex justify-content-between align-items-center">
                         <ProjectBreadcrumb projectTitle={intro.data.title} />
                         <ProjectPagination currentProjectId={projectId} />
