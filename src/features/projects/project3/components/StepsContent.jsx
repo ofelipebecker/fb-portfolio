@@ -31,7 +31,7 @@ export const StepsContent = [
                 </li>
             </ul>
             <SingleFigure 
-                src={images[0]} 
+                image={images[0]} 
                 alt={captions[0]}
                 caption={captions[0]}
             />
@@ -68,7 +68,7 @@ export const StepsContent = [
             </p>
             <SingleFigureModal
                 modalId="vcxt-04-modal"
-                imageSrc={images[0]}
+                image={images[0]}
                 caption={captions[0]}
             />
         </>
@@ -80,7 +80,7 @@ export const StepsContent = [
                 padrão das tabelas.
             </p>
             <SingleFigure 
-                src={images[0]} 
+                image={images[0]} 
                 alt={captions[0]}
                 caption={captions[0]}
             />

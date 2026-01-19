@@ -1,6 +1,6 @@
 import SingleFigure from "./SingleFigure";
 
-const SingleFigureModal = ({ modalId, imageSrc, caption }) => (
+const SingleFigureModal = ({ modalId, image, caption }) => (
     <>
         <button 
             className="p-0 border-0 bg-transparent text-start" 
@@ -8,7 +8,7 @@ const SingleFigureModal = ({ modalId, imageSrc, caption }) => (
             data-bs-target={`#${modalId}`}
             title="Expandir imagem."
         >
-            <SingleFigure src={imageSrc} alt={caption} caption={caption} />
+            <SingleFigure image={image} alt={caption} caption={caption} />
         </button>
         <div className="modal fade" id={modalId} tabIndex="-1" aria-hidden="true">
             <div className="modal-dialog modal-w-fit-content">
@@ -22,7 +22,7 @@ const SingleFigureModal = ({ modalId, imageSrc, caption }) => (
                         </button>
                     </div>
                     <div className="modal-body">
-                        <SingleFigure src={imageSrc} alt={caption} caption={caption} />
+                        <SingleFigure image={image} alt={caption} caption={caption} />
                     </div>
                 </div>
             </div>
