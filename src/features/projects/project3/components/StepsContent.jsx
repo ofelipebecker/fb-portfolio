@@ -4,32 +4,8 @@ import SingleFigureModal from "../../../../components/SingleFigureModal";
 
 import DemoTable from "./DemoTable";
 
-import imageVCXT02 from "../../../../assets/images/proj-vcx-tables/proj-vcx-tables-2.png";
-import imageVCXT031 from "../../../../assets/images/proj-vcx-tables/proj-vcx-tables-3-1.png";
-import imageVCXT032 from "../../../../assets/images/proj-vcx-tables/proj-vcx-tables-3-2.png";
-import imageVCXT033 from "../../../../assets/images/proj-vcx-tables/proj-vcx-tables-3-3.png";
-import imageVCXT04 from "../../../../assets/images/proj-vcx-tables/proj-vcx-tables-4.png"
-import imageVCXT05 from "../../../../assets/images/proj-vcx-tables/proj-vcx-tables-5.png";
-import imageVCXT071 from "../../../../assets/images/proj-vcx-tables/proj-vcx-tables-7-1.png";
-import imageVCXT072 from "../../../../assets/images/proj-vcx-tables/proj-vcx-tables-7-2.png";
-import imageVCXT073 from "../../../../assets/images/proj-vcx-tables/proj-vcx-tables-7-3.png";
-import imageVCXT074 from "../../../../assets/images/proj-vcx-tables/proj-vcx-tables-7-4.png";
-import imageVCXT075 from "../../../../assets/images/proj-vcx-tables/proj-vcx-tables-7-5.png";
-import imageVCXT076 from "../../../../assets/images/proj-vcx-tables/proj-vcx-tables-7-6.png";
-
-const imagesVCXT03 = [imageVCXT031, imageVCXT032, imageVCXT033];
-
-const imagesVCXT07 = [
-    imageVCXT071, 
-    imageVCXT072, 
-    imageVCXT073, 
-    imageVCXT074, 
-    imageVCXT075, 
-    imageVCXT076
-];
-
 export const StepsContent = [
-    ({ captions='' }) => (
+    ({ captions='', images }) => (
         <>
             <p className="my-4">
                 Eu pesquisei artigos e documentos sobre design de tabelas, para 
@@ -55,13 +31,13 @@ export const StepsContent = [
                 </li>
             </ul>
             <SingleFigure 
-                src={imageVCXT02} 
+                src={images[0]} 
                 alt={captions[0]}
                 caption={captions[0]}
             />
         </>
     ),
-    ({ captions='' }) => (
+    ({ captions='', images }) => (
         <>
             <p className="my-4 text-nowrap">
                 Eu fiz uma análise de usabilidade das tabelas seguindo o método da&nbsp;
@@ -77,12 +53,12 @@ export const StepsContent = [
             </p>
             <ImageCarousel 
                 id="vcxt-03"
-                images={imagesVCXT03}
+                images={images}
                 captions={captions}
             />
         </>
     ),
-    ({ captions='' }) => (
+    ({ captions='', images }) => (
         <>
             <p className="my-4">
                 Adicionei ao VC-X Sonar ferramentas para gerar mapas de calor. 
@@ -92,25 +68,25 @@ export const StepsContent = [
             </p>
             <SingleFigureModal
                 modalId="vcxt-04-modal"
-                imageSrc={imageVCXT04}
+                imageSrc={images[0]}
                 caption={captions[0]}
             />
         </>
     ),
-    ({ captions='' }) => (
+    ({ captions='', images }) => (
         <>
             <p className="mt-4">
                 A seguir, trabalhei em alguns desenhos à mão de alternativas para o novo 
                 padrão das tabelas.
             </p>
             <SingleFigure 
-                src={imageVCXT05} 
+                src={images[0]} 
                 alt={captions[0]}
                 caption={captions[0]}
             />
         </>
     ),
-    ({ captions='' }) => (
+    ({ captions='', images }) => (
         <>
             <p className="mt-4">
                 Tendo feito a pesquisa e análise do estado atual, defini princípios de 
@@ -135,7 +111,7 @@ export const StepsContent = [
             </ul>
         </>
     ),
-    ({ captions='' }) => (
+    ({ captions='', images }) => (
         <>
             <p className="mt-4">
                 Tendo um padrão de design das tabelas definido, demos início ao processo 
@@ -146,12 +122,12 @@ export const StepsContent = [
             </p>
             <ImageCarousel 
                 id="vcxt-07"
-                images={imagesVCXT07}
+                images={images}
                 captions={captions}
             />
         </>
     ),
-    ({ captions='' }) => (
+    ({ captions='', images }) => (
         <>
             <p className="my-4">
                 Para demonstrar na prática as funcionalidades implementadas, desenvolvi esta 

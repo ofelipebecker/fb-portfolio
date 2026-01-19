@@ -3,6 +3,8 @@ const ProjectSteps = ({ steps }) => {
         <>
             {steps.map((step, index) => {
                 const data = step.data;
+                const stepImages = step.images;
+
                 const StepContent = step.content;
                 
                 return (
@@ -12,7 +14,12 @@ const ProjectSteps = ({ steps }) => {
                                 <h2>{data.title}</h2>
                                 <h3>{data.subtitle}</h3>
                                 <div className="card-body d-flex flex-column p-0">
-                                    <div><StepContent captions={data.imagesCaptions}/></div>
+                                    <div>
+                                        <StepContent 
+                                            captions={data.imagesCaptions}
+                                            images={stepImages}
+                                        />
+                                    </div>
                                 </div>
                             </div>
                         </div>
