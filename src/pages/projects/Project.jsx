@@ -1,4 +1,5 @@
 import { useParams } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 import ProjectBreadcrumb from "../../features/projects/components/ProjectBreadcrumb";
 import ProjectIntro from "../../features/projects/components/ProjectIntro";
@@ -6,11 +7,24 @@ import ProjectPagination from "../../features/projects/components/ProjectPaginat
 import ProjectSteps from "../../features/projects/components/ProjectSteps";
 
 import { intro } from "../../features/projects/project3/intro";
-import { steps } from "../../features/projects/project3/steps";
 
 const Project = () => {
     const { projectId } = useParams();
-    const projectSteps = steps;
+    const [projectSteps, setProjectSteps] = useState(null);
+
+    useEffect(() => {
+        import(`../../features/projects/${projectId}/steps`).then(module => setProjectSteps(module.default));
+    }, [projectId]);
+
+    if (!projectSteps) return (
+        <div className="container">
+            <div className="row">
+                <div className="col-12 col-lg-10 offset-lg-1 mt-5 px-3 px-sm-0">
+                    <p>Carregando...</p>
+                </div>
+            </div>
+        </div>
+    );
 
     return (
         <div className="container">
