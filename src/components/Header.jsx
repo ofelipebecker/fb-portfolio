@@ -1,22 +1,17 @@
 import { Link, useLocation } from "react-router-dom";
-import { useLanguage } from "../context/LanguageContext";
 
-import headerTranslations from '../data/translations/header.json';
+import headerData from '../data/translations/header.json';
 
 import logoHorizontal from "../assets/images/logo-horizontal-orange-en.svg";
 import logoVertical from "../assets/images/logo-vertical-orange-en.svg";
 import purpleArrow from "../assets/images/purple-arrow-home.png";
 
 const Header = () => {
-    const { language, setLanguage } = useLanguage();
-    const isLanguagePT = language === "pt";
-
-    const data = headerTranslations[language];
+    const data = headerData['pt'];
 
     const location = useLocation();
     const pathname = location.pathname;
 
-    const isHomePage = pathname === "/";
     const isWorkPage = pathname.startsWith("/work");
 
     return (
@@ -49,27 +44,6 @@ const Header = () => {
                     >
                         <div className="d-flex flex-column w-100">
                             <div className="row d-none d-lg-flex">
-                                {isHomePage && (
-                                    <div className="col-10 offset-1 text-end">
-                                        <div className="text-nowrap">
-                                            <button 
-                                                className="btn btn-lg text-light"
-                                                onClick={() => setLanguage('pt')}
-                                            >   
-                                                {isLanguagePT && ('✓ ')}
-                                                Português
-                                            </button>
-                                            <span className="text-light">|</span>
-                                            <button 
-                                                className="btn btn-lg text-light"
-                                                onClick={() => setLanguage('en')}
-                                            >   
-                                                {!isLanguagePT && ('✓ ')}
-                                                English
-                                            </button>
-                                        </div>
-                                    </div>
-                                )}
                                 <div className="col-12 my-5 text-center">
                                     <img
                                         src={logoVertical}

@@ -1,11 +1,6 @@
-import { useLanguage } from "../context/LanguageContext";
-
 import ReactLogo from "../assets/images/react-logo.svg";
 
 const Footer = () => {
-    const { language } = useLanguage();
-    const isLanguagePT = language === "pt";
-
     return (
         <footer className="footer mt-auto py-3 bg-light px-3 px-sm-0">
             <div className="container">
@@ -18,8 +13,8 @@ const Footer = () => {
                     <div className="col-12 col-sm-6">
                         <div className="d-flex align-items-center text-purple">
                             <span className="me-2">
-                                {isLanguagePT ? 'Feito com' : 'Made with'}
-                                </span>
+                                Feito com
+                            </span>
                             <img
                                 className="w-25px"
                                 src={ReactLogo}
