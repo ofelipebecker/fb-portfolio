@@ -1,21 +1,21 @@
-import imageVCXT02 from "../../../assets/images/proj-vcx-tables/proj-vcx-tables-2.png";
-import imageVCXT031 from "../../../assets/images/proj-vcx-tables/proj-vcx-tables-3-1.png";
-import imageVCXT032 from "../../../assets/images/proj-vcx-tables/proj-vcx-tables-3-2.png";
-import imageVCXT033 from "../../../assets/images/proj-vcx-tables/proj-vcx-tables-3-3.png";
-import imageVCXT04 from "../../../assets/images/proj-vcx-tables/proj-vcx-tables-4.png"
-import imageVCXT05 from "../../../assets/images/proj-vcx-tables/proj-vcx-tables-5.png";
-import imageVCXT071 from "../../../assets/images/proj-vcx-tables/proj-vcx-tables-7-1.png";
-import imageVCXT072 from "../../../assets/images/proj-vcx-tables/proj-vcx-tables-7-2.png";
-import imageVCXT073 from "../../../assets/images/proj-vcx-tables/proj-vcx-tables-7-3.png";
-import imageVCXT074 from "../../../assets/images/proj-vcx-tables/proj-vcx-tables-7-4.png";
-import imageVCXT075 from "../../../assets/images/proj-vcx-tables/proj-vcx-tables-7-5.png";
-import imageVCXT076 from "../../../assets/images/proj-vcx-tables/proj-vcx-tables-7-6.png";
+import imageVCXTs02 from "../../../assets/images/proj-vcx-tables/vcxt-s02.png";
+import imageVCXTs031 from "../../../assets/images/proj-vcx-tables/vcxt-s03-01.png";
+import imageVCXTs032 from "../../../assets/images/proj-vcx-tables/vcxt-s03-02.png";
+import imageVCXTs033 from "../../../assets/images/proj-vcx-tables/vcxt-s03-03.png";
+import imageVCXTs04 from "../../../assets/images/proj-vcx-tables/vcxt-s04.png"
+import imageVCXTs05 from "../../../assets/images/proj-vcx-tables/vcxt-s05.png";
+import imageVCXTs071 from "../../../assets/images/proj-vcx-tables/vcxt-s07-01.png";
+import imageVCXTs072 from "../../../assets/images/proj-vcx-tables/vcxt-s07-02.png";
+import imageVCXTs073 from "../../../assets/images/proj-vcx-tables/vcxt-s07-03.png";
+import imageVCXTs074 from "../../../assets/images/proj-vcx-tables/vcxt-s07-04.png";
+import imageVCXTs075 from "../../../assets/images/proj-vcx-tables/vcxt-s07-05.png";
+import imageVCXTs076 from "../../../assets/images/proj-vcx-tables/vcxt-s07-06.png";
 
 export const stepsImages = [
-    [imageVCXT02],
-    [imageVCXT031, imageVCXT032, imageVCXT033],
-    [imageVCXT04],
-    [imageVCXT05],
+    [imageVCXTs02],
+    [imageVCXTs031, imageVCXTs032, imageVCXTs033],
+    [imageVCXTs04],
+    [imageVCXTs05],
     [],
-    [imageVCXT071, imageVCXT072, imageVCXT073, imageVCXT074, imageVCXT075, imageVCXT076],
+    [imageVCXTs071, imageVCXTs072, imageVCXTs073, imageVCXTs074, imageVCXTs075, imageVCXTs076],
 ];

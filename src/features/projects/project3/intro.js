@@ -1,9 +1,9 @@
 import { introData } from './data/introData';
-import imageVCXT01 from '../../../assets/images/proj-vcx-tables/proj-vcx-tables-1.png';
+import imageVCXTIntro from '../../../assets/images/proj-vcx-tables/vcxt-intro.png';
 
 const intro = {
     data: introData,
-    image: imageVCXT01,
+    image: imageVCXTIntro,
 };
 
 export default intro;
