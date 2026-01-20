@@ -1,13 +1,18 @@
-import logoVertical from "../assets/images/logo-v-orange.png";
-import logoHorizontal from "../assets/images/logo-h-orange.png";
-import purpleArrow from "../assets/images/purple-arrow-home.png";
 import { Link, useLocation } from "react-router-dom";
 
+import headerData from '../data/translations/header.json';
+
+import logoHorizontal from "../assets/images/logo-horizontal-orange-en.svg";
+import logoVertical from "../assets/images/logo-vertical-orange-en.svg";
+import purpleArrow from "../assets/images/purple-arrow-home.png";
+
 const Header = () => {
+    const data = headerData['pt'];
+
     const location = useLocation();
     const pathname = location.pathname;
 
-    const isProjetosActive = pathname.startsWith("/work");
+    const isWorkPage = pathname.startsWith("/work");
 
     return (
         <header>
@@ -45,10 +50,9 @@ const Header = () => {
                                         className="max-h-130px w-auto"
                                         alt="logo"
                                     />
-                                    <ul className="list-unstyled fst-italic mt-4 text-orange">
-                                        <li>Front-End</li>
-                                        <li>Palhoça, SC - Brasil</li>
-                                    </ul>
+                                    <p className="fst-italic mt-4 text-orange">
+                                        {data.location}
+                                    </p>
                                 </div>
                             </div>
                             <div className="row">
@@ -57,25 +61,21 @@ const Header = () => {
                                         <li className="nav-item">
                                             <Link
                                                 to="/"
-                                                className={`nav-link ${
-                                                    !isProjetosActive
-                                                        ? "active"
-                                                        : ""
-                                                }`}
+                                                className={
+                                                    `nav-link ${!isWorkPage ? "active" : ""}`
+                                                }
                                             >
-                                                Sobre
+                                                {data.nav.about}
                                             </Link>
                                         </li>
                                         <li className="nav-item">
                                             <Link
                                                 to="/work"
-                                                className={`nav-link ${
-                                                    isProjetosActive
-                                                        ? "active"
-                                                        : ""
-                                                }`}
+                                                className={
+                                                    `nav-link ${isWorkPage ? "active" : ""}`
+                                                }
                                             >
-                                                Projetos
+                                                {data.nav.work}
                                             </Link>
                                         </li>
                                     </ul>

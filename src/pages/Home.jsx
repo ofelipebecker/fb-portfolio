@@ -1,23 +1,34 @@
-import EducationCard from "../components/EducationCard";
-import LocationCard from "../components/LocationCard";
-import SkillsCard from "../components/SkillsCard";
+import homeData from '../data/translations/home.json';
+
+import EducationCard from "../features/education/components/EducationCard";
+import LocationCard from "../features/location/components/LocationCard";
+import SkillsCard from "../features/skills/components/SkillsCard";
 
 const Home = () => {
+    const data = homeData['pt'];
+
     return (
-        <>
-            <div className="container mt-5 text-center">
-                <h1 className="mb-5">Sobre</h1>
-                <div className="row g-5 px-3 px-sm-0">
-                    <SkillsCard />
-                    <EducationCard />
-                </div>
-                <div className="row px-3 px-sm-0">
-                    <LocationCard />
-                </div>
-                <div className="row my-5"></div>
-                <div className="row my-5 d-none d-lg-flex"></div>
+        <div className="container mt-5 text-center">
+            <h1 className="mb-5">{data.home.title}</h1>
+            <div className="row g-5 px-3 px-sm-0">
+                <SkillsCard 
+                    title={data.skills.title}
+                    chartData={data.skills.chart}
+                />
+                <EducationCard 
+                    title={data.education.title}
+                    tableData={data.education.table}
+                />
             </div>
-        </>
+            <div className="row px-3 px-sm-0">
+                <LocationCard 
+                    title={data.location.title}
+                    mapData={data.location.map}
+                />
+            </div>
+            <div className="row my-5"></div>
+            <div className="row my-5 d-none d-lg-flex"></div>
+        </div>
     );
 };
 

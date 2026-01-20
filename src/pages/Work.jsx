@@ -1,6 +1,5 @@
-import ProjectLink from "../components/ProjectLink";
-
-import workProjects from "../data/workProjectsData";
+import ProjectLink from "../features/work/components/ProjectLink";
+import workProjects from "../features/work/data/workProjectsData-pt";
 
 const Work = () => {
     return (

@@ -7,12 +7,14 @@ const Footer = () => {
                 <div className="row">
                     <div className="col-12 col-sm-6 d-flex align-items-center">
                         <span className="d-flex align-items-center text-purple">
-                            Felipe Becker | Desenvolvedor Front-end | 2026
+                            Felipe Becker | Frontend Developer | 2026
                         </span>
                     </div>
                     <div className="col-12 col-sm-6">
                         <div className="d-flex align-items-center text-purple">
-                            <span className="me-2">Feito com</span>
+                            <span className="me-2">
+                                Feito com
+                            </span>
                             <img
                                 className="w-25px"
                                 src={ReactLogo}
