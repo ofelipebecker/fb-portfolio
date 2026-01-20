@@ -1,28 +1,28 @@
-import imageVCXD02 from '../../../assets/images/proj-vcx-dashboard/proj-vcx-dash-2-0.png';
-import imageVCXD03 from '../../../assets/images/proj-vcx-dashboard/proj-vcx-dash-3-heatmap.jpg';
-import imageVCXD04 from '../../../assets/images/proj-vcx-dashboard/proj-vcx-dash-4-sketch-1.jpg';
-import imageVCXD051 from '../../../assets/images/proj-vcx-dashboard/proj-vcx-dash-5-1-bs-tabs.png';
-import imageVCXD052 from '../../../assets/images/proj-vcx-dashboard/proj-vcx-dash-5-2-chart.png';
-import imageVCXD06 from '../../../assets/images/proj-vcx-dashboard/proj-vcx-dash-6-period-selector.png';
-import imageVCXD07 from '../../../assets/images/proj-vcx-dashboard/proj-vcx-dash-7-other-charts-tabs.png';
-import imageVCXD08 from '../../../assets/images/proj-vcx-dashboard/proj-vcx-dash-8-other-charts-tables.png';
+import imageVCXDs02 from '../../../assets/images/proj-vcx-dashboard/vcxd-s02-benchmarking.png';
+import imageVCXDs04 from '../../../assets/images/proj-vcx-dashboard/vcxd-s04-heatmap.jpg'
+import imageVCXDs07 from '../../../assets/images/proj-vcx-dashboard/vcxd-s07-sketch.jpg';
+import imageVCXDs10 from '../../../assets/images/proj-vcx-dashboard/vcxd-s10-bs-tabs.png';
+import imageVCXDs11 from '../../../assets/images/proj-vcx-dashboard/vcxd-s11-chart.png';
+import imageVCXDs13 from '../../../assets/images/proj-vcx-dashboard/vcxd-s13-period-selector.png';
+import imageVCXDs15 from '../../../assets/images/proj-vcx-dashboard/vcxd-s15-other-charts-tabs.png';
+import imageVCXDs16 from '../../../assets/images/proj-vcx-dashboard/vcxd-s16-other-charts-tables.png';
 
 export const stepsImages = [
     [],
-    [imageVCXD02],
+    [imageVCXDs02],
     [],
-    [imageVCXD03],
-    [],
-    [],
-    [imageVCXD04],
+    [imageVCXDs04],
     [],
     [],
-    [imageVCXD051],
-    [imageVCXD052],
+    [imageVCXDs07],
     [],
-    [imageVCXD06],
     [],
-    [imageVCXD07],
-    [imageVCXD08],
+    [imageVCXDs10],
+    [imageVCXDs11],
+    [],
+    [imageVCXDs13],
+    [],
+    [imageVCXDs15],
+    [imageVCXDs16],
     [],
 ];
