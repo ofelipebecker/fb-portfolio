@@ -1,9 +1,9 @@
 import { introData } from './data/introData';
-import imageCTB01 from '../../../assets/images/proj-ctb/proj-ctb-01.png';
+import imageCTBIntro from '../../../assets/images/proj-ctb/ctb-intro.png';
 
 const intro = {
     data: introData,
-    image: imageCTB01,
+    image: imageCTBIntro,
 };
 
 export default intro;

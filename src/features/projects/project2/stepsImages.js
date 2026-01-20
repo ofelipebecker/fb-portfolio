@@ -1,45 +1,45 @@
-import imageCTB02 from "../../../assets/images/proj-ctb/proj-ctb-02.png";
-import imageCTB031 from "../../../assets/images/proj-ctb/proj-ctb-03.png";
-import imageCTB032 from "../../../assets/images/proj-ctb/proj-ctb-03b.png";
-import imageCTB041 from "../../../assets/images/proj-ctb/proj-ctb-04-01.png";
-import imageCTB06 from "../../../assets/images/proj-ctb/proj-ctb-06.png";
-import imageCTB071 from "../../../assets/images/proj-ctb/proj-ctb-07-01.png";
-import imageCTB08 from "../../../assets/images/proj-ctb/proj-ctb-08.png";
-import imageCTB09 from "../../../assets/images/proj-ctb/proj-ctb-09.png";
-import imageCTB10 from "../../../assets/images/proj-ctb/proj-ctb-10.png";
-import imageCTB11 from "../../../assets/images/proj-ctb/proj-ctb-11.png";
-import imageCTB12 from "../../../assets/images/proj-ctb/proj-ctb-12.png";
-import imageCTB13 from "../../../assets/images/proj-ctb/proj-ctb-13.png";
-import imageCTB14 from "../../../assets/images/proj-ctb/proj-ctb-14.png";
-import imageCTB15 from "../../../assets/images/proj-ctb/proj-ctb-15.png";
-import imageCTB16 from "../../../assets/images/proj-ctb/proj-ctb-16.png";
-import imageCTB17 from "../../../assets/images/proj-ctb/proj-ctb-17.png";
-import imageCTB18 from "../../../assets/images/proj-ctb/proj-ctb-18.png";
-import imageCTB19 from "../../../assets/images/proj-ctb/proj-ctb-19.png";
-import imageCTB20 from "../../../assets/images/proj-ctb/proj-ctb-20.png";
-import imageCTB21 from "../../../assets/images/proj-ctb/proj-ctb-20-01-sm.png";
+import imageCTBs01 from "../../../assets/images/proj-ctb/ctb-s01.png";
+import imageCTBs02 from "../../../assets/images/proj-ctb/ctb-s02.png";
+import imageCTBs04 from "../../../assets/images/proj-ctb/ctb-s04.png";
+import imageCTBs05 from "../../../assets/images/proj-ctb/ctb-s05.png";
+import imageCTBs07 from "../../../assets/images/proj-ctb/ctb-s07.png";
+import imageCTBs08 from "../../../assets/images/proj-ctb/ctb-s08.png";
+import imageCTBs09 from "../../../assets/images/proj-ctb/ctb-s09.png";
+import imageCTBs10 from "../../../assets/images/proj-ctb/ctb-s10.png";
+import imageCTBs11 from "../../../assets/images/proj-ctb/ctb-s11.png";
+import imageCTBs12 from "../../../assets/images/proj-ctb/ctb-s12.png";
+import imageCTBs13 from "../../../assets/images/proj-ctb/ctb-s13.png";
+import imageCTBs14 from "../../../assets/images/proj-ctb/ctb-s14.png";
+import imageCTBs15 from "../../../assets/images/proj-ctb/ctb-s15.png";
+import imageCTBs16 from "../../../assets/images/proj-ctb/ctb-s16.png";
+import imageCTBs17 from "../../../assets/images/proj-ctb/ctb-s17.png";
+import imageCTBs18 from "../../../assets/images/proj-ctb/ctb-s18.png";
+import imageCTBs19 from "../../../assets/images/proj-ctb/ctb-s19.png";
+import imageCTBs20 from "../../../assets/images/proj-ctb/ctb-s20.png";
+import imageCTBs21 from "../../../assets/images/proj-ctb/ctb-s21.png";
+import imageCTBs22 from "../../../assets/images/proj-ctb/ctb-s22.png";
 
 export const stepsImages = [
-    [imageCTB02],
-    [imageCTB031],
+    [imageCTBs01],
+    [imageCTBs02],
     [],
-    [imageCTB032],
-    [imageCTB041],
+    [imageCTBs04],
+    [imageCTBs05],
     [],
-    [imageCTB06],
-    [imageCTB071],
-    [imageCTB08],
-    [imageCTB09],
-    [imageCTB10],
-    [imageCTB11],
-    [imageCTB12],
-    [imageCTB13],
-    [imageCTB14],
-    [imageCTB15],
-    [imageCTB16],
-    [imageCTB17],
-    [imageCTB18],
-    [imageCTB19],
-    [imageCTB20],
-    [imageCTB21],
+    [imageCTBs07],
+    [imageCTBs08],
+    [imageCTBs09],
+    [imageCTBs10],
+    [imageCTBs11],
+    [imageCTBs12],
+    [imageCTBs13],
+    [imageCTBs14],
+    [imageCTBs15],
+    [imageCTBs16],
+    [imageCTBs17],
+    [imageCTBs18],
+    [imageCTBs19],
+    [imageCTBs20],
+    [imageCTBs21],
+    [imageCTBs22],
 ];
