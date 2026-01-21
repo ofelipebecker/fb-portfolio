@@ -1,11 +1,15 @@
-import homeData from '../data/translations/home.json';
+import { useLanguage } from '../context/LanguageContext';
+
+import homeTranslations from '../data/translations/home.json';
 
 import EducationCard from "../features/education/components/EducationCard";
 import LocationCard from "../features/location/components/LocationCard";
 import SkillsCard from "../features/skills/components/SkillsCard";
 
 const Home = () => {
-    const data = homeData['pt'];
+    const { language } = useLanguage();
+    
+    const data = homeTranslations[language];
 
     return (
         <div className="container mt-5 text-center">
