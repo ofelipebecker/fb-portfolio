@@ -14,7 +14,7 @@ const Home = () => {
     return (
         <div className="container mt-5 text-center">
             <h1 className="mb-5">{data.home.title}</h1>
-            <div className="row g-5 px-3 px-sm-0">
+            <div className="row gy-5 px-3 px-sm-0">
                 <SkillsCard 
                     title={data.skills.title}
                     chartData={data.skills.chart}
