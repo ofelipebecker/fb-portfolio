@@ -3,8 +3,8 @@ import { useLanguage } from "../context/LanguageContext";
 
 import headerTranslations from '../data/translations/header.json';
 
-import logoHorizontal from "../assets/images/logo-horizontal-orange-en.svg";
-import logoVertical from "../assets/images/logo-vertical-orange-en.svg";
+import logoSmallScreen from "../assets/images/logo-horizontal-orange-en.svg";
+import logoLargeScreen from "../assets/images/logo-vertical-orange-en.svg";
 import purpleArrow from "../assets/images/purple-arrow-home.png";
 
 const Header = () => {
@@ -37,7 +37,7 @@ const Header = () => {
                         </button>
                         <div className="py-2">
                             <img
-                                src={logoHorizontal}
+                                src={logoSmallScreen}
                                 className="d-lg-none ms-3 max-h-40px"
                                 alt="logo"
                             />
@@ -72,7 +72,7 @@ const Header = () => {
                                 )}
                                 <div className="col-12 my-5 text-center">
                                     <img
-                                        src={logoVertical}
+                                        src={logoLargeScreen}
                                         className="max-h-130px w-auto"
                                         alt="logo"
                                     />
