@@ -21,101 +21,80 @@ const Header = () => {
 
     return (
         <header>
-            <nav className="navbar navbar-expand-lg navbar-light d-flex flex-column p-0">
-                <div className="container-fluid bg-purple shadow-sm">
-                    <div className="d-flex align-items-center">
-                        <button
-                            className="navbar-toggler btn-outline-orange max-h-50px"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#navbar-toggler-btn"
-                            aria-controls="navbar-toggler-btn"
-                            aria-expanded="false"
-                            aria-label="Toggle navigation"
-                        >
-                            <span className="bi bi-list fs-1"></span>
-                        </button>
-                        <div className="py-2">
-                            <img
-                                src={logoSmallScreen}
-                                className="d-lg-none ms-3 max-h-40px"
-                                alt="logo"
-                            />
-                        </div>
-                    </div>
-                    <div
-                        className="collapse navbar-collapse"
-                        id="navbar-toggler-btn"
+            <nav className="navbar navbar-expand-lg bg-purple p-0">
+                <div className="container-fluid justify-content-start">
+                    <button
+                        className="navbar-toggler btn-outline-orange max-h-50px"
+                        type="button"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvas-navbar"
+                        aria-controls="offcanvas-navbar"
+                        aria-label="Toggle navigation"
                     >
-                        <div className="d-flex flex-column w-100">
-                            <div className="row d-none d-lg-flex">
-                                {isHomePage && (
-                                    <div className="col-10 offset-1 text-end">
-                                        <div className="text-nowrap">
-                                            <button 
-                                                className="btn btn-lg text-light"
-                                                onClick={() => setLanguage('pt')}
-                                            >   
-                                                {isLanguagePT && ('✓ ')}
-                                                Português
-                                            </button>
-                                            <span className="text-light">|</span>
-                                            <button 
-                                                className="btn btn-lg text-light"
-                                                onClick={() => setLanguage('en')}
-                                            >   
-                                                {!isLanguagePT && ('✓ ')}
-                                                English
-                                            </button>
-                                        </div>
-                                    </div>
-                                )}
-                                <div className="col-12 my-5 text-center">
-                                    <img
-                                        src={logoLargeScreen}
-                                        className="max-h-130px w-auto"
-                                        alt="logo"
-                                    />
-                                    <p className="fst-italic mt-4 text-orange">
-                                        {data.location}
-                                    </p>
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="col-12">
-                                    <ul className="nav justify-content-center mb-3 mb-lg-5">
-                                        <li className="nav-item">
-                                            <Link
-                                                to="/"
-                                                className={
-                                                    `nav-link ${!isWorkPage ? "active" : ""}`
-                                                }
-                                            >
-                                                {data.nav.about}
-                                            </Link>
-                                        </li>
-                                        <li className="nav-item">
-                                            <Link
-                                                to="/work"
-                                                className={
-                                                    `nav-link ${isWorkPage ? "active" : ""}`
-                                                }
-                                            >
-                                                {data.nav.work}
-                                            </Link>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
+                        <span className="bi bi-list fs-1"></span>
+                    </button>
+                    <Link
+                        to="/"
+                        className="navbar-brand py-2"
+                    >
+                        <img
+                            src={logoSmallScreen}
+                            className="d-lg-none ms-3 max-h-40px"
+                            alt="logo"
+                        />
+                        <img
+                            src={logoLargeScreen}
+                            className="max-h-130px w-auto d-none d-lg-flex"
+                            alt="logo"
+                        />
+                    </Link>
+                    <div 
+                        className="offcanvas offcanvas-start bg-purple" 
+                        tabindex="-1" 
+                        id="offcanvas-navbar" 
+                        aria-labelledby="offcanvas-navbar-label"
+                    >
+                        <div className="offcanvas-header p-4 align-items-start">
+                            <h5 className="offcanvas-title" id="offcanvas-navbar-label">
+                                <img
+                                    src={logoSmallScreen}
+                                    className="d-lg-none max-h-50px"
+                                    alt="logo"
+                                />
+                            </h5>
+                            <button
+                                type="button"
+                                className="btn-close btn-close-white fs-3"
+                                data-bs-dismiss="offcanvas"
+                                aria-label="Close"
+                            >
+                            </button>
+                        </div>
+                        <div className="offcanvas-body p-4">
+                            <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li className="nav-item">
+                                    <Link
+                                        to="/"
+                                        className={
+                                            `nav-link ${!isWorkPage ? "active" : ""}`
+                                        }
+                                    >
+                                        {data.nav.about}
+                                    </Link>
+                                </li>
+                                <li className="nav-item">
+                                    <Link
+                                        to="/work"
+                                        className={
+                                            `nav-link ${isWorkPage ? "active" : ""}`
+                                        }
+                                    >
+                                        {data.nav.work}
+                                    </Link>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                </div>
-                <div className="d-none d-lg-flex justify-content-center">
-                    <img
-                        src={purpleArrow}
-                        className="w-auto"
-                        alt="purple-arrow"
-                    />
                 </div>
             </nav>
         </header>
