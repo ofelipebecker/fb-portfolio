@@ -48,6 +48,37 @@ const Header = () => {
                             alt="logo"
                         />
                     </Link>
+                    <div class="dropdown ms-auto d-lg-none">
+                        <button 
+                            class="btn dropdown-toggle btn-outline-orange border-0" 
+                         
+                            data-bs-toggle="dropdown" 
+                            aria-expanded="false"
+                        >
+                            <span className="bi bi bi-translate fs-2"></span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end mt-3">
+                            <li>
+                                <button 
+                                    class="dropdown-item" 
+                                    type="button"
+                                    onClick={() => setLanguage('pt')}
+                                >
+                                    Português
+                                    {isLanguagePT && (' ✓')}
+                                </button>
+                            </li>
+                            <li>
+                                <button 
+                                    class="dropdown-item" 
+                                    onClick={() => setLanguage('en')}
+                                >   
+                                    English
+                                    {!isLanguagePT && (' ✓')}
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
                     <div 
                         className="offcanvas offcanvas-start bg-purple" 
                         tabindex="-1" 
