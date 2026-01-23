@@ -48,18 +48,18 @@ const Header = () => {
                             alt="logo"
                         />
                     </Link>
-                    <div class="dropdown ms-auto d-lg-none">
+                    <div className="dropdown ms-auto d-lg-none">
                         <button 
-                            class="btn dropdown-toggle btn-outline-orange border-0" 
+                            className="btn dropdown-toggle btn-outline-orange border-0" 
                             data-bs-toggle="dropdown" 
                             aria-expanded="false"
                         >
                             <span className="bi bi bi-translate fs-2"></span>
                         </button>
-                        <ul class="dropdown-menu dropdown-menu-end border-0 mt-3 shadow-sm p-0">
+                        <ul className="dropdown-menu dropdown-menu-end border-0 mt-3 shadow-sm p-0">
                             <li>
                                 <button 
-                                    class="dropdown-item text-purple p-3" 
+                                    className="dropdown-item text-purple p-3" 
                                     type="button"
                                     onClick={() => setLanguage('pt')}
                                 >
