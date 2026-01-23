@@ -22,7 +22,7 @@ const Header = () => {
     return (
         <header>
             <nav className="navbar navbar-expand-lg bg-purple p-0">
-                <div className="container-fluid justify-content-start">
+                <div className="container-fluid justify-content-start shadow-sm">
                     <button
                         className="navbar-toggler btn-outline-orange max-h-50px"
                         type="button"
@@ -51,16 +51,15 @@ const Header = () => {
                     <div class="dropdown ms-auto d-lg-none">
                         <button 
                             class="btn dropdown-toggle btn-outline-orange border-0" 
-                         
                             data-bs-toggle="dropdown" 
                             aria-expanded="false"
                         >
                             <span className="bi bi bi-translate fs-2"></span>
                         </button>
-                        <ul class="dropdown-menu dropdown-menu-end mt-3">
+                        <ul class="dropdown-menu dropdown-menu-end border-0 mt-3 shadow-sm p-0">
                             <li>
                                 <button 
-                                    class="dropdown-item" 
+                                    class="dropdown-item text-purple p-3" 
                                     type="button"
                                     onClick={() => setLanguage('pt')}
                                 >
@@ -70,7 +69,7 @@ const Header = () => {
                             </li>
                             <li>
                                 <button 
-                                    class="dropdown-item" 
+                                    class="dropdown-item text-purple p-3" 
                                     onClick={() => setLanguage('en')}
                                 >   
                                     English
