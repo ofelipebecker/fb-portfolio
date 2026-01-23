@@ -292,8 +292,12 @@ h4 {
     font-family: "Zilla Slab";
 }
 
-header ul li.nav-item a.nav-link {
+header ul li.nav-item a.nav-link,
+header ul li.nav-item a.nav-link.active {
     color: var(--light-gray);
+}
+
+header ul li.nav-item a.nav-link {
     font-family: "Zilla Slab";
     font-size: 2.4rem;
 }
