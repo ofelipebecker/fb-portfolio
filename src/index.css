@@ -138,9 +138,12 @@ body {
     color: rgba(var(--bs-success-rgb));
 }
 
-.btn-outline-orange {
+.btn-outline-orange,
+.btn-outline-orange.active,
+.btn-outline-orange:first-child:active,
+.btn-outline-orange:focus-visible {
     border: 1px solid var(--main-orange);
-    color: var(--main-orange);
+    color: var(--main-orange) !important;
 }
 
 .btn.btn-purple {
