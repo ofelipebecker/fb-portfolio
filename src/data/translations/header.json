@@ -1,16 +1,16 @@
 {
-  "en": {
-    "location": "Palhoça, SC - Brazil",
-    "nav": {
-      "about": "About",
-      "work": "Work"
+    "en": {
+        "location": "Palhoça, SC - Brazil",
+        "nav": {
+            "about": "About",
+            "work": "Work"
+        }
+    },
+    "pt": {
+        "location": "Palhoça, SC - Brasil",
+        "nav": {
+            "about": "Sobre",
+            "work": "Projetos"
+        }
     }
-  },
-  "pt": {
-    "location": "Palhoça, SC - Brasil",
-    "nav": {
-      "about": "Sobre",
-      "work": "Projetos"
-    }
-  }
 }
