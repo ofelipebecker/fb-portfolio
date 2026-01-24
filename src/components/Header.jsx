@@ -131,22 +131,26 @@ const Header = () => {
             {isLargeScreen && (
                 <nav className="navbar p-0">
                     <div className="container-fluid bg-purple flex-column shadow-sm">
-                        <div className="text-nowrap w-100 text-end">
-                            <button 
-                                className="btn btn-lg text-light"
-                                onClick={() => setLanguage('pt')}
-                            >   
-                                {isLanguagePT && ('✓ ')}
-                                Português
-                            </button>
-                            <span className="text-light">|</span>
-                            <button 
-                                className="btn btn-lg text-light"
-                                onClick={() => setLanguage('en')}
-                            >   
-                                {!isLanguagePT && ('✓ ')}
-                                English
-                            </button>
+                        <div className="row w-100">
+                            <div className="col-lg-10 offset-lg-1 mt-1">
+                                <div className="text-nowrap w-100 text-end">
+                                    <button 
+                                        className="btn btn-lg text-light"
+                                        onClick={() => setLanguage('pt')}
+                                    >   
+                                        {isLanguagePT && ('✓ ')}
+                                        Português
+                                    </button>
+                                    <span className="text-light">|</span>
+                                    <button 
+                                        className="btn btn-lg text-light"
+                                        onClick={() => setLanguage('en')}
+                                    >   
+                                        {!isLanguagePT && ('✓ ')}
+                                        English
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                         <Link
                             to="/"
@@ -158,9 +162,9 @@ const Header = () => {
                                 alt="logo"
                             />
                         </Link>
-                        <p className="text-orange mb-0 mt-4">
+                        <small className="text-orange mb-0 mt-4">
                             <em>{data.residence}</em>
-                        </p>
+                        </small>
                         <ul class="nav justify-content-end my-5">
                             <li class="nav-item me-4">
                                 <Link
