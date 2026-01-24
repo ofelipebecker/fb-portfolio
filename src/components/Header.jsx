@@ -130,10 +130,27 @@ const Header = () => {
             )}
             {isLargeScreen && (
                 <nav className="navbar p-0">
-                    <div className="container-fluid bg-purple justify-content-center shadow-sm">
+                    <div className="container-fluid bg-purple flex-column shadow-sm">
+                        <div className="text-nowrap w-100 text-end">
+                            <button 
+                                className="btn btn-lg text-light"
+                                onClick={() => setLanguage('pt')}
+                            >   
+                                {isLanguagePT && ('✓ ')}
+                                Português
+                            </button>
+                            <span className="text-light">|</span>
+                            <button 
+                                className="btn btn-lg text-light"
+                                onClick={() => setLanguage('en')}
+                            >   
+                                {!isLanguagePT && ('✓ ')}
+                                English
+                            </button>
+                        </div>
                         <Link
                             to="/"
-                            className="navbar-brand py-2"
+                            className="navbar-brand py-2 m-0"
                         >
                             <img
                                 src={logoLargeScreen}
@@ -141,6 +158,31 @@ const Header = () => {
                                 alt="logo"
                             />
                         </Link>
+                        <p className="text-orange mb-0 mt-4">
+                            <em>{data.residence}</em>
+                        </p>
+                        <ul class="nav justify-content-end my-5">
+                            <li class="nav-item me-4">
+                                <Link
+                                    to="/"
+                                    className={
+                                        `nav-link ${!isWorkPage ? "active" : ""}`
+                                    }
+                                >
+                                    {data.nav.about}
+                                </Link>
+                            </li>
+                            <li class="nav-item">
+                                <Link
+                                    to="/work"
+                                    className={
+                                        `nav-link ${isWorkPage ? "active" : ""}`
+                                    }
+                                >
+                                    {data.nav.work}
+                                </Link>
+                            </li>
+                        </ul>
                     </div>
                     <div className="d-flex justify-content-center w-100">
                         <img
