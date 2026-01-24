@@ -1,5 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import { useLanguage } from "../context/LanguageContext";
+import useMediaQuery from "../hooks/useMediaQuery";
 
 import headerTranslations from '../data/translations/header.json';
 
@@ -19,114 +20,137 @@ const Header = () => {
     const isHomePage = pathname === "/";
     const isWorkPage = pathname.startsWith("/work");
 
+    const isLargeScreen = useMediaQuery('(min-width: 992px)'); 
+    const isSmallScreen = !isLargeScreen; 
+
     return (
         <header>
-            <nav className="navbar navbar-expand-lg bg-purple p-0">
-                <div className="container-fluid justify-content-start shadow-sm">
-                    <button
-                        className="navbar-toggler btn-outline-orange max-h-50px"
-                        type="button"
-                        data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvas-navbar"
-                        aria-controls="offcanvas-navbar"
-                        aria-label="Toggle navigation"
-                    >
-                        <span className="bi bi-list fs-1"></span>
-                    </button>
-                    <Link
-                        to="/"
-                        className="navbar-brand py-2"
-                    >
-                        <img
-                            src={logoSmallScreen}
-                            className="d-lg-none ms-3 max-h-40px"
-                            alt="logo"
-                        />
-                        <img
-                            src={logoLargeScreen}
-                            className="max-h-130px w-auto d-none d-lg-flex"
-                            alt="logo"
-                        />
-                    </Link>
-                    <div className="dropdown ms-auto d-lg-none">
-                        <button 
-                            className="btn dropdown-toggle btn-outline-orange border-0" 
-                            data-bs-toggle="dropdown" 
-                            aria-expanded="false"
+            {isSmallScreen && (
+                <nav className="navbar p-0">
+                    <div className="container-fluid justify-content-start bg-purple shadow-sm">
+                        <button
+                            className="navbar-toggler btn-outline-orange max-h-50px"
+                            type="button"
+                            data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvas-navbar"
+                            aria-controls="offcanvas-navbar"
+                            aria-label="Toggle navigation"
                         >
-                            <span className="bi bi bi-translate fs-2"></span>
+                            <span className="bi bi-list fs-1"></span>
                         </button>
-                        <ul className="dropdown-menu dropdown-menu-end border-0 mt-3 shadow-sm p-0">
-                            <li>
-                                <button 
-                                    className="dropdown-item text-purple p-3" 
-                                    type="button"
-                                    onClick={() => setLanguage('pt')}
-                                >
-                                    Português
-                                    {isLanguagePT && (' ✓')}
-                                </button>
-                            </li>
-                            <li>
-                                <button 
-                                    class="dropdown-item text-purple p-3" 
-                                    onClick={() => setLanguage('en')}
-                                >   
-                                    English
-                                    {!isLanguagePT && (' ✓')}
-                                </button>
-                            </li>
-                        </ul>
-                    </div>
-                    <div 
-                        className="offcanvas offcanvas-start bg-purple" 
-                        tabindex="-1" 
-                        id="offcanvas-navbar" 
-                        aria-labelledby="offcanvas-navbar-label"
-                    >
-                        <div className="offcanvas-header p-4 align-items-start">
-                            <h5 className="offcanvas-title" id="offcanvas-navbar-label">
-                                <img
-                                    src={logoSmallScreen}
-                                    className="d-lg-none max-h-50px"
-                                    alt="logo"
-                                />
-                            </h5>
-                            <button
-                                type="button"
-                                className="btn-close btn-close-white fs-3"
-                                data-bs-dismiss="offcanvas"
-                                aria-label="Close"
+                        <Link
+                            to="/"
+                            className="navbar-brand py-2"
+                        >
+                            <img
+                                src={logoSmallScreen}
+                                className="ms-3 max-h-40px"
+                                alt="logo"
+                            />
+                        </Link>
+                        <div className="dropdown ms-auto">
+                            <button 
+                                className="btn dropdown-toggle btn-outline-orange border-0" 
+                                data-bs-toggle="dropdown" 
+                                aria-expanded="false"
                             >
+                                <span className="bi bi-translate fs-2"></span>
                             </button>
-                        </div>
-                        <div className="offcanvas-body p-4">
-                            <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
-                                <li className="nav-item">
-                                    <Link
-                                        to="/"
-                                        className={
-                                            `nav-link ${!isWorkPage ? "active" : ""}`
-                                        }
+                            <ul className="dropdown-menu dropdown-menu-end border-0 mt-3 shadow-sm p-0">
+                                <li>
+                                    <button 
+                                        className="dropdown-item text-purple p-3" 
+                                        type="button"
+                                        onClick={() => setLanguage('pt')}
                                     >
-                                        {data.nav.about}
-                                    </Link>
+                                        Português
+                                        {isLanguagePT && (' ✓')}
+                                    </button>
                                 </li>
-                                <li className="nav-item">
-                                    <Link
-                                        to="/work"
-                                        className={
-                                            `nav-link ${isWorkPage ? "active" : ""}`
-                                        }
-                                    >
-                                        {data.nav.work}
-                                    </Link>
+                                <li>
+                                    <button 
+                                        className="dropdown-item text-purple p-3" 
+                                        onClick={() => setLanguage('en')}
+                                    >   
+                                        English
+                                        {!isLanguagePT && (' ✓')}
+                                    </button>
                                 </li>
                             </ul>
                         </div>
+                        <div 
+                            className="offcanvas offcanvas-start bg-purple" 
+                            tabindex="-1" 
+                            id="offcanvas-navbar" 
+                            aria-labelledby="offcanvas-navbar-label"
+                        >
+                            <div className="offcanvas-header p-4 align-items-start">
+                                <h5 className="offcanvas-title" id="offcanvas-navbar-label">
+                                    <img
+                                        src={logoSmallScreen}
+                                        className="max-h-50px"
+                                        alt="logo"
+                                    />
+                                </h5>
+                                <button
+                                    type="button"
+                                    className="btn-close btn-close-white fs-3"
+                                    data-bs-dismiss="offcanvas"
+                                    aria-label="Close"
+                                >
+                                </button>
+                            </div>
+                            <div className="offcanvas-body p-4">
+                                <ul className="navbar-nav">
+                                    <li className="nav-item">
+                                        <Link
+                                            to="/"
+                                            className={
+                                                `nav-link ${!isWorkPage ? "active" : ""}`
+                                            }
+                                        >
+                                            {data.nav.about}
+                                        </Link>
+                                    </li>
+                                    <li className="nav-item">
+                                        <Link
+                                            to="/work"
+                                            className={
+                                                `nav-link ${isWorkPage ? "active" : ""}`
+                                            }
+                                        >
+                                            {data.nav.work}
+                                        </Link>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </nav>
+                </nav>
+            )}
+            {isLargeScreen && (
+                <nav className="navbar p-0">
+                    <div className="container-fluid bg-purple justify-content-center shadow-sm">
+                        <Link
+                            to="/"
+                            className="navbar-brand py-2"
+                        >
+                            <img
+                                src={logoLargeScreen}
+                                className="max-h-130px w-auto"
+                                alt="logo"
+                            />
+                        </Link>
+                    </div>
+                    <div className="d-flex justify-content-center w-100">
+                        <img
+                            src={purpleArrow}
+                            className="w-auto"
+                            alt="purple-arrow"
+                        />
+                    </div>
+                </nav>
+            )}
         </header>
     );
 };
