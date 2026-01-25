@@ -27,7 +27,7 @@ const Header = () => {
         <header>
             {isSmallScreen && (
                 <nav className="navbar p-0">
-                    <div className="container-fluid justify-content-start bg-purple shadow-sm">
+                    <div className="container-fluid justify-content-start bg-purple px-4 shadow-sm">
                         <button
                             className="navbar-toggler btn-outline-orange max-h-50px"
                             type="button"
