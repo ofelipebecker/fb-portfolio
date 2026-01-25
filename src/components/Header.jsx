@@ -17,7 +17,6 @@ const Header = () => {
     const location = useLocation();
     const pathname = location.pathname;
 
-    const isHomePage = pathname === "/";
     const isWorkPage = pathname.startsWith("/work");
 
     const isSmallScreen = useMediaQuery("(max-width: 991px)");
