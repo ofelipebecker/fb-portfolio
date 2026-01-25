@@ -78,7 +78,7 @@ const Header = () => {
                         </div>
                         <div 
                             className="offcanvas offcanvas-start bg-purple" 
-                            tabindex="-1" 
+                            tabIndex="-1" 
                             id="offcanvas-navbar" 
                             aria-labelledby="offcanvas-navbar-label"
                         >
