@@ -19,12 +19,12 @@ const Footer = () => {
                         <div className="d-flex align-items-center text-purple">
                             <span className="me-2">
                                 {isLanguagePT ? 'Feito com' : 'Made with'}
-                                </span>
+                            </span>
                             <img
                                 className="w-25px"
                                 src={ReactLogo}
                                 alt="..."
-                            ></img>
+                            />
                             <span className="text-react-blue fs-3 fw-semibold ms-2">
                                 React
                             </span>

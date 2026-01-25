@@ -14,7 +14,7 @@ const SkillsCard = ({ title, chartData }) => {
                             className="w-25px"
                             src={ChartJSLogo}
                             alt="..."
-                        ></img>
+                        />
                         <span className="text-orange">Chart.JS</span>
                     </div>
                 </div>

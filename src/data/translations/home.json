@@ -1,118 +1,118 @@
 {
-  "en": {
-    "home": {
-      "title": "About"
+    "en": {
+        "home": {
+            "title": "About"
+        },
+        "skills": {
+            "title": "Skills",
+            "chart": {
+                "labels": [
+                    "JavaScript",
+                    "HTML/CSS",
+                    "Bootstrap",
+                    "React",
+                    "JS Libraries"
+                ],
+                "tooltipLabel": "Skill"
+            }
+        },
+        "education": {
+            "title": "Education",
+            "table": {
+                "headers": [
+                    "Course",
+                    "Institution",
+                    "Date"
+                ],
+                "body": [
+                    {
+                        "course": "Bachelor's Degree in Design",
+                        "institution": "UFSC",
+                        "date": "2008 - 2014"
+                    },
+                    {
+                        "course": "JavaScript Algorithms and Data Structures Certification",
+                        "institution": "FreeCodeCamp",
+                        "date": "2020"
+                    },
+                    {
+                        "course": "Front End Development Libraries (React + Redux)",
+                        "institution": "FreeCodeCamp",
+                        "date": "Ongoing"
+                    },
+                    {
+                        "course": "EnglishScore Proficiency - Level CEFR C1",
+                        "institution": "British Council",
+                        "date": "2020"
+                    }
+                ]
+            }
+        },
+        "location": {
+            "title": "Where is Felipe?",
+            "map": {
+                "address": "Hello! I'm in Palhoça/SC - Brazil!",
+                "contactMessage": "Contact me at:",
+                "buttonText": "Show"
+            }
+        }
     },
-    "skills": {
-      "title": "Skills",
-      "chart": {
-        "labels": [
-          "JavaScript",
-          "HTML/CSS",
-          "Bootstrap",
-          "React",
-          "JS Libraries"
-        ],
-        "tooltipLabel": "Skill"
-      }
-    }, 
-    "education": {
-      "title": "Education",
-      "table": {
-        "headers": [
-          "Course",
-          "Institution", 
-          "Date"
-        ],
-        "body": [
-          {
-            "course": "Bachelor's Degree in Design",
-            "institution": "UFSC",
-            "date": "2008 - 2014"
-          },
-          {
-            "course": "JavaScript Algorithms and Data Structures Certification",
-            "institution": "FreeCodeCamp", 
-            "date": "2020"
-          },
-          {
-            "course": "Front End Development Libraries (React + Redux)",
-            "institution": "FreeCodeCamp",
-            "date": "Ongoing"
-          },
-          {
-            "course": "EnglishScore Proficiency - Level CEFR C1",
-            "institution": "British Council",
-            "date": "2020"
-          }
-        ]
-      }
-    }, 
-    "location": {
-      "title": "Where is Felipe?",
-      "map": {
-        "address": "Hello! I'm in Palhoça/SC - Brazil!",
-        "contactMessage": "Contact me at:",
-        "buttonText": "Show"
-      }
+    "pt": {
+        "home": {
+            "title": "Sobre"
+        },
+        "skills": {
+            "title": "Habilidades",
+            "chart": {
+                "labels": [
+                    "JavaScript",
+                    "HTML/CSS",
+                    "Bootstrap",
+                    "React",
+                    "Bibliotecas de JS"
+                ],
+                "tooltipLabel": "Habilidade"
+            }
+        },
+        "education": {
+            "title": "Educação",
+            "table": {
+                "headers": [
+                    "Curso",
+                    "Instituição",
+                    "Data"
+                ],
+                "body": [
+                    {
+                        "course": "Bacharelado em Design",
+                        "institution": "UFSC",
+                        "date": "2008 - 2014"
+                    },
+                    {
+                        "course": "JavaScript Algorithms and Data Structures Certification",
+                        "institution": "FreeCodeCamp",
+                        "date": "2020"
+                    },
+                    {
+                        "course": "Front End Development Libraries (React + Redux)",
+                        "institution": "FreeCodeCamp",
+                        "date": "Em andamento"
+                    },
+                    {
+                        "course": "EnglishScore Proficiency - Level CEFR C1",
+                        "institution": "British Council",
+                        "date": "2020"
+                    }
+                ]
+            }
+        },
+        "location": {
+            "title": "Onde está Felipe?",
+            "map": {
+                "address": "Olá! Estou em Palhoça/SC - Brasil!",
+                "contactMessage": "Entre em contato comigo em:",
+                "buttonText": "Mostrar"
+            }
+        }
     }
-  },
-  "pt": {
-    "home": {
-      "title": "Sobre"
-    },
-    "skills": {
-      "title": "Habilidades",
-      "chart": {
-        "labels": [
-          "JavaScript",
-          "HTML/CSS",
-          "Bootstrap",
-          "React",
-          "Bibliotecas de JS"
-        ],
-        "tooltipLabel": "Habilidade"
-      }
-    }, 
-    "education": {
-      "title": "Educação",
-      "table": {
-        "headers": [
-          "Curso",
-          "Instituição",
-          "Data"
-        ],
-        "body": [
-          {
-            "course": "Bacharelado em Design",
-            "institution": "UFSC",
-            "date": "2008 - 2014"
-          },
-          {
-            "course": "JavaScript Algorithms and Data Structures Certification",
-            "institution": "FreeCodeCamp",
-            "date": "2020"
-          },
-          {
-            "course": "Front End Development Libraries (React + Redux)",
-            "institution": "FreeCodeCamp",
-            "date": "Em andamento"
-          },
-          {
-            "course": "EnglishScore Proficiency - Level CEFR C1",
-            "institution": "British Council",
-            "date": "2020"
-          }
-        ]
-      }
-    }, 
-    "location": {
-      "title": "Onde está Felipe?",
-      "map": {
-        "address": "Olá! Estou em Palhoça/SC - Brasil!",
-        "contactMessage": "Entre em contato comigo em:",
-        "buttonText": "Mostrar"
-      }
-    }
-  }
 }

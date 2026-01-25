@@ -77,7 +77,8 @@ const CityMap = ({ mapData }) => {
             <div
                 ref={mapContainerRef}
                 style={{ width: "100%", height: "400px" }}
-            ></div>
+            >
+            </div>
         </div>
     );
 };
