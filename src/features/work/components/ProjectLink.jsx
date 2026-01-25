@@ -7,12 +7,12 @@ const ProjectLink = ({ title, imageSrc, url, tags }) => {
                 to={url}
                 className="proj-link text-decoration-none text-reset"
             >
-                <div className="card border-0 overflow-hidden rounded-3 shadow-sm">
+                <div className="card border-0 overflow-hidden rounded-3 bg-light shadow-sm">
                     <div className="card-title d-flex align-items-end mb-0 p-3">
                         <h2 className="mb-0 me-3">{title}</h2>
                         <small>{tags}</small>
                     </div>
-                    <div className="card-body border-top border-3 p-0 max-h-200px overflow-hidden">
+                    <div className="card-body border border-dark-subtle max-h-200px overflow-hidden p-0 m-2">
                         <img src={imageSrc} className="w-100" alt={title} />
                     </div>
                 </div>
