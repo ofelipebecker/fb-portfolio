@@ -165,8 +165,8 @@ const Header = () => {
                         <small className="text-orange mb-0 mt-4">
                             <em>{data.residence}</em>
                         </small>
-                        <ul class="nav justify-content-end my-5">
-                            <li class="nav-item me-4">
+                        <ul className="nav justify-content-end my-5">
+                            <li className="nav-item me-4">
                                 <Link
                                     to="/"
                                     className={
@@ -176,7 +176,7 @@ const Header = () => {
                                     {data.nav.about}
                                 </Link>
                             </li>
-                            <li class="nav-item">
+                            <li className="nav-item">
                                 <Link
                                     to="/work"
                                     className={
