@@ -20,12 +20,11 @@ const Header = () => {
     const isHomePage = pathname === "/";
     const isWorkPage = pathname.startsWith("/work");
 
-    const isLargeScreen = useMediaQuery('(min-width: 992px)'); 
-    const isSmallScreen = !isLargeScreen; 
+    const isSmallScreen = useMediaQuery("(max-width: 991px)");
 
     return (
         <header>
-            {isSmallScreen && (
+            {isSmallScreen ? (
                 <nav className="navbar p-0">
                     <div className="container-fluid justify-content-start bg-purple px-4 shadow-sm">
                         <button
@@ -127,8 +126,7 @@ const Header = () => {
                         </div>
                     </div>
                 </nav>
-            )}
-            {isLargeScreen && (
+            ) : (
                 <nav className="navbar p-0">
                     <div className="container-fluid bg-purple flex-column shadow-sm">
                         <div className="row w-100">
@@ -152,15 +150,8 @@ const Header = () => {
                                 </div>
                             </div>
                         </div>
-                        <Link
-                            to="/"
-                            className="navbar-brand py-2 m-0"
-                        >
-                            <img
-                                src={logoLargeScreen}
-                                className="max-h-130px w-auto"
-                                alt="logo"
-                            />
+                        <Link to="/" className="navbar-brand py-2 m-0">
+                            <img src={logoLargeScreen} className="max-h-130px w-auto" alt="logo" />
                         </Link>
                         <small className="text-orange mb-0 mt-4">
                             <em>{data.residence}</em>
@@ -169,9 +160,7 @@ const Header = () => {
                             <li className="nav-item me-4">
                                 <Link
                                     to="/"
-                                    className={
-                                        `nav-link ${!isWorkPage ? "active" : ""}`
-                                    }
+                                    className={`nav-link ${!isWorkPage ? "active" : ""}`}
                                 >
                                     {data.nav.about}
                                 </Link>
@@ -179,9 +168,7 @@ const Header = () => {
                             <li className="nav-item">
                                 <Link
                                     to="/work"
-                                    className={
-                                        `nav-link ${isWorkPage ? "active" : ""}`
-                                    }
+                                    className={`nav-link ${isWorkPage ? "active" : ""}`}
                                 >
                                     {data.nav.work}
                                 </Link>
@@ -189,11 +176,7 @@ const Header = () => {
                         </ul>
                     </div>
                     <div className="d-flex justify-content-center w-100">
-                        <img
-                            src={purpleArrow}
-                            className="w-auto"
-                            alt="purple-arrow"
-                        />
+                        <img src={purpleArrow} className="w-auto" alt="purple-arrow" />
                     </div>
                 </nav>
             )}
