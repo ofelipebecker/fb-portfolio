@@ -1,6 +1,6 @@
-import ctbCover from "../../../assets/images/proj-ctb/work-proj-ctb-cover.png";
-import vcxDashCover from "../../../assets/images/proj-vcx-dashboard/work-proj-vcx-dashboard-cover.jpg";
-import vcxTablesCover from "../../../assets/images/proj-vcx-tables/work-proj-vcx-tables-cover.png";
+import ctbCover from "../../../../assets/images/proj-ctb/work-proj-ctb-cover.png";
+import vcxDashCover from "../../../../assets/images/proj-vcx-dashboard/work-proj-vcx-dashboard-cover.jpg";
+import vcxTablesCover from "../../../../assets/images/proj-vcx-tables/work-proj-vcx-tables-cover.png";
 
 const workProjects = [
     {
