@@ -25,19 +25,21 @@ const Work = () => {
     );
 
     return (
-        <div className="container my-5">
+        <div className="container-fluid mb-9 mt-5 px-4">
             <div className="row">
-                <div className="col-12 col-lg-10 offset-lg-1 mt-5">
-                    <h1>{isLanguagePT ? 'Projetos' : 'Work'}</h1>
-                    {workProjects.map((project, index) => (
-                        <ProjectLink
-                            key={index}
-                            title={project.title}
-                            imageSrc={project.imageSrc}
-                            tags={project.tags}
-                            url={project.url}
-                        />
-                    ))}
+                <div className="col-12 col-lg-10 offset-lg-1">
+                    <h1 className="mb-5 text-center">{isLanguagePT ? 'Projetos' : 'Work'}</h1>
+                    <div className="row g-5">
+                        {workProjects.map((project, index) => (
+                            <ProjectLink
+                                key={index}
+                                title={project.title}
+                                imageSrc={project.imageSrc}
+                                tags={project.tags}
+                                url={project.url}
+                            />
+                        ))}
+                    </div>
                 </div>
             </div>
         </div>
