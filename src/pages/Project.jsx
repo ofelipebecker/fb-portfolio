@@ -1,5 +1,6 @@
-import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import { useLanguage } from "../context/LanguageContext";
 
 import ProjectBreadcrumb from "../features/projects/components/ProjectBreadcrumb";
 import ProjectConclusion from "../features/projects/components/ProjectConclusion";
@@ -8,19 +9,26 @@ import ProjectPagination from "../features/projects/components/ProjectPagination
 import ProjectSteps from "../features/projects/components/ProjectSteps";
 
 const Project = () => {
+    const { language } = useLanguage();
     const { projectId } = useParams();
+    
     const [projectConclusion, setProjectConclusion] = useState(null);
     const [projectIntro, setProjectIntro] = useState(null);
     const [projectSteps, setProjectSteps] = useState(null);
 
     useEffect(() => {
+        import(`../features/projects/${projectId}/intro`)
+            .then(module => {
+                const intro = module.default(language);
+                setProjectIntro(intro);
+            });
+            
         import(`../features/projects/${projectId}/conclusion`)
             .then(module => setProjectConclusion(module.default));
-        import(`../features/projects/${projectId}/intro`)
-            .then(module => setProjectIntro(module.default));
+
         import(`../features/projects/${projectId}/steps`)
             .then(module => setProjectSteps(module.default));
-    }, [projectId]);
+    }, [language, projectId]);
 
     if (!projectConclusion || !projectIntro || !projectSteps) return (
         <div className="container-fluid mt-5 px-4 text-center mb-9">
