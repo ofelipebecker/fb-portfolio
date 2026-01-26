@@ -15,7 +15,7 @@ const Work = () => {
     }, [language]);
 
     if (!workProjects) return (
-        <div className="container">
+        <div className="container-fluid mt-5 px-4 text-center mb-9">
             <div className="row">
                 <div className="col-12 col-lg-10 offset-lg-1 mt-5">
                     <p>Carregando...</p>
