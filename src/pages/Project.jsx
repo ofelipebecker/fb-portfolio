@@ -49,7 +49,10 @@ const Project = () => {
                 <div className="col-12 col-lg-10 col-xl-8 col-xxl-6 offset-lg-1 offset-xl-2 offset-xxl-3">
                     <div className="row">
                         <div className="col">
-                            <ProjectBreadcrumb projectTitle={projectIntro.data.title} />
+                            <ProjectBreadcrumb 
+                                language={language} 
+                                projectTitle={projectIntro.data.title} 
+                            />
                         </div>
                     </div>
                     <div className="row">
@@ -63,7 +66,10 @@ const Project = () => {
                     </div>
                     <div className="row mt-5">
                         <div className="col">
-                            <ProjectBreadcrumb projectTitle={projectIntro.data.title} />
+                            <ProjectBreadcrumb 
+                                language={language} 
+                                projectTitle={projectIntro.data.title} 
+                            />
                         </div>
                         <div className="col-auto">
                             <ProjectPagination currentProjectId={projectId} />
