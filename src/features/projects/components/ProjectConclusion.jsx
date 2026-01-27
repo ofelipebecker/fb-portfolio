@@ -1,7 +1,7 @@
 const ProjectConclusion = ({ conclusion }) => (
     <div className="col mt-5">
         <div className="card border-0 rounded-3 shadow-sm p-4">
-            <h2>Conclusão</h2>
+            <h2>{ conclusion.data.title }</h2>
             <div className="card-body d-flex flex-column p-0">
                 {conclusion.video && (
                     <div className="ratio ratio-16x9">
@@ -14,10 +14,10 @@ const ProjectConclusion = ({ conclusion }) => (
                         </iframe>
                     </div>
                 )}
-                {conclusion.data.map((text, index) => (
+                {conclusion.data.text.map((text, index) => (
                     <p 
                         key={index}
-                        className={index === conclusion.data.length - 1 ? "mb-0 mt-4" : "my-4"}
+                        className={index === conclusion.data.text.length - 1 ? "mb-0 mt-4" : "my-4"}
                     >
                         {text}
                     </p>

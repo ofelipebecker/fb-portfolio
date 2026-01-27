@@ -23,11 +23,14 @@ const Project = () => {
                 setProjectIntro(intro);
             });
             
-        import(`../features/projects/${projectId}/conclusion`)
-            .then(module => setProjectConclusion(module.default));
-
         import(`../features/projects/${projectId}/steps`)
             .then(module => setProjectSteps(module.default));
+
+        import(`../features/projects/${projectId}/conclusion`)
+            .then(module => {
+                const conclusion = module.default(language);
+                setProjectConclusion(conclusion);
+            });
     }, [language, projectId]);
 
     if (!projectConclusion || !projectIntro || !projectSteps) return (
