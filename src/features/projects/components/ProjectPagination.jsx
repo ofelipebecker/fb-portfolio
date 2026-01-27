@@ -13,14 +13,14 @@ const ProjectPagination = ({ currentProjectId }) => {
     };
 
     return (
-        <nav aria-label="Navegação entre projetos">
+        <nav aria-label="Cross-project navigation">
             <ul className="pagination mb-0">
                 <li className={`page-item ${!hasPreviousProject ? 'disabled' : ''}`}>
                     {hasPreviousProject ? (
                         <Link 
                             className="page-link fs-4" 
                             to={`/work/project${previousProjectNum}`}
-                            aria-label="Projeto anterior"
+                            aria-label="Previous project"
                             onClick={handleLinkClick}
                         >
                             ← Anterior
@@ -36,7 +36,7 @@ const ProjectPagination = ({ currentProjectId }) => {
                         <Link 
                             className="page-link fs-4" 
                             to={`/work/project${nextProjectNum}`}
-                            aria-label="Próximo projeto"
+                            aria-label="Next project"
                             onClick={handleLinkClick}
                         >
                             Próximo →
