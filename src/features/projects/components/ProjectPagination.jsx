@@ -1,10 +1,15 @@
 import { Link } from "react-router-dom";
 import { workProjectsLength } from "../../work/data/pt/workProjectsData";
 
-const ProjectPagination = ({ currentProjectId }) => {
+const ProjectPagination = ({ language, currentProjectId }) => {
+    const isLanguagePT = language === "pt";
+    const nextText = `${isLanguagePT ? 'Próximo' : 'Next'} →`;
+    const previousText = `← ${isLanguagePT ? 'Anterior' : 'Previous'}`;
+
     const currentProjectNum = Number(currentProjectId.replace('project', ''));
     const previousProjectNum = currentProjectNum - 1;
     const nextProjectNum = currentProjectNum + 1;
+    
     const hasPreviousProject = previousProjectNum > 0;
     const hasNextProject = nextProjectNum <= workProjectsLength;
 
@@ -23,11 +28,11 @@ const ProjectPagination = ({ currentProjectId }) => {
                             aria-label="Previous project"
                             onClick={handleLinkClick}
                         >
-                            ← Anterior
+                            {previousText}
                         </Link>
                     ) : (
                         <span className="page-link fs-4 text-muted" aria-disabled="true">
-                            ← Anterior
+                            {previousText}
                         </span>
                     )}
                 </li>
@@ -39,11 +44,11 @@ const ProjectPagination = ({ currentProjectId }) => {
                             aria-label="Next project"
                             onClick={handleLinkClick}
                         >
-                            Próximo →
+                            {nextText}
                         </Link>
                     ) : (
                         <span className="page-link fs-4 text-muted" aria-disabled="true">
-                            Próximo →
+                            {nextText}
                         </span>
                     )}
                 </li> 

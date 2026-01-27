@@ -72,7 +72,10 @@ const Project = () => {
                             />
                         </div>
                         <div className="col-auto">
-                            <ProjectPagination currentProjectId={projectId} />
+                            <ProjectPagination 
+                                language={language} 
+                                currentProjectId={projectId} 
+                            />
                         </div>
                     </div>
                 </div>
