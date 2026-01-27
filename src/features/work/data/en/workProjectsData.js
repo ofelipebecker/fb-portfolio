@@ -1,26 +1,26 @@
-import ctbCover from "../../../../assets/images/proj-ctb/work-proj-ctb-cover.png";
-import vcxDashCover from "../../../../assets/images/proj-vcx-dashboard/work-proj-vcx-dashboard-cover.jpg";
-import vcxTablesCover from "../../../../assets/images/proj-vcx-tables/work-proj-vcx-tables-cover.png";
+import ctbCover from '../../../../assets/images/proj-ctb/work-proj-ctb-cover.png';
+import vcxDashCover from '../../../../assets/images/proj-vcx-dashboard/work-proj-vcx-dashboard-cover.jpg';
+import vcxTablesCover from '../../../../assets/images/proj-vcx-tables/work-proj-vcx-tables-cover.png';
 
 const workProjects = [
-    {
-        title: "Main Dashboard - VC-X Sonar | Dashboard",
-        imageSrc: vcxDashCover,
-        tags: "JS | Chart.js | Day.js | Datatables.js | Bootstrap",
-        url: "/work/project1",
-    },
-    {
-        title: "Cities & Bikes | Webapp/Interactive Map",
-        imageSrc: ctbCover,
-        tags: "JS | MapboxGL.js | Mapbox Directions API | Mapbox Geocoding API | OpenWeatherMap API",
-        url: "/work/project2",
-    },
-    {
-        title: "Tables Standardization - VC-X Sonar | Tables",
-        imageSrc: vcxTablesCover,
-        tags: "JS | Datatables.js | Bootstrap",
-        url: "/work/project3",
-    },
+  {
+    title: 'Main Dashboard - VC-X Sonar | Dashboard',
+    imageSrc: vcxDashCover,
+    tags: 'JS | Chart.js | Day.js | Datatables.js | Bootstrap',
+    url: '/work/project1',
+  },
+  {
+    title: 'Cities & Bikes | Webapp/Interactive Map',
+    imageSrc: ctbCover,
+    tags: 'JS | MapboxGL.js | Mapbox Directions API | Mapbox Geocoding API | OpenWeatherMap API',
+    url: '/work/project2',
+  },
+  {
+    title: 'Tables Standardization - VC-X Sonar | Tables',
+    imageSrc: vcxTablesCover,
+    tags: 'JS | Datatables.js | Bootstrap',
+    url: '/work/project3',
+  },
 ];
 
 const workProjectsLength = workProjects.length;

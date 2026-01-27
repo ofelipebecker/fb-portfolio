@@ -1,16 +1,16 @@
 {
-    "en": {
-        "residence": "Palhoça, SC - Brazil",
-        "nav": {
-            "about": "About",
-            "work": "Work"
-        }
-    },
-    "pt": {
-        "residence": "Palhoça, SC - Brasil",
-        "nav": {
-            "about": "Sobre",
-            "work": "Projetos"
-        }
+  "en": {
+    "residence": "Palhoça, SC - Brazil",
+    "nav": {
+      "about": "About",
+      "work": "Work"
     }
+  },
+  "pt": {
+    "residence": "Palhoça, SC - Brasil",
+    "nav": {
+      "about": "Sobre",
+      "work": "Projetos"
+    }
+  }
 }
