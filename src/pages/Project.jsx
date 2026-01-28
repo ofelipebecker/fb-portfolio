@@ -22,9 +22,10 @@ const Project = () => {
       setProjectIntro(intro);
     });
 
-    import(`../features/projects/${projectId}/steps`).then((module) =>
-      setProjectSteps(module.default),
-    );
+    import(`../features/projects/${projectId}/steps`).then((module) => {
+      const steps = module.default(language);
+      setProjectSteps(steps)
+    });
 
     import(`../features/projects/${projectId}/conclusion`).then((module) => {
       const conclusion = module.default(language);
