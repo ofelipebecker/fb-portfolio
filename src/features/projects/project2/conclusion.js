@@ -1,8 +1,10 @@
-import { conclusionData } from './data/conclusionData';
+const createConclusion = (language) => {
+  const conclusionData = require(`./data/${language}/conclusionData.js`).conclusionData;
 
-const conclusion = {
-  data: conclusionData,
-  video: '',
+  return {
+    data: conclusionData,
+    video: '',
+  };
 };
 
-export default conclusion;
+export default createConclusion;
