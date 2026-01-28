@@ -1,4 +1,4 @@
-import SingleFigure from '../../../../components/SingleFigure';
+import SingleFigure from "../../../../../components/SingleFigure";
 
 export const StepsContent = [
   ({ captions = '', images }) => (
