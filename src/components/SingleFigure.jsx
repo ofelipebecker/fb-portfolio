@@ -1,10 +1,10 @@
 const SingleFigure = ({ image, alt, caption }) => (
-    <figure className="figure mb-0">
-        <img src={image} className="figure-img img-fluid border mb-0" alt={alt} />
-        <figcaption className="figure-caption">
-            <em>{caption}</em>
-        </figcaption>
-    </figure>
+  <figure className='figure mb-0'>
+    <img src={image} className='figure-img img-fluid border mb-0' alt={alt} />
+    <figcaption className='figure-caption'>
+      <em>{caption}</em>
+    </figcaption>
+  </figure>
 );
 
 export default SingleFigure;

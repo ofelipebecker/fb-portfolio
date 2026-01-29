@@ -1,9 +1,11 @@
-import { introData } from './data/introData';
-import imageVCXTIntro from '../../../assets/images/proj-vcx-tables/vcxt-intro.png';
+const createIntro = (language) => {
+  const introData = require(`./data/${language}/introData.js`).introData;
+  const imageVCXTIntro = require('../../../assets/images/proj-vcx-tables/vcxt-intro.png');
 
-const intro = {
+  return {
     data: introData,
     image: imageVCXTIntro,
+  };
 };
 
-export default intro;
+export default createIntro;

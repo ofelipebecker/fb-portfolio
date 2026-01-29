@@ -1,9 +1,11 @@
-import { introData } from './data/introData';
-import imageCTBIntro from '../../../assets/images/proj-ctb/ctb-intro.png';
+const createIntro = (language) => {
+  const introData = require(`./data/${language}/introData.js`).introData;
+  const imageCTBIntro = require('../../../assets/images/proj-ctb/ctb-intro.png');
 
-const intro = {
+  return {
     data: introData,
     image: imageCTBIntro,
+  };
 };
 
-export default intro;
+export default createIntro;
