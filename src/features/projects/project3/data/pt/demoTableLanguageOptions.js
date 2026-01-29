@@ -1,4 +1,4 @@
-export const language = {
+export const languageOptions = {
   decimal: '',
   emptyTable: 'Nenhum registro disponível na tabela',
   info: 'Mostrando _START_ a _END_ de _TOTAL_ registros',
