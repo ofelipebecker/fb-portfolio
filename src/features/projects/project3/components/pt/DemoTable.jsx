@@ -10,7 +10,8 @@ import 'datatables.net-bs5/css/dataTables.bootstrap5.css';
 import 'datatables.net-fixedcolumns-bs5/css/fixedColumns.bootstrap5.css';
 import 'datatables.net-buttons-bs5/css/buttons.bootstrap5.css';
 
-import { demoTableData } from '../data/demoTableData';
+import { demoTableData } from '../../data/pt/demoTableData';
+import { languageOptions } from '../../data/pt/demoTableLanguageOptions';
 
 DataTable.use(DT);
 DataTable.use(FixedColumns);
@@ -24,30 +25,7 @@ const DemoTable = () => {
   useEffect(() => {
     const tableOptions = {
       data: demoTableData,
-      language: {
-        decimal: '',
-        emptyTable: 'Nenhum registro disponível na tabela',
-        info: 'Mostrando _START_ a _END_ de _TOTAL_ registros',
-        infoEmpty: 'Mostrando 0 a 0 de 0 registros',
-        infoFiltered: '(filtrado de _MAX_ registros totais)',
-        infoPostFix: '',
-        thousands: ',',
-        lengthMenu: '_MENU_ resultados',
-        loadingRecords: 'Carregando...',
-        processing: 'Processando...',
-        search: 'Pesquisar',
-        zeroRecords: 'Nenhum registro correspondente encontrado',
-        paginate: {
-          first: 'Primeira',
-          last: 'Última',
-          next: 'Próxima',
-          previous: 'Anterior',
-        },
-        aria: {
-          sortAscending: ': ativar para ordenar coluna ascendente',
-          sortDescending: ': ativar para ordenar coluna descendente',
-        },
-      },
+      language: languageOptions,
       layout: {
         topStart: ['pageLength', 'buttons'],
         topEnd: 'search',
