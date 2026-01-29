@@ -1,8 +1,8 @@
-import ImageCarousel from '../../../../components/ImageCarousel';
-import SingleFigure from '../../../../components/SingleFigure';
-import SingleFigureModal from '../../../../components/SingleFigureModal';
+import ImageCarousel from '../../../../../components/ImageCarousel';
+import SingleFigure from '../../../../../components/SingleFigure';
+import SingleFigureModal from '../../../../../components/SingleFigureModal';
 
-import DemoTable from './DemoTable';
+import DemoTable from '../pt/DemoTable';
 
 export const StepsContent = [
   ({ captions = '', images }) => (
