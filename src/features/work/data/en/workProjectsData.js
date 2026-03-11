@@ -10,15 +10,15 @@ const workProjects = [
     url: '/work/project1',
   },
   {
-    title: 'Cities & Bikes | Webapp/Interactive Map',
-    imageSrc: ctbCover,
-    tags: 'JS | MapboxGL.js | Mapbox Directions API | Mapbox Geocoding API | OpenWeatherMap API',
-    url: '/work/project2',
-  },
-  {
     title: 'Tables Standardization - VC-X Sonar | Tables',
     imageSrc: vcxTablesCover,
     tags: 'JS | Datatables.js | Bootstrap',
+    url: '/work/project2',
+  },
+  {
+    title: 'Cities & Bikes | Webapp/Interactive Map',
+    imageSrc: ctbCover,
+    tags: 'JS | MapboxGL.js | Mapbox Directions API | Mapbox Geocoding API | OpenWeatherMap API',
     url: '/work/project3',
   },
 ];

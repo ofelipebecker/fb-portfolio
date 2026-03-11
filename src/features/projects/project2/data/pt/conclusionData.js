@@ -2,34 +2,33 @@ export const conclusionData = {
   title: 'Conclusão',
   text: [
     `
-      Muita coisa mudou desde que projetei o projeto pela primeira
-      vez, e decidi adotar uma abordagem diferente desta vez.
-      Cinco anos atrás, eu segui rigorosamente o método de design
-      e, naquele contexto, fazia sentido. Hoje em dia, por outro
-      lado, minha direção era desenvolver a versão um o mais
-      rápido possível, para que eu pudesse testá-la no mundo
-      "real".
+      A padronização das foi um projeto de grande impacto no VC-X Sonar, considerando o 
+      papel central que as tabelas tem no software. A implementação do DataTables.js como 
+      base para todas as tabelas permitiu melhorar a consistência visual e de 
+      comportamento, o que torna mais simples a leitura e compreensão das informações e 
+      reduz o tempo e energia gastos pelos usuários. Além disso, com a padronização, foi 
+      possível adicionar funcionalidades que foram bem recebidas, como: colunas fixas, 
+      melhores opções de exportação de dados, linhas filhas (child rows, linhas dentro de 
+      linhas, que disponibilizam informações extras), filtros por período e 
+      upload/download de arquivos.
     `,
     `
-      Descobri que, sem surpresa, os serviços de mapas são muito
-      mais fáceis de trabalhar, além de serem muito mais
-      acessíveis. Ter ferramentas como Mapbox e OpenStreetMap
-      tornou o projeto possível.
+      O maior desafio deste projeto foi unificar mais de 100 tabelas que estavam 
+      anteriormente divididas entre duas bibliotecas diferentes (a Footable e uma versão 
+      antiga da DataTables.js) em um único padrão atualizado. A diversidade de tipos de 
+      informação e propósitos das tabelas exigiu uma arquitetura flexível que pudesse 
+      atender desde listas simples até processos mais complexos, como upload de arquivos 
+      em tabelas. Adicionalmente, tivemos que implementar tabelas para e-mails via MJML, 
+      um processo separado com suas próprias dificuldades técnicas. Todo esse trabalho foi 
+      realizado por uma equipe reduzida de 3 desenvolvedores que conciliavam com outras 
+      demandas paralelas.
     `,
     `
-      No desenvolvimento de tecnologias, minha primeira intenção
-      era desenvolver um aplicativo móvel com React Native.
-      Percebi, enquanto tentava, que levaria muito tempo para
-      adaptar tudo ao React Native, já que eu tinha apenas
-      conhecimento básico de desenvolvimento. Decidi que era
-      melhor criar uma versão mais simples, mas rápida - um
-      aplicativo web em JavaScript puro, e então testar o projeto.
-    `,
-    `
-      Foi ótimo finalmente ter o projeto que trabalhei tanto para
-      criar se tornando realidade, mas também aprendi muito sobre
-      desenvolvimento web e design de mapas, e isso me tornou um
-      profissional mais qualificado e confiante.
+      Este projeto representou um grande crescimento técnico para mim, no qual alcançei 
+      proficiência em DataTables.js, além de evolução em JavaScript e outras bibliotecas. 
+      O feedback positivo dos usuários validou as decisões de design e funcionalidades. 
+      Aprendi a dividir um projeto complexo em blocos entregáveis, o que permitiu manter 
+      qualidade e consistência mesmo com múltiplas demandas simultâneas.
     `,
   ],
 };

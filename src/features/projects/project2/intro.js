@@ -1,10 +1,10 @@
 const createIntro = (language) => {
   const introData = require(`./data/${language}/introData.js`).introData;
-  const imageCTBIntro = require('../../../assets/images/proj-ctb/ctb-intro.png');
+  const imageVCXTIntro = require('../../../assets/images/proj-vcx-tables/vcxt-intro.png');
 
   return {
     data: introData,
-    image: imageCTBIntro,
+    image: imageVCXTIntro,
   };
 };
 
