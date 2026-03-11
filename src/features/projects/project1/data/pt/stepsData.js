@@ -75,4 +75,9 @@ export const stepsData = [
     title: 'Desenvolvimento',
     subtitle: 'Implementação Demais Cards - Revisões de Código',
   },
+  {
+    title: 'Desenvolvimento',
+    subtitle: 'Implementação de Referência com Dados Sintéticos',
+    imagesCaptions: [],
+  },
 ];

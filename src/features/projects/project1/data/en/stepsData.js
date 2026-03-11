@@ -75,4 +75,9 @@ export const stepsData = [
     title: 'Development',
     subtitle: 'Development of the Other Cards - Code Review',
   },
+  {
+    title: 'Development',
+    subtitle: 'Reference Implementation with Synthetic Data',
+    imagesCaptions: [],
+  },
 ];
