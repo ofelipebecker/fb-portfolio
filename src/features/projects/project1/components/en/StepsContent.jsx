@@ -296,4 +296,23 @@ export const StepsContent = [
       </p>
     </>
   ),
+  ({ captions = '', images }) => (
+    <>
+      <p className='my-4'>
+        To demonstrate the implemented functionalities in practice, I developed a sample dashboard 
+        using React, Chart.js, Day.js, and React Bootstrap. Although the data is fictitious, the 
+        interaction features align with what I implemented in the VC-X Sonar Dashboard.
+      </p>
+      <a
+        className='btn btn-lg btn-warning mb-3'
+        href='https://fbecker-dashboard-charts-demo.netlify.app/'
+        rel='noreferrer noopener'
+        target='_blank'
+      >
+        Open demo dashboard in a new tab 
+        <span className='bi bi-box-arrow-up-right ms-2'></span>
+      </a>
+      <SingleFigure image={images[0]} alt={captions[0]} caption={captions[0]} />
+    </>
+  ),
 ];
