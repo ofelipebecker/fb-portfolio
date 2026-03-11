@@ -89,6 +89,7 @@
   --main-orange: #ff931e;
   --main-purple: #6c2250;
   --medium-gray: #6c757d;
+  --medium-orange: #ffa84a;
   --react-blue: #58c4dc;
 }
 
@@ -173,6 +174,23 @@ body {
 .btn.btn-outline-primary:hover {
   background-color: var(--main-purple);
   color: white;
+}
+
+.btn.btn-warning {
+	--bs-btn-color: var(--dark-purple);
+	--bs-btn-bg: var(--medium-orange);
+	--bs-btn-border-color: var(--medium-orange);
+	--bs-btn-hover-color: var(--dark-purple);
+	--bs-btn-hover-bg: var(--main-orange);
+	--bs-btn-hover-border-color: var(--main-orange);
+	--bs-btn-focus-shadow-rgb: 217,164,6;
+	--bs-btn-active-color: var(--dark-purple);
+	--bs-btn-active-bg: var(--main-orange);
+	--bs-btn-active-border-color: var(--main-orange);
+	--bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+	--bs-btn-disabled-color: var(--dark-purple);
+	--bs-btn-disabled-bg: var(--medium-orange);
+	--bs-btn-disabled-border-color: var(--medium-orange);
 }
 
 .carousel-caption {

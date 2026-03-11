@@ -6,6 +6,7 @@ import imageVCXDs11 from '../../../assets/images/proj-vcx-dashboard/vcxd-s11-cha
 import imageVCXDs13 from '../../../assets/images/proj-vcx-dashboard/vcxd-s13-period-selector.png';
 import imageVCXDs15 from '../../../assets/images/proj-vcx-dashboard/vcxd-s15-other-charts-tabs.png';
 import imageVCXDs16 from '../../../assets/images/proj-vcx-dashboard/vcxd-s16-other-charts-tables.png';
+import imageVCXDs17 from '../../../assets/images/proj-vcx-dashboard/vcxd-s17-dashboard-charts-demo.png';
 
 export const stepsImages = [
   [],
@@ -25,4 +26,5 @@ export const stepsImages = [
   [imageVCXDs15],
   [imageVCXDs16],
   [],
+  [imageVCXDs17],
 ];
