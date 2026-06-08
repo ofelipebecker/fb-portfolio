@@ -1,5 +1,5 @@
 export const conclusionData = {
-  title: 'Conclusão',
+  title: 'Conclusion',
   text: [
     `
       Much changed since I first designed the project, and l decided to
