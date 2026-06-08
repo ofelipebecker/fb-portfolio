@@ -105,6 +105,10 @@ export const stepsData = [
   {
     title: 'Desenvolvimento Front-end',
     subtitle: 'Hospedagem e Publicação',
-    imagesCaptions: [''],
+    imagesCaptions: [
+      'Cidades e Bikes: mapa com locais.',
+      'Cidades e Bikes: mapa informações de um local abertas.',
+      'Cidades e Bikes: menu de mostrar/esconder colunas.',
+    ],
   },
 ];

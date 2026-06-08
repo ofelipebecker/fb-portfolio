@@ -17,7 +17,9 @@ import imageCTBs18 from '../../../assets/images/proj-ctb/ctb-s18.png';
 import imageCTBs19 from '../../../assets/images/proj-ctb/ctb-s19.png';
 import imageCTBs20 from '../../../assets/images/proj-ctb/ctb-s20.png';
 import imageCTBs21 from '../../../assets/images/proj-ctb/ctb-s21.png';
-import imageCTBs22 from '../../../assets/images/proj-ctb/ctb-s22.png';
+import imageCTBs221 from '../../../assets/images/proj-ctb/ctb-s22-01.png';
+import imageCTBs222 from '../../../assets/images/proj-ctb/ctb-s22-02.png';
+import imageCTBs223 from '../../../assets/images/proj-ctb/ctb-s22-03.png';
 
 export const stepsImages = [
   [imageCTBs01],
@@ -41,5 +43,9 @@ export const stepsImages = [
   [imageCTBs19],
   [imageCTBs20],
   [imageCTBs21],
-  [imageCTBs22],
+  [
+    imageCTBs221,
+    imageCTBs222,
+    imageCTBs223,
+  ],
 ];
