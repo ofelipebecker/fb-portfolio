@@ -26,6 +26,15 @@ export const conclusionData = {
       aplicativo web em JavaScript puro, e então testar o projeto.
     `,
     `
+      Em 2026, com mais experiência, refatorei completamente o
+      projeto migrando de JavaScript puro para React com
+      TypeScript. A componentização da interface e a extração
+      da lógica do mapa para hooks customizados tornaram o
+      código mais modular, sustentável e escalável. Essa
+      evolução técnica reflete meu crescimento como
+      desenvolvedor e a maturidade que adquiri nos últimos anos.
+    `,
+    `
       Foi ótimo finalmente ter o projeto que trabalhei tanto para
       criar se tornando realidade, mas também aprendi muito sobre
       desenvolvimento web e design de mapas, e isso me tornou um
