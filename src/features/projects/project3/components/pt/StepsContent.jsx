@@ -1,3 +1,4 @@
+import ImageCarousel from '../../../../../components/ImageCarousel';
 import SingleFigure from '../../../../../components/SingleFigure';
 
 export const StepsContent = [
@@ -290,24 +291,23 @@ export const StepsContent = [
   ({ captions = '', images }) => (
     <>
       <p className='my-4'>
-        A tarefa final de desenvolvimento foi publicar Cidades e Bicicletas.
-        Primeiramente, eu precisava encontrar um host que suportasse https, já
-        que a conexão precisa ser segura para que o site armazene a localização
-        do usuário. Eu decidi usar &nbsp;
-        <a href='/'>Netlify</a> porque esse serviço não só atendia ao requisito
-        de suporte a https, mas também era muito fácil de publicar e manter o
-        site.
+        A tarefa final de desenvolvimento foi publicar o Cidades & Bikes. Na versão original (2021), 
+        utilizei HTML, CSS e JavaScript puro. Em 2026, reconstruí o projeto utilizando React com 
+        TypeScript, componentizando a interface e extraindo a lógica do mapa para hooks 
+        customizados. Mantive a hospedagem no Netlify pela facilidade de deploy contínuo e suporte 
+        nativo a HTTPS.
       </p>
       <a
-        className='btn btn-lg btn-outline-primary mb-4'
+        className='btn btn-lg btn-info mb-4'
         href='https://cidadesebikes.netlify.app/'
         rel='noreferrer noopener'
         target='_blank'
         title='Abrir webapp em nova aba.'
       >
-        CIDADES & BIKES WEBAPP
+        Abrir CIDADES & BIKES em nova aba 
+        <span className='bi bi-box-arrow-up-right ms-2'></span>
       </a>
-      <SingleFigure image={images[0]} alt={captions[0]} caption={captions[0]} />
+      <ImageCarousel id='ctb-22' images={images} captions={captions} />
     </>
   ),
 ];
