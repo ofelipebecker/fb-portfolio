@@ -1,0 +1,477 @@
+@font-face {
+  font-family: 'Zilla Slab';
+  src: url('./assets/fonts/ZillaSlab-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Zilla Slab';
+  src: url('./assets/fonts/ZillaSlab-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Zilla Slab';
+  src: url('./assets/fonts/ZillaSlab-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Zilla Slab';
+  src: url('./assets/fonts/ZillaSlab-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Zilla Slab';
+  src: url('./assets/fonts/ZillaSlab-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Zilla Slab';
+  src: url('./assets/fonts/ZillaSlab-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Zilla Slab';
+  src: url('./assets/fonts/ZillaSlab-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Zilla Slab';
+  src: url('./assets/fonts/ZillaSlab-SemiBoldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Zilla Slab';
+  src: url('./assets/fonts/ZillaSlab-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Zilla Slab';
+  src: url('./assets/fonts/ZillaSlab-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+:root {
+  --bootstrap-purple: #6f42c1;
+  --dark-orange: #995812;
+  --dark-purple: #611e48;
+  --light-gray: #e6e6e6;
+  --lighter-gray: #f8f9fa;
+  --lighter-gray-2: #f2f2f2;
+  --light-orange: #ffe9d2;
+  --main-orange: #ff931e;
+  --main-purple: #6c2250;
+  --medium-gray: #6c757d;
+  --medium-orange: #ffa84a;
+  --react-blue: #58c4dc;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: var(--light-orange) !important;
+  font-size: 1.4rem;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+.alert {
+  border-radius: 0;
+}
+
+.bg-purple {
+  background-color: var(--main-purple);
+}
+
+.bg-light-gray {
+  background-color: var(--light-gray);
+}
+
+.bg-light-orange {
+  background-color: var(--light-orange);
+}
+
+.bg-light-purple {
+  background-color: #eadeff;
+}
+
+.bg-orange {
+  background-color: var(--main-orange);
+}
+
+.btn.btn-outline-md-gray,
+.btn.btn-outline-md-gray:hover {
+  border-color: var(--medium-gray);
+}
+
+.btn.btn-outline-md-gray:hover {
+  background-color: var(--lighter-gray-2);
+}
+
+.btn.btn-outline-md-gray .bi.bi-toggle-on {
+  color: rgba(var(--bs-success-rgb));
+}
+
+.btn-outline-orange,
+.btn-outline-orange.active,
+.btn-outline-orange:first-child:active,
+.btn-outline-orange:focus-visible {
+  border: 1px solid var(--main-orange);
+  color: var(--main-orange) !important;
+}
+
+.btn.btn-purple {
+  background-color: var(--main-purple);
+  border-color: var(--main-purple);
+  color: white;
+}
+
+.btn.btn-purple:hover {
+  background-color: var(--dark-purple);
+  border-color: var(--main-purple);
+  color: white;
+}
+
+.btn.btn-outline-primary {
+  border-color: var(--main-purple);
+  color: var(--main-purple);
+}
+
+.btn.btn-outline-primary:hover {
+  background-color: var(--main-purple);
+  color: white;
+}
+
+.btn.btn-warning {
+	--bs-btn-color: var(--dark-purple);
+	--bs-btn-bg: var(--medium-orange);
+	--bs-btn-border-color: var(--medium-orange);
+	--bs-btn-hover-color: var(--dark-purple);
+	--bs-btn-hover-bg: var(--main-orange);
+	--bs-btn-hover-border-color: var(--main-orange);
+	--bs-btn-focus-shadow-rgb: 217,164,6;
+	--bs-btn-active-color: var(--dark-purple);
+	--bs-btn-active-bg: var(--main-orange);
+	--bs-btn-active-border-color: var(--main-orange);
+	--bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+	--bs-btn-disabled-color: var(--dark-purple);
+	--bs-btn-disabled-bg: var(--medium-orange);
+	--bs-btn-disabled-border-color: var(--medium-orange);
+}
+
+.carousel-caption {
+  bottom: unset;
+  color: var(--dark-purple);
+  position: relative;
+  left: unset;
+  right: unset;
+  padding-bottom: unset;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  width: 10%;
+}
+
+.carousel-control-next .carousel-control-next-icon,
+.carousel-control-prev .carousel-control-prev-icon {
+  background-color: var(--dark-purple);
+  height: 4rem;
+  width: 3rem;
+  box-shadow:
+    0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12) !important;
+}
+
+.carousel-indicators {
+  margin-bottom: 0;
+  position: relative;
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: var(--dark-purple);
+  height: 7px;
+}
+
+.carousel-indicators [data-bs-target]:not(.active) {
+  opacity: 0.7;
+}
+
+div.dt-buttons div.dt-button-collection {
+  background: white;
+  border: 1px solid #dee2e6;
+  border-radius: 0.4rem;
+  padding: 0;
+  min-width: unset;
+  max-width: 200px;
+  box-shadow:
+    0 8px 10px 1px rgba(0, 0, 0, 0.14),
+    0 3px 14px 2px rgba(0, 0, 0, 0.12),
+    0 5px 5px -3px rgba(0, 0, 0, 0.2) !important;
+}
+
+div.dt-buttons .dt-button-collection .dt-button {
+  padding: 1rem;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  color: #212529;
+}
+
+div.dt-buttons .dt-button-collection .dt-button:not(:last-child) {
+  border-bottom: 1px solid var(--light-gray);
+}
+
+div.dt-buttons .dt-button-collection .dt-button:hover {
+  background-color: var(--lighter-gray);
+}
+
+div.dt-buttons div.dt-button-collection .dt-button-active::after {
+  content: '\F26E';
+  font-family: 'bootstrap-icons';
+  font-size: 2rem;
+  line-height: 100%;
+  right: 1rem;
+}
+
+div.dt-container table.dataTable tr > .dtfc-fixed-left::after {
+  box-shadow: inset 10px 0 8px -8px rgba(0, 0, 0, 0.2);
+}
+
+div.dt-container table.dataTable tr > .dtfc-fixed-right::after {
+  box-shadow: inset -10px 0 8px -8px rgba(0, 0, 0, 0.2);
+}
+
+div.dt-container table.dataTable tr > th {
+  border-bottom-width: 0.2rem;
+}
+
+div.dt-container table.dataTable tr > th,
+div.dt-container table.dataTable tr > td {
+  padding: 1.2rem;
+  vertical-align: middle;
+}
+
+div.dt-container div.dt-length select {
+  font-size: 1.3rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+div.dt-container div.dt-search input {
+  font-size: 1.3rem;
+  padding: 0.5rem;
+}
+
+div.dt-scroll-body table.table.dataTable.table-hover > tbody > tr:hover > * {
+  background-color: var(--lighter-gray);
+  box-shadow: unset;
+}
+
+.dt-button.buttons-colvis span.dt-button-down-arrow {
+  margin-left: 0.8rem;
+}
+
+.dt-paging .pagination .dt-paging-button button {
+  font-size: 1.3rem;
+}
+
+.fw-semibold {
+  font-weight: 500;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--main-purple);
+  font-family: 'Zilla Slab';
+}
+
+header ul li.nav-item a.nav-link,
+header ul li.nav-item a.nav-link.active {
+  color: var(--light-gray);
+}
+
+header ul li.nav-item a.nav-link {
+  font-family: 'Zilla Slab';
+  font-size: 2.4rem;
+}
+
+header ul li.nav-item a.nav-link.active {
+  text-decoration: underline;
+}
+
+header ul li.nav-item a.nav-link:hover {
+  color: var(--main-orange);
+}
+
+li,
+p {
+  font-size: 1.4rem;
+}
+
+.max-h-130px {
+  max-height: 130px;
+}
+
+.max-h-200px {
+  max-height: 200px;
+}
+
+.max-h-40px {
+  max-height: 40px;
+}
+
+.max-h-50px {
+  max-height: 50px;
+}
+
+.modal-w-fit-content {
+  max-width: fit-content;
+}
+
+.my-6,
+.mb-6 {
+  margin-bottom: 4rem !important;
+}
+
+.my-7,
+.mb-7 {
+  margin-bottom: 5rem !important;
+}
+
+.my-8,
+.mb-8 {
+  margin-bottom: 6rem !important;
+}
+
+.my-9,
+.mb-9 {
+  margin-bottom: 8rem !important;
+}
+
+.my-10,
+.mb-10 {
+  margin-bottom: 10rem !important;
+}
+
+.my-6,
+.mt-6 {
+  margin-top: 4rem !important;
+}
+
+.my-7,
+.mt-7 {
+  margin-top: 5rem !important;
+}
+
+.my-8,
+.mt-8 {
+  margin-top: 6rem !important;
+}
+
+.my-9,
+.mt-9 {
+  margin-top: 8rem !important;
+}
+
+.my-10,
+.mt-10 {
+  margin-top: 10rem !important;
+}
+
+.proj-link div {
+  opacity: 0.9;
+}
+
+.proj-link > div:hover {
+  box-shadow: var(--bs-box-shadow) !important;
+  opacity: 1;
+}
+
+.shadow-sm {
+  box-shadow:
+    0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12) !important;
+}
+
+.shadow {
+  box-shadow:
+    0 8px 10px 1px rgba(0, 0, 0, 0.14),
+    0 3px 14px 2px rgba(0, 0, 0, 0.12),
+    0 5px 5px -3px rgba(0, 0, 0, 0.2) !important;
+}
+
+.table > :not(caption) > * > * {
+  color: unset;
+}
+
+.table-striped > tbody > tr:nth-of-type(2n + 1) > * {
+  background-color: #fcfafb;
+}
+
+.table-hover > tbody > tr:hover > * {
+  background-color: #f1e9ed;
+}
+
+.text-bs-purple {
+  color: var(--bootstrap-purple);
+}
+
+.text-dark-orange {
+  color: var(--dark-orange);
+}
+
+.text-orange {
+  color: var(--main-orange);
+}
+
+.text-purple {
+  color: var(--main-purple);
+}
+
+.text-react-blue {
+  color: var(--react-blue);
+}
+
+.w-25px {
+  width: 25px;
+}
